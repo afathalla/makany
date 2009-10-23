@@ -1,0 +1,15 @@
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000407)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.290970)[0m   [0mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.051571)[0m   [0;1mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;35;1mSQL (0.030816)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.002222)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateCourses (1)
+  [4;36;1mSQL (0.099981)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `subject` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.078419)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.011157)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.003330)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.039786)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mSQL (0.018875)[0m   [0mdescribe `courses`[0m
+  [4;36;1mSQL (0.019336)[0m   [0;1mSHOW KEYS FROM `courses`[0m
