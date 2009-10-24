@@ -12,7 +12,24 @@
   <%=h @course.name %>
 </p>
 
+<h2>Course Sections </h2>
+<table>
+<th>Section Number</th>
+<th>Section Description</th>
+<th>Number of Registered Students</th>
 
+<% for section in @course_sections %>
+  <tr>
+    <td><%=h section.section_number %></td>
+    <td><%=h section.description%></td>
+    <td><%=h section.student_enrollment %></td>
+    <td><%= link_to 'Show', section %></td>
+    <td><%= link_to 'Edit', edit_section_path(section) %></td>
+    <td><%= link_to 'Destroy', section, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+
+</table>
 
 
 <%= link_to 'Edit', edit_course_path(@course) %> |

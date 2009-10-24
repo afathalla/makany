@@ -14,7 +14,7 @@ class CoursesController < ApplicationController
   # GET /courses/1.xml
   def show
     @course = Course.find(params[:id])
-
+    @course_sections=@course.sections
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @course }
