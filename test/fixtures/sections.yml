@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  course_id: 
+  section_number: 
+  student_enrollment: 
+  description: MyString
+
+two:
+  course_id: 
+  section_number: 
+  student_enrollment: 
+  description: MyString

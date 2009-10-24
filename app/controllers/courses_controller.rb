@@ -25,7 +25,7 @@ class CoursesController < ApplicationController
   # GET /courses/new.xml
   def new
     @course = Course.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @course }

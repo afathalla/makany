@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  place_name: MyString
+  type_id: 1
+  location_id: 1
+
+two:
+  place_name: MyString
+  type_id: 1
+  location_id: 1

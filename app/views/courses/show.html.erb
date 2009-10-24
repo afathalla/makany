@@ -1,17 +1,18 @@
 <p>
-  <b>Code:</b>
-  <%=h @course.code %>
+  <b>Course Code:</b>
+  <%=h CourseCode.find(@course.course_code_id).code_name %>
 </p>
 
+<p>
+  <b>Number:</b>
+  <%=h @course.course_number %>
+</p>
 <p>
   <b>Name:</b>
   <%=h @course.name %>
 </p>
 
-<p>
-  <b>Subject:</b>
-  <%=h @course.subject %>
-</p>
+
 
 
 <%= link_to 'Edit', edit_course_path(@course) %> |

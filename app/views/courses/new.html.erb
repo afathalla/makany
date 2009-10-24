@@ -4,18 +4,18 @@
 
 <% form_for(@course) do |f| %>
   <p>
-    <b>Code</b><br />
-    <%= f.text_field :code %>
+    <b>Course Code</b><br />
+    <%= collection_select(:course, :course_code_id,CourseCode.find(:all),:id, :code_name, {:prompt=>true})  %>
+  </p>
+
+  <p>
+    <b>Number</b><br />
+    <%= f.text_field :course_number %>
   </p>
 
   <p>
     <b>Name</b><br />
     <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <b>Subject</b><br />
-    <%= f.text_field :subject %>
   </p>
 
   <p>

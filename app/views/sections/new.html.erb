@@ -1,0 +1,27 @@
+<h1>New section</h1>
+
+<% form_for(@section) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :course_id %><br />
+    <%= f.text_field :course_id %>
+  </p>
+  <p>
+    <%= f.label :section_number %><br />
+    <%= f.text_field :section_number %>
+  </p>
+  <p>
+    <%= f.label :student_enrollment %><br />
+    <%= f.text_field :student_enrollment %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sections_path %>

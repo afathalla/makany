@@ -1,0 +1,22 @@
+<h1>Listing course_codes</h1>
+
+<table>
+  <tr>
+    <th>Code name</th>
+    <th>Code subject</th>
+  </tr>
+
+<% for course_code in @course_codes %>
+  <tr>
+    <td><%=h course_code.code_name %></td>
+    <td><%=h course_code.code_subject %></td>
+    <td><%= link_to 'Show', course_code %></td>
+    <td><%= link_to 'Edit', edit_course_code_path(course_code) %></td>
+    <td><%= link_to 'Destroy', course_code, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New course_code', new_course_code_path %>

@@ -3,15 +3,15 @@
 <table>
   <tr>
     <th>Code</th>
+    <th>Number</th>
     <th>Name</th>
-    <th>Subject</th>
   </tr>
 
 <% for course in @courses %>
   <tr>
-    <td><%=h course.code %></td>
+    <td><%=h CourseCode.find(course.course_code_id).code_name %></td>
+    <td><%=h course.course_number%></td>
     <td><%=h course.name %></td>
-    <td><%=h course.subject %></td>
     <td><%= link_to 'Show', course %></td>
     <td><%= link_to 'Edit', edit_course_path(course) %></td>
     <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?', :method => :delete %></td>

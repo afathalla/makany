@@ -1,0 +1,20 @@
+<h1>Editing course_code</h1>
+
+<% form_for(@course_code) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :code_name %><br />
+    <%= f.text_field :code_name %>
+  </p>
+  <p>
+    <%= f.label :code_subject %><br />
+    <%= f.text_field :code_subject %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @course_code %> |
+<%= link_to 'Back', course_codes_path %>
