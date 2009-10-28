@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :people
+
+  map.resources :locations
+
   map.resources :course_codes
 
   map.resources :places

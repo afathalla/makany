@@ -18,7 +18,8 @@
 <th>Section Description</th>
 <th>Number of Registered Students</th>
 
-<% for section in @course_sections %>
+<% if (@course_sections.count > 0) %>
+<%for section in @course_sections %>
   <tr>
     <td><%=h section.section_number %></td>
     <td><%=h section.description%></td>
@@ -28,7 +29,7 @@
     <td><%= link_to 'Destroy', section, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-
+<% end %>
 </table>
 
 
