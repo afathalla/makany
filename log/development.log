@@ -4819,3 +4819,515 @@ Rendering courses/show
   [4;35;1mSection Columns (0.004097)[0m   [0mSHOW FIELDS FROM `sections`[0m
   [4;36;1mSQL (0.001481)[0m   [0;1mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 3) [0m
 Completed in 0.10960 (9 reqs/sec) | Rendering: 0.06387 (58%) | DB: 0.01537 (14%) | 200 OK [http://localhost/courses/3]
+  [4;35;1mSQL (0.027117)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-10-30 21:17:27) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"courses", "action"=>"show", "id"=>"1"}
+  [4;36;1mCourse Columns (0.132513)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (0.016476)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+  [4;36;1mCourseCode Columns (0.055544)[0m   [0;1mSHOW FIELDS FROM `course_codes`[0m
+  [4;35;1mCourseCode Load (0.022039)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mSection Columns (0.027603)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.001031)[0m   [0mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 1) [0m
+  [4;36;1mSection Load (0.002760)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.course_id = 1) [0m
+Completed in 2.27019 (0 reqs/sec) | Rendering: 1.09780 (48%) | DB: 0.28508 (12%) | 200 OK [http://localhost/courses/1]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-30 22:03:19) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"id=2"}
+  [4;35;1mPerson Columns (0.067662)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.103666)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=id=2):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1379:in `find_one'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1362:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    /app/controllers/people_controller.rb:16:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-30 22:03:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"id=1"}
+  [4;35;1mPerson Columns (0.006618)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001194)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=id=1):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1379:in `find_one'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1362:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    /app/controllers/people_controller.rb:16:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-30 22:03:54) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"1"}
+  [4;35;1mPerson Columns (0.007813)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.038897)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+Completed in 0.08887 (11 reqs/sec) | Rendering: 0.02994 (33%) | DB: 0.22585 (254%) | 200 OK [http://localhost/people/1]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-30 22:07:06) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;35;1mPerson Columns (0.005766)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.002219)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+Completed in 0.02915 (34 reqs/sec) | Rendering: 0.00839 (28%) | DB: 0.00798 (27%) | 200 OK [http://localhost/people/3]
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000672)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.026708)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001773)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.008467)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.007047)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.005859)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001426)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001596)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001455)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001724)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001989)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+  [4;35;1mSQL (0.001558)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20091024120825)
+  [4;36;1mSQL (0.001417)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;35;1mSQL (0.001583)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;36;1mSQL (0.001196)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;35;1mSQL (0.001196)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;36;1mSQL (0.001151)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;35;1mSQL (0.001172)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocations (20091026181448)
+  [4;36;1mSQL (0.001178)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20091026181630)
+  [4;35;1mSQL (0.001178)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocationsPlaces (20091030204122)
+  [4;36;1mSQL (0.001212)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.676175)[0m   [0mCREATE TABLE `locations_places` (`location_id` int(11) DEFAULT NULL NULL, `place_id` int(11) DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.079973)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091030204122')[0m
+  [4;35;1mSQL (0.003336)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.002266)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.029314)[0m   [0mSHOW FIELDS FROM `course_codes`[0m
+  [4;36;1mSQL (0.028058)[0m   [0;1mdescribe `course_codes`[0m
+  [4;35;1mSQL (0.006387)[0m   [0mSHOW KEYS FROM `course_codes`[0m
+  [4;36;1mSQL (0.009715)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mSQL (0.006854)[0m   [0mdescribe `courses`[0m
+  [4;36;1mSQL (0.005078)[0m   [0;1mSHOW KEYS FROM `courses`[0m
+  [4;35;1mSQL (0.038750)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mSQL (0.007048)[0m   [0;1mdescribe `locations`[0m
+  [4;35;1mSQL (0.019401)[0m   [0mSHOW KEYS FROM `locations`[0m
+  [4;36;1mSQL (0.008183)[0m   [0;1mSHOW FIELDS FROM `locations_places`[0m
+  [4;35;1mSQL (0.003967)[0m   [0mdescribe `locations_places`[0m
+  [4;36;1mSQL (0.002625)[0m   [0;1mSHOW KEYS FROM `locations_places`[0m
+  [4;35;1mSQL (0.004407)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.004898)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.032157)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.025616)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.003844)[0m   [0mdescribe `places`[0m
+  [4;36;1mSQL (0.002286)[0m   [0;1mSHOW KEYS FROM `places`[0m
+  [4;35;1mSQL (0.004412)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSQL (0.004964)[0m   [0;1mdescribe `sections`[0m
+  [4;35;1mSQL (0.023052)[0m   [0mSHOW KEYS FROM `sections`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000735)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002108)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.013022)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008208)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocationsPlaces (20091030204122)
+  [4;36;1mSQL (0.008995)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.081792)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091030204122'[0m
+  [4;36;1mSQL (0.002936)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002156)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.031924)[0m   [0;1mSHOW FIELDS FROM `course_codes`[0m
+  [4;35;1mSQL (0.005285)[0m   [0mdescribe `course_codes`[0m
+  [4;36;1mSQL (0.003822)[0m   [0;1mSHOW KEYS FROM `course_codes`[0m
+  [4;35;1mSQL (0.004847)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (0.004964)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.005750)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (0.004946)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (0.006994)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.006633)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (0.005507)[0m   [0mSHOW FIELDS FROM `locations_places`[0m
+  [4;36;1mSQL (0.003931)[0m   [0;1mdescribe `locations_places`[0m
+  [4;35;1mSQL (0.005357)[0m   [0mSHOW KEYS FROM `locations_places`[0m
+  [4;36;1mSQL (0.005064)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.005496)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.003224)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.004429)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.004155)[0m   [0;1mdescribe `places`[0m
+  [4;35;1mSQL (0.002897)[0m   [0mSHOW KEYS FROM `places`[0m
+  [4;36;1mSQL (0.006901)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.005967)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.003733)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000595)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001752)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001910)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007918)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.006705)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.004493)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001356)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001756)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001468)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002080)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001547)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001295)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+  [4;36;1mSQL (0.001354)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20091024120825)
+  [4;35;1mSQL (0.001399)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;36;1mSQL (0.001264)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;35;1mSQL (0.001235)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;36;1mSQL (0.001340)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;35;1mSQL (0.001424)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;36;1mSQL (0.001446)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocations (20091026181448)
+  [4;35;1mSQL (0.001209)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20091026181630)
+  [4;36;1mSQL (0.001156)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001256)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001535)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004806)[0m   [0mSHOW FIELDS FROM `course_codes`[0m
+  [4;36;1mSQL (0.004707)[0m   [0;1mdescribe `course_codes`[0m
+  [4;35;1mSQL (0.004772)[0m   [0mSHOW KEYS FROM `course_codes`[0m
+  [4;36;1mSQL (0.009513)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mSQL (0.004722)[0m   [0mdescribe `courses`[0m
+  [4;36;1mSQL (0.003235)[0m   [0;1mSHOW KEYS FROM `courses`[0m
+  [4;35;1mSQL (0.004296)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mSQL (0.004055)[0m   [0;1mdescribe `locations`[0m
+  [4;35;1mSQL (0.002769)[0m   [0mSHOW KEYS FROM `locations`[0m
+  [4;36;1mSQL (0.004523)[0m   [0;1mSHOW FIELDS FROM `locations_places`[0m
+  [4;35;1mSQL (0.004444)[0m   [0mdescribe `locations_places`[0m
+  [4;36;1mSQL (0.003928)[0m   [0;1mSHOW KEYS FROM `locations_places`[0m
+  [4;35;1mSQL (0.005943)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.006183)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.002990)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.005113)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.005646)[0m   [0mdescribe `places`[0m
+  [4;36;1mSQL (0.002342)[0m   [0;1mSHOW KEYS FROM `places`[0m
+  [4;35;1mSQL (0.003691)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSQL (0.003721)[0m   [0;1mdescribe `sections`[0m
+  [4;35;1mSQL (0.002129)[0m   [0mSHOW KEYS FROM `sections`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000546)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001720)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001894)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008412)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.006895)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.004434)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001404)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001545)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.002068)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002008)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001449)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001358)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+  [4;36;1mSQL (0.001433)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20091024120825)
+  [4;35;1mSQL (0.001222)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;36;1mSQL (0.001212)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;35;1mSQL (0.001218)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;36;1mSQL (0.001222)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;35;1mSQL (0.001177)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;36;1mSQL (0.001336)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocations (20091026181448)
+  [4;35;1mSQL (0.001195)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20091026181630)
+  [4;36;1mSQL (0.001316)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocationsPlaces (20091030204122)
+  [4;35;1mSQL (0.001243)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'locations_places' already exists: CREATE TABLE `locations_places` (`location_id` int(11) DEFAULT NULL NULL, `place_id` int(11) DEFAULT NULL NULL) ENGINE=InnoDB[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000566)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001739)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001863)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006365)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.008095)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.004430)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001368)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001569)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001496)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001558)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001313)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001754)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+  [4;36;1mSQL (0.001261)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20091024120825)
+  [4;35;1mSQL (0.001257)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;36;1mSQL (0.001274)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;35;1mSQL (0.001373)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;36;1mSQL (0.001536)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;35;1mSQL (0.001200)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;36;1mSQL (0.001197)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocations (20091026181448)
+  [4;35;1mSQL (0.001248)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20091026181630)
+  [4;36;1mSQL (0.001235)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001297)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001669)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004982)[0m   [0mSHOW FIELDS FROM `course_codes`[0m
+  [4;36;1mSQL (0.005146)[0m   [0;1mdescribe `course_codes`[0m
+  [4;35;1mSQL (0.004528)[0m   [0mSHOW KEYS FROM `course_codes`[0m
+  [4;36;1mSQL (0.006376)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mSQL (0.004511)[0m   [0mdescribe `courses`[0m
+  [4;36;1mSQL (0.003022)[0m   [0;1mSHOW KEYS FROM `courses`[0m
+  [4;35;1mSQL (0.004066)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mSQL (0.004090)[0m   [0;1mdescribe `locations`[0m
+  [4;35;1mSQL (0.005530)[0m   [0mSHOW KEYS FROM `locations`[0m
+  [4;36;1mSQL (0.004673)[0m   [0;1mSHOW FIELDS FROM `locations_places`[0m
+  [4;35;1mSQL (0.005110)[0m   [0mdescribe `locations_places`[0m
+  [4;36;1mSQL (0.003158)[0m   [0;1mSHOW KEYS FROM `locations_places`[0m
+  [4;35;1mSQL (0.006245)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.005452)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.003194)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.005017)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.005577)[0m   [0mdescribe `places`[0m
+  [4;36;1mSQL (0.002692)[0m   [0;1mSHOW KEYS FROM `places`[0m
+  [4;35;1mSQL (0.003771)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSQL (0.003652)[0m   [0;1mdescribe `sections`[0m
+  [4;35;1mSQL (0.002025)[0m   [0mSHOW KEYS FROM `sections`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000573)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001776)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.028917)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008867)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.006644)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.004444)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001463)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001593)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001656)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001480)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001549)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001365)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+  [4;36;1mSQL (0.001348)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20091024120825)
+  [4;35;1mSQL (0.001286)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;36;1mSQL (0.001232)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;35;1mSQL (0.001367)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;36;1mSQL (0.001215)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;35;1mSQL (0.001307)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;36;1mSQL (0.001257)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateLocations (20091026181448)
+  [4;35;1mSQL (0.001644)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20091026181630)
+  [4;36;1mSQL (0.001602)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeoplePlaces (20091030205800)
+  [4;35;1mSQL (0.001343)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.073428)[0m   [0;1mCREATE TABLE `people_places` (`person_id` int(11) DEFAULT NULL NULL, `place_id` int(11) DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.032123)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091030205800')[0m
+  [4;36;1mSQL (0.001693)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001578)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.004808)[0m   [0;1mSHOW FIELDS FROM `course_codes`[0m
+  [4;35;1mSQL (0.005970)[0m   [0mdescribe `course_codes`[0m
+  [4;36;1mSQL (0.003222)[0m   [0;1mSHOW KEYS FROM `course_codes`[0m
+  [4;35;1mSQL (0.006491)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (0.005107)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.002978)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (0.005845)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (0.005184)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.004744)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (0.006334)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.007100)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.002781)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.007515)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mSQL (0.004016)[0m   [0mdescribe `people_places`[0m
+  [4;36;1mSQL (0.002973)[0m   [0;1mSHOW KEYS FROM `people_places`[0m
+  [4;35;1mSQL (0.006358)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.006416)[0m   [0;1mdescribe `places`[0m
+  [4;35;1mSQL (0.002231)[0m   [0mSHOW KEYS FROM `places`[0m
+  [4;36;1mSQL (0.004200)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.003834)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.002063)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-31 00:36:26) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;35;1mPerson Columns (0.041758)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001769)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mSQL (0.001718)[0m   [0mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `places' for #<Class:0x383a99>):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing'
+    /app/controllers/people_controller.rb:17:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-31 00:38:08) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.003963)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001126)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mSQL (0.001118)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `person_places' for #<Class:0x41f937>):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing'
+    /app/controllers/people_controller.rb:17:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)

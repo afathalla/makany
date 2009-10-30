@@ -1,23 +1,25 @@
 <p>
-  <b>First name:</b>
-  <%=h @person.first_name %>
+  <b>Name:</b>
+  <%=h @person.first_name %>&nbsp;<%=h @person.last_name %>
 </p>
 
 <p>
-  <b>Last name:</b>
-  <%=h @person.last_name %>
+  <h2>Current Location:</h2>
+  <%=h @person.locations %>
 </p>
 
 <p>
-  <b>Age:</b>
-  <%=h @person.age %>
+<!--  <h2> Places Visited Recently </h2>
+  <table>
+  <th>Place name</th>
+  <#%for place in @person_places %>
+  <tr>
+    <td><%=h place.place_name %></td>
+    <td><%= link_to 'More About this place', place %></td>
+  </tr>
+<#% end %>
+</table> -->
 </p>
-
-<p>
-  <b>Gender:</b>
-  <%=h @person.gender %>
-</p>
-
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>

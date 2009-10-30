@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091026181630) do
+ActiveRecord::Schema.define(:version => 20091030205800) do
 
   create_table "course_codes", :force => true do |t|
     t.string   "code_name",    :limit => 4
@@ -40,6 +40,11 @@ ActiveRecord::Schema.define(:version => 20091026181630) do
     t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "people_places", :id => false, :force => true do |t|
+    t.integer "person_id", :limit => 11
+    t.integer "place_id",  :limit => 11
   end
 
   create_table "places", :force => true do |t|
