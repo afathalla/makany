@@ -1,0 +1,22 @@
+<h1>Listing Place Types</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+
+<% for place_type in @place_types %>
+  <tr>
+    <td><%=h place_type.place_type %></td>
+    <td><%=h place_type.place_description %></td>
+    <td><%= link_to 'Show', place_type %></td>
+    <td><%= link_to 'Edit', edit_place_type_path(place_type) %></td>
+    <td><%= link_to 'Destroy', place_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New place_type', new_place_type_path %>

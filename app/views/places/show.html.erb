@@ -5,7 +5,7 @@
 
 <p>
   <b>Type:</b>
-  <%=h @place.type_id %>
+  <%=h PlaceType.find(@place.type_id).place_type %>
 </p>
 
 <p>

@@ -1,0 +1,13 @@
+<p>
+  <b>Type:</b>
+  <%=h @place_type.place_type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @place_type.place_description %>
+</p>
+
+
+<%= link_to 'Edit', edit_place_type_path(@place_type) %> |
+<%= link_to 'Back', place_types_path %>

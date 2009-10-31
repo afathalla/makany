@@ -5,20 +5,19 @@
 
 <p>
   <h2>Current Location:</h2>
-  <%=h @person.locations %>
 </p>
 
 <p>
-<!--  <h2> Places Visited Recently </h2>
+ <h2> Places Visited Recently </h2>
   <table>
   <th>Place name</th>
-  <#%for place in @person_places %>
+  <% for place in @person.places %>
   <tr>
     <td><%=h place.place_name %></td>
     <td><%= link_to 'More About this place', place %></td>
   </tr>
-<#% end %>
-</table> -->
+<% end %>
+</table> 
 </p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |

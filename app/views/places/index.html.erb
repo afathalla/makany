@@ -10,7 +10,7 @@
 <% for place in @places %>
   <tr>
     <td><%=h place.place_name %></td>
-    <td><%=h place.type_id %></td>
+    <td><%=h PlaceType.find(place.type_id).place_type %></td>
     <td><%=h place.location_id %></td>
     <td><%= link_to 'Show', place %></td>
     <td><%= link_to 'Edit', edit_place_path(place) %></td>

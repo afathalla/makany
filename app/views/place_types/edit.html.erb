@@ -1,0 +1,20 @@
+<h1>Editing Place Type</h1>
+
+<% form_for(@place_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :place_type %><br />
+    <%= f.text_field :place_type %>
+  </p>
+  <p>
+    <%= f.label :place_description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @place_type %> |
+<%= link_to 'Back', place_types_path %>
