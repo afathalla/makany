@@ -1,0 +1,21 @@
+/* 
+    Document   : header
+    Created on : 07-Nov-2009, 13:32:07
+    Author     : User
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+div#person_nav {
+    float: right; font-size: 0.9em;
+}
+

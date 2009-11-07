@@ -1,0 +1,16 @@
+ <h2> Welcome to Makany </h2>
+
+ <% form_for @person_session do |form| %>
+ <%= form.error_messages %>
+   <p>
+     <%= form.label :username, "Username" %>
+     <%= form.text_field :username %>
+   </p>
+   <p>
+      <%= form.label :password, "Password" %>
+      <%= form.password_field :password %>
+    </p>
+    <p>
+      <%= form.submit "Submit" %>
+    </p>
+ <% end %>

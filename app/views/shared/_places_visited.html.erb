@@ -1,0 +1,15 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+  <p>
+    <h1> Places Visited by <%=@person.full_name%> </h1>
+  </p>
+  <p>
+    <div>
+    <% for place in Place.find(:all) %>
+      <%= check_box_tag "person[place_ids][]", place.id, @person.places.include?(place) %>
+      <%= place.place_name %><br/>
+      </div>
+      <%end%>
+</p>

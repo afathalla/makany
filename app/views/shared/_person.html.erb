@@ -1,0 +1,43 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<% form_for(@person) do |f| %>
+  <%= f.error_messages %>
+    <p>
+    <%= f.label :username, "Username" %><br />
+    <%= f.text_field :username %>
+   </p>
+    <p>
+    <%= f.label :email, "Email" %><br />
+    <%= f.text_field :email %>
+   </p>
+    <p>
+    <%= f.label :password, "Password" %><br />
+    <%= f.password_field :password %>
+   </p>
+    <p>
+    <%= f.label :password_confirmation, "Retype your password"%><br />
+    <%= f.password_field :password_confirmation %>
+   </p>
+  <p>
+    <%= f.label :first_name, "First Name"%><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name, "Family Name"%><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :age, "Age"%><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :gender, "Gender" %><br />
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
