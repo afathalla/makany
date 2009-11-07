@@ -19,10 +19,22 @@
     <%= f.label :gender %><br />
     <%= f.text_field :gender %>
   </p>
+
+  <p>
+    <h1> Places Visited by <%=@person.full_name%> </h1>
+  </p>
+  <p>
+    <div>
+    <% for place in Place.find(:all) %>
+      <%= check_box_tag "person[place_ids][]", place.id, @person.places.include?(place) %>
+      <%= place.place_name %><br/>
+      </div>
+      <%end%>
+</p>
   <p>
     <%= f.submit "Update" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @person %> |
-<%= link_to 'Back', people_path %>
+<%=# link_to 'Add new Places to ' << @person.full_name,new_person_place_path(@person)%> 
+<%= link_to 'Back to People Listing', people_path %>

@@ -7979,3 +7979,2166 @@ Rendering places/index
   [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
   [4;36;1mPlaceType Load (0.001780)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
 Completed in 0.12134 (8 reqs/sec) | Rendering: 0.08214 (67%) | DB: 0.02209 (18%) | 200 OK [http://localhost/places]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-10-31 14:46:24) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.002192)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.005083)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.07434 (13 reqs/sec) | Rendering: 0.04706 (63%) | DB: 0.00727 (9%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-10-31 14:50:16) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.004279)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.004662)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.04722 (21 reqs/sec) | Rendering: 0.02359 (49%) | DB: 0.00894 (18%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-10-31 14:50:19) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.003182)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.007173)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.06964 (14 reqs/sec) | Rendering: 0.03665 (52%) | DB: 0.01035 (14%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:50:21) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005834)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.004766)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.05603 (17 reqs/sec) | Rendering: 0.02858 (51%) | DB: 0.01060 (18%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-10-31 14:51:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.002162)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.004679)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.05310 (18 reqs/sec) | Rendering: 0.03060 (57%) | DB: 0.00684 (12%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-31 14:51:04) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005622)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.002032)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mJoin Table Columns (0.004291)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPlace Load (0.005669)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Completed in 0.07354 (13 reqs/sec) | Rendering: 0.02976 (40%) | DB: 0.01761 (23%) | 200 OK [http://localhost/people/1]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-10-31 14:52:36) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.005681)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.005219)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.05075 (19 reqs/sec) | Rendering: 0.02008 (39%) | DB: 0.01090 (21%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:52:37) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.174087)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.011179)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.24606 (4 reqs/sec) | Rendering: 0.04374 (17%) | DB: 0.18527 (75%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:54:37) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004654)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001718)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+
+
+ActionView::TemplateError (undefined local variable or method `fullname' for #<ActionView::Base:0x14bd4d1>) on line #27 of people/edit.html.erb:
+24:   </p>
+25: <% end %>
+26: 
+27: <%= link_to 'Add new Places to' << "#{fullname}",@person%>
+28: <%= link_to 'Show', @person %> |
+29: <%= link_to 'Back', people_path %>
+
+    app/views/people/edit.html.erb:27:in `_run_erb_47app47views47people47edit46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:54:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005414)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001552)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+
+
+ActionView::TemplateError (undefined method `fullname' for #<Person:0x1bddb4e>) on line #27 of people/edit.html.erb:
+24:   </p>
+25: <% end %>
+26: 
+27: <%= link_to 'Add new Places to' << "#{@person.fullname}",@person%>
+28: <%= link_to 'Show', @person %> |
+29: <%= link_to 'Back', people_path %>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    app/views/people/edit.html.erb:27:in `_run_erb_47app47views47people47edit46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:54:59) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005246)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001934)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.04857 (20 reqs/sec) | Rendering: 0.02472 (50%) | DB: 0.00718 (14%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:14) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004865)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001738)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.04530 (22 reqs/sec) | Rendering: 0.02364 (52%) | DB: 0.00660 (14%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:38) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005215)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001602)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.08592 (11 reqs/sec) | Rendering: 0.06663 (77%) | DB: 0.00682 (7%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:39) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004751)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001686)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.04952 (20 reqs/sec) | Rendering: 0.02467 (49%) | DB: 0.00644 (12%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:40) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005121)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.008161)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.07215 (13 reqs/sec) | Rendering: 0.02390 (33%) | DB: 0.01328 (18%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:41) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.012377)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001480)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.09253 (10 reqs/sec) | Rendering: 0.05671 (61%) | DB: 0.01386 (14%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:55:58) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005194)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001460)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.06301 (15 reqs/sec) | Rendering: 0.02264 (35%) | DB: 0.00665 (10%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-31 14:56:18) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004953)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001708)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.05456 (18 reqs/sec) | Rendering: 0.02540 (46%) | DB: 0.00666 (12%) | 200 OK [http://localhost/people/1/edit]
+  [4;35;1mSQL (0.063616)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 18:44:13) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.186467)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.018525)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.082201)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.102595)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.42512 (2 reqs/sec) | Rendering: 0.01931 (4%) | DB: 0.45340 (106%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 18:44:18) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.020745)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001271)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.09422 (10 reqs/sec) | Rendering: 0.06007 (63%) | DB: 0.02202 (23%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 18:44:22) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.005439)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001329)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.04210 (23 reqs/sec) | Rendering: 0.01713 (40%) | DB: 0.00677 (16%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 18:44:38) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.005004)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001481)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.04256 (23 reqs/sec) | Rendering: 0.02213 (52%) | DB: 0.00648 (15%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 18:45:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.009124)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.002050)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.004242)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001328)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.05747 (17 reqs/sec) | Rendering: 0.01917 (33%) | DB: 0.01674 (29%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 18:45:07) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.004079)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001261)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.003485)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001392)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.03738 (26 reqs/sec) | Rendering: 0.01518 (40%) | DB: 0.01022 (27%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-02 19:01:42) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;36;1mPerson Load (0.002154)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Columns (0.027706)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 0.07651 (13 reqs/sec) | Rendering: 0.02124 (27%) | DB: 0.02986 (39%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 19:01:50) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.005015)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001393)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.004069)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001387)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.04744 (21 reqs/sec) | Rendering: 0.02061 (43%) | DB: 0.01186 (25%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-02 19:01:52) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;36;1mPerson Load (0.001273)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Columns (0.003750)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 0.04422 (22 reqs/sec) | Rendering: 0.01833 (41%) | DB: 0.00502 (11%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 19:01:54) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.004022)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001177)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.06162 (16 reqs/sec) | Rendering: 0.04215 (68%) | DB: 0.00520 (8%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 19:02:01) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/person/add_new_place" with {:method=>:get}):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 19:03:12) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/person/add_new_place" with {:method=>:get}):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 19:30:41) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.004235)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001167)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+
+
+ActionView::TemplateError (undefined method `new_person_place' for #<ActionView::Base:0x102dfd9>) on line #27 of people/edit.html.erb:
+24:   </p>
+25: <% end %>
+26: 
+27: <%= link_to 'Add new Places to ' << @person.full_name,new_person_place(@person)%> <br />
+28: <%= link_to 'Back to People Listing', people_path %>
+
+    app/views/people/edit.html.erb:27:in `_run_erb_47app47views47people47edit46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 19:31:23) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.004556)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001274)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.03894 (25 reqs/sec) | Rendering: 0.02012 (51%) | DB: 0.00583 (14%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:31:25) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.004027)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.001139)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mPlaceType Columns (0.004051)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.06273 (15 reqs/sec) | Rendering: 0.04161 (66%) | DB: 0.00922 (14%) | 200 OK [http://localhost/people/3/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 19:31:35) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Dr. Sherif Aly", "type_id"=>""}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;35;1mPlace Columns (0.003708)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.000432)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlace Create (0.000691)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Dr. Sherif Aly', NULL, NULL, '2009-11-02 19:31:35', '2009-11-02 19:31:35')[0m
+  [4;36;1mSQL (0.050761)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/places/4
+Completed in 0.08751 (11 reqs/sec) | DB: 0.05559 (63%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 19:31:35) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"4"}
+  [4;35;1mPlace Columns (0.003756)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.001129)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 4) [0m
+Rendering template within layouts/places
+Rendering places/show
+
+
+ActionView::TemplateError (Couldn't find PlaceType without an ID) on line #8 of places/show.html.erb:
+5: 
+6: <p>
+7:   <b>Type:</b>
+8:   <%=h PlaceType.find(@place.type_id).place_type %>
+9: </p>
+10: 
+11: <p>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1360:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    app/views/places/show.html.erb:8:in `_run_erb_47app47views47places47show46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/places_controller.rb:18:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 19:31:48) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Dr. Sherif Aly's Office", "type_id"=>"4"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;35;1mPlace Columns (0.004208)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.000417)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlace Create (0.000650)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Dr. Sherif Aly\'s Office', 4, NULL, '2009-11-02 19:31:48', '2009-11-02 19:31:48')[0m
+  [4;36;1mSQL (0.051579)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/places/5
+Completed in 0.12608 (7 reqs/sec) | DB: 0.05685 (45%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 19:31:48) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"5"}
+  [4;35;1mPlace Columns (0.003695)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.001120)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 5) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Columns (0.003945)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000973)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.07147 (13 reqs/sec) | Rendering: 0.04455 (62%) | DB: 0.00973 (13%) | 200 OK [http://localhost/places/5]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:31:50) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;35;1mPlace Load (0.001565)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlace Columns (0.003747)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlaceType Columns (0.003651)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000988)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPlaceType Load (0.000970)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+
+
+ActionView::TemplateError (Couldn't find PlaceType without an ID) on line #13 of places/index.html.erb:
+10: <% for place in @places %>
+11:   <tr>
+12:     <td><%=h place.place_name %></td>
+13:     <td><%=h PlaceType.find(place.type_id).place_type %></td>
+14:     <td><%=h place.location_id %></td>
+15:     <td><%= link_to 'Show', place %></td>
+16:     <td><%= link_to 'Edit', edit_place_path(place) %></td>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1360:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    app/views/places/index.html.erb:13:in `_run_erb_47app47views47places47index46html46erb'
+    app/views/places/index.html.erb:10:in `each'
+    app/views/places/index.html.erb:10:in `_run_erb_47app47views47places47index46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/places_controller.rb:7:in `index'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:31:53) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;35;1mPlace Load (0.001379)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlace Columns (0.003562)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlaceType Columns (0.004607)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000989)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPlaceType Load (0.001041)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+
+
+ActionView::TemplateError (Couldn't find PlaceType without an ID) on line #13 of places/index.html.erb:
+10: <% for place in @places %>
+11:   <tr>
+12:     <td><%=h place.place_name %></td>
+13:     <td><%=h PlaceType.find(place.type_id).place_type %></td>
+14:     <td><%=h place.location_id %></td>
+15:     <td><%= link_to 'Show', place %></td>
+16:     <td><%= link_to 'Edit', edit_place_path(place) %></td>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1360:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    app/views/places/index.html.erb:13:in `_run_erb_47app47views47places47index46html46erb'
+    app/views/places/index.html.erb:10:in `each'
+    app/views/places/index.html.erb:10:in `_run_erb_47app47views47places47index46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/places_controller.rb:7:in `index'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:32:50) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;35;1mPlace Load (0.002025)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlace Columns (0.007461)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlaceType Columns (0.003578)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000847)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPlaceType Load (0.000949)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;35;1mPlaceType Load (0.001035)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.09251 (10 reqs/sec) | Rendering: 0.04645 (50%) | DB: 0.02609 (28%) | 200 OK [http://localhost/places]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-02 19:33:00) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;36;1mPerson Load (0.001306)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Columns (0.003790)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 0.06550 (15 reqs/sec) | Rendering: 0.01384 (21%) | DB: 0.00510 (7%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 19:33:02) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.005367)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001401)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.005416)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001338)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.05813 (17 reqs/sec) | Rendering: 0.02433 (41%) | DB: 0.01352 (23%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 19:37:35) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.003910)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001088)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.003693)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001200)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.04023 (24 reqs/sec) | Rendering: 0.01774 (44%) | DB: 0.00989 (24%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 19:40:05) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.004267)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001087)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.02929 (34 reqs/sec) | Rendering: 0.01241 (42%) | DB: 0.00535 (18%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:40:08) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.004110)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.001414)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPerson Columns (0.003539)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+
+
+NoMethodError (undefined method `add' for #<Class:0x1f5d62f>):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:285:in `method_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_proxy.rb:168:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:281:in `method_missing'
+    /app/controllers/places_controller.rb:28:in `new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:41:06) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;35;1mPlace Columns (0.005067)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.001639)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPerson Columns (0.004721)[0m   [0mSHOW FIELDS FROM `people`[0m
+
+
+NoMethodError (undefined method `append' for #<Class:0xaaabfc>):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:285:in `method_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_proxy.rb:168:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:281:in `method_missing'
+    /app/controllers/places_controller.rb:28:in `new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:41:28) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.004543)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPerson Columns (0.004437)[0m   [0mSHOW FIELDS FROM `people`[0m
+
+
+NoMethodError (undefined method `stringify_keys!' for "3":String):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:2355:in `attributes='
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:2130:in `initialize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:285:in `method_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_proxy.rb:168:in `with_scope'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:281:in `method_missing'
+    /app/controllers/places_controller.rb:28:in `new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:50:21) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.003667)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+
+
+NameError (uninitialized constant PlacesController::People):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:492:in `const_missing'
+    /app/controllers/places_controller.rb:28:in `new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:50:34) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;35;1mPlace Columns (0.004154)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPerson Columns (0.005337)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001833)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mSQL (0.001608)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000545)[0m   [0mCOMMIT[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.001240)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPlaceType Columns (0.003733)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.07686 (13 reqs/sec) | Rendering: 0.02508 (32%) | DB: 0.05159 (67%) | 200 OK [http://localhost/people/3/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 19:52:19) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Dr. Sherif Aly", "type_id"=>""}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.003969)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000354)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Create (0.000507)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Dr. Sherif Aly', NULL, NULL, '2009-11-02 19:52:19', '2009-11-02 19:52:19')[0m
+  [4;35;1mSQL (0.036727)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/places/6
+Completed in 0.06933 (14 reqs/sec) | DB: 0.04156 (59%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 19:52:20) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"6"}
+  [4;36;1mPlace Columns (0.004114)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001379)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 6) [0m
+Rendering template within layouts/places
+Rendering places/show
+
+
+ActionView::TemplateError (Couldn't find PlaceType without an ID) on line #8 of places/show.html.erb:
+5: 
+6: <p>
+7:   <b>Type:</b>
+8:   <%=h PlaceType.find(@place.type_id).place_type %>
+9: </p>
+10: 
+11: <p>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1360:in `find_from_ids'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:537:in `find'
+    app/views/places/show.html.erb:8:in `_run_erb_47app47views47places47show46html46erb'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/places_controller.rb:18:in `show'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 19:52:54) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Dr. Sherif Aly's Office", "type_id"=>"4"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.004843)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000363)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Create (0.000470)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Dr. Sherif Aly\'s Office', 4, NULL, '2009-11-02 19:52:54', '2009-11-02 19:52:54')[0m
+  [4;35;1mSQL (0.058622)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/places/7
+Completed in 0.09428 (10 reqs/sec) | DB: 0.06430 (68%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 19:52:54) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"7"}
+  [4;36;1mPlace Columns (0.003928)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001178)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 7) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Columns (0.003642)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.000843)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.04425 (22 reqs/sec) | Rendering: 0.02299 (51%) | DB: 0.00959 (21%) | 200 OK [http://localhost/places/7]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:53:28) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;36;1mPlace Load (0.001458)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;35;1mPlace Columns (0.003645)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlaceType Columns (0.003606)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.000937)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPlaceType Load (0.001018)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;36;1mPlaceType Load (0.000972)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.05998 (16 reqs/sec) | Rendering: 0.03759 (62%) | DB: 0.01164 (19%) | 200 OK [http://localhost/places]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-02 19:53:36) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;35;1mPerson Load (0.001505)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.003887)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.05343 (18 reqs/sec) | Rendering: 0.03254 (60%) | DB: 0.00539 (10%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 19:53:42) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;35;1mPerson Columns (0.003888)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001398)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.03017 (33 reqs/sec) | Rendering: 0.01299 (43%) | DB: 0.00529 (17%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 19:53:46) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;35;1mPlace Columns (0.003699)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPerson Columns (0.003739)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001330)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000292)[0m   [0mCOMMIT[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.001530)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPlaceType Columns (0.003493)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.06921 (14 reqs/sec) | Rendering: 0.02492 (36%) | DB: 0.01432 (20%) | 200 OK [http://localhost/people/3/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 19:54:56) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Koko", "type_id"=>"1"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.004746)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000418)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Create (0.000652)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Koko', 1, NULL, '2009-11-02 19:54:56', '2009-11-02 19:54:56')[0m
+  [4;35;1mSQL (0.016753)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/places/8
+Completed in 0.05219 (19 reqs/sec) | DB: 0.02257 (43%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 19:54:57) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"8"}
+  [4;36;1mPlace Columns (0.003790)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001182)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 8) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Columns (0.003773)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.000876)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Completed in 0.04820 (20 reqs/sec) | Rendering: 0.02315 (48%) | DB: 0.00962 (19%) | 200 OK [http://localhost/places/8]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:55:52) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;36;1mPlace Load (0.002843)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;35;1mPlace Columns (0.003788)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlaceType Columns (0.004364)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.000948)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPlaceType Load (0.000916)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;36;1mPlaceType Load (0.000941)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Completed in 0.07989 (12 reqs/sec) | Rendering: 0.04118 (51%) | DB: 0.01380 (17%) | 200 OK [http://localhost/places]
+
+
+Processing PlacesController#destroy (for 127.0.0.1 at 2009-11-02 19:55:56) [DELETE]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"_method"=>"delete", "authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "controller"=>"places", "action"=>"destroy", "id"=>"8"}
+  [4;36;1mPlace Columns (0.003756)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.000992)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 8) [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mBEGIN[0m
+  [4;35;1mJoin Table Columns (0.003604)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPerson Load (0.001375)[0m   [0;1mSELECT * FROM `people` INNER JOIN `people_places` ON `people`.id = `people_places`.person_id WHERE (`people_places`.place_id = 8 ) [0m
+  [4;35;1mPlace Destroy (0.000405)[0m   [0m DELETE FROM `places`
+ WHERE `id` = 8
+[0m
+  [4;36;1mSQL (0.018849)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/places
+Completed in 0.05498 (18 reqs/sec) | DB: 0.02925 (53%) | 302 Found [http://localhost/places/8]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 19:55:56) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;35;1mPlace Load (0.001400)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlace Columns (0.004166)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlaceType Columns (0.003626)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000839)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPlaceType Load (0.000924)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;35;1mPlaceType Load (0.000905)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.05282 (18 reqs/sec) | Rendering: 0.03047 (57%) | DB: 0.01186 (22%) | 200 OK [http://localhost/places]
+
+
+Processing PlacesController#edit (for 127.0.0.1 at 2009-11-02 19:56:04) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"edit", "id"=>"7"}
+  [4;36;1mPlace Columns (0.003834)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001148)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 7) [0m
+Rendering template within layouts/places
+Rendering places/edit
+Completed in 0.03457 (28 reqs/sec) | Rendering: 0.01897 (54%) | DB: 0.00498 (14%) | 200 OK [http://localhost/places/7/edit]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-02 20:03:43) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+  [4;36;1mPerson Load (0.001480)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Columns (0.004864)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 0.03872 (25 reqs/sec) | Rendering: 0.01818 (46%) | DB: 0.00634 (16%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 20:03:45) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.005182)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001274)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.07451 (13 reqs/sec) | Rendering: 0.05324 (71%) | DB: 0.00646 (8%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 20:03:47) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.003667)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+
+
+ActiveRecord::RecordNotSaved (You cannot call create unless the parent is saved):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/association_collection.rb:356:in `ensure_owner_is_not_new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/has_and_belongs_to_many_association.rb:103:in `create_record'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/associations/has_and_belongs_to_many_association.rb:5:in `create'
+    /app/controllers/places_controller.rb:29:in `new'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (unprocessable_entity)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-11-02 20:07:55) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+
+
+SyntaxError (C:/Users/User/Documents/NetBeansProjects/makany/app/controllers/places_controller.rb:37: , unexpected kEND
+):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:105:in `require_or_load'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:479:in `const_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/inflector.rb:283:in `module_eval'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/inflector.rb:283:in `constantize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-11-02 20:08:49) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+
+
+SyntaxError (C:/Users/User/Documents/NetBeansProjects/makany/app/controllers/places_controller.rb:36: , unexpected kEND
+):
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:105:in `require_or_load'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:479:in `const_missing'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/inflector.rb:283:in `module_eval'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/inflector.rb:283:in `constantize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 20:09:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;35;1mPlace Columns (0.005654)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPerson Columns (0.004031)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001038)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000528)[0m   [0mCOMMIT[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.001632)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPlaceType Columns (0.007559)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.07646 (13 reqs/sec) | Rendering: 0.02828 (36%) | DB: 0.02438 (31%) | 200 OK [http://localhost/people/3/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 20:10:05) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Ze Office", "type_id"=>"4"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.004143)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000364)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Create (0.000559)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Ze Office', 4, NULL, '2009-11-02 20:10:05', '2009-11-02 20:10:05')[0m
+  [4;35;1mSQL (0.030439)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/places/9
+Completed in 0.06543 (15 reqs/sec) | DB: 0.03551 (54%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 20:10:06) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"9"}
+  [4;36;1mPlace Columns (0.003761)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001130)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 9) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Columns (0.003525)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.000811)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.04307 (23 reqs/sec) | Rendering: 0.01933 (44%) | DB: 0.00923 (21%) | 200 OK [http://localhost/places/9]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 20:11:16) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+  [4;36;1mPerson Columns (0.003875)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001128)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.004501)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.001562)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.04047 (24 reqs/sec) | Rendering: 0.01668 (41%) | DB: 0.01107 (27%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 20:11:38) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;36;1mPerson Columns (0.003734)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001281)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.03348 (29 reqs/sec) | Rendering: 0.01333 (39%) | DB: 0.00502 (14%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 20:11:49) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;36;1mPlace Columns (0.003949)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPerson Columns (0.003728)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001220)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mSQL (0.000368)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000362)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.001085)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mPlaceType Columns (0.003499)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.06523 (15 reqs/sec) | Rendering: 0.02686 (41%) | DB: 0.01421 (21%) | 200 OK [http://localhost/people/3/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 20:12:05) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Koko Office", "type_id"=>"4"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;35;1mPlace Columns (0.004781)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mSQL (0.000488)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlace Create (0.000539)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Koko Office', 4, NULL, '2009-11-02 20:12:05', '2009-11-02 20:12:05')[0m
+  [4;36;1mSQL (0.018331)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/places/10
+Completed in 0.04931 (20 reqs/sec) | DB: 0.02414 (48%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 20:12:05) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"10"}
+  [4;35;1mPlace Columns (0.003779)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.001213)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 10) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Columns (0.003859)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+  [4;36;1mPlaceType Load (0.000820)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+Completed in 0.04660 (21 reqs/sec) | Rendering: 0.02396 (51%) | DB: 0.00967 (20%) | 200 OK [http://localhost/places/10]
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 20:12:45) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"3"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.013053)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.009040)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.004681)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mJoin Table Columns (0.007013)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPlace Load (0.005080)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 3 ) [0m
+Completed in 0.10963 (9 reqs/sec) | Rendering: 0.04389 (40%) | DB: 0.03887 (35%) | 200 OK [http://localhost/people/3]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 20:12:47) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"3"}
+  [4;35;1mPerson Columns (0.010321)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.004409)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.08173 (12 reqs/sec) | Rendering: 0.03723 (45%) | DB: 0.01473 (18%) | 200 OK [http://localhost/people/3/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 20:12:49) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"3"}
+  [4;35;1mPlace Columns (0.007978)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPerson Columns (0.013858)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.007108)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mSQL (0.001259)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000771)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-02 20:43:01) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"2"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000490)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.011798)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.017108)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mJoin Table Columns (0.004644)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPlace Load (0.008619)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 2 ) [0m
+Completed in 0.12149 (8 reqs/sec) | Rendering: 0.04748 (39%) | DB: 0.04266 (35%) | 200 OK [http://localhost/people/2]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-02 20:43:11) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"2"}
+  [4;35;1mPerson Columns (0.008749)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.002175)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.06480 (15 reqs/sec) | Rendering: 0.02842 (43%) | DB: 0.01092 (16%) | 200 OK [http://localhost/people/2/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-02 20:43:13) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"2"}
+  [4;35;1mPlace Columns (0.005149)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPerson Columns (0.008239)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.003121)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+  [4;36;1mSQL (0.000451)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000494)[0m   [0mCOMMIT[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.002299)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPlaceType Columns (0.005971)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.13798 (7 reqs/sec) | Rendering: 0.06179 (44%) | DB: 0.02572 (18%) | 200 OK [http://localhost/people/2/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-02 20:43:22) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Amrs Hanhouy", "type_id"=>"3"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.005832)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000621)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Create (0.000642)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Amrs Hanhouy', 3, NULL, '2009-11-02 20:43:22', '2009-11-02 20:43:22')[0m
+  [4;35;1mSQL (0.055417)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/places/11
+Completed in 0.09382 (10 reqs/sec) | DB: 0.06251 (66%) | 302 Found [http://localhost/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-02 20:43:22) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZGOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--1bdba1f4ac6432619706de330962816df685084e
+  Parameters: {"controller"=>"places", "action"=>"show", "id"=>"11"}
+  [4;36;1mPlace Columns (0.004783)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.001736)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 11) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Columns (0.004871)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.001750)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 3) [0m
+Completed in 0.08266 (12 reqs/sec) | Rendering: 0.04730 (57%) | DB: 0.01314 (15%) | 200 OK [http://localhost/places/11]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-02 20:43:24) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJFBsYWNlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwZUOgxjc3JmX2lkIiU5MTgyOWU2YzdhNWU1ZDFlOWZi
+MTA5ODM5NTc1MzRjNw==--b168fca664634e3d14beeee75b8697930b6ca969
+  Parameters: {"controller"=>"places", "action"=>"index"}
+  [4;36;1mPlace Load (0.002816)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;35;1mPlace Columns (0.005676)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlaceType Columns (0.004776)[0m   [0;1mSHOW FIELDS FROM `place_types`[0m
+  [4;35;1mPlaceType Load (0.001280)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPlaceType Load (0.001445)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;36;1mPlaceType Load (0.001485)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mPlaceType Load (0.001364)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 3) [0m
+Completed in 0.11698 (8 reqs/sec) | Rendering: 0.07751 (66%) | DB: 0.01884 (16%) | 200 OK [http://localhost/places]
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-06 21:17:35) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.103236)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Load (0.043078)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.183178)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.36858 (2 reqs/sec) | Rendering: 0.06288 (17%) | DB: 0.32949 (89%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:17:41) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.010451)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.004377)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Completed in 0.13382 (7 reqs/sec) | Rendering: 0.09024 (67%) | DB: 0.01483 (11%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-06 21:17:44) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"places", "action"=>"new", "person_id"=>"1"}
+  [4;35;1mPlace Columns (0.008754)[0m   [0mSHOW FIELDS FROM `places`[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.004258)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPlaceType Columns (0.069115)[0m   [0mSHOW FIELDS FROM `place_types`[0m
+Completed in 0.16182 (6 reqs/sec) | Rendering: 0.05461 (33%) | DB: 0.08213 (50%) | 200 OK [http://localhost/people/1/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-06 21:17:59) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "place"=>{"place_name"=>"Aly Khan", "type_id"=>"4"}, "commit"=>"Create", "controller"=>"places", "action"=>"create"}
+  [4;36;1mPlace Columns (0.008587)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from initialize_framework_settings at C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-06 21:47:25) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.036481)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Load (0.015853)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Columns (0.059240)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 0.13403 (7 reqs/sec) | Rendering: 0.03988 (29%) | DB: 0.11157 (83%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:47:28) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.012538)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.005834)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+ERROR: compiling _run_erb_47app47views47people47edit46html46erb RAISED C:/Users/User/Documents/NetBeansProjects/makany/app/views/people/edit.html.erb:38: , unexpected end-of-file
+Function body: def _run_erb_47app47views47people47edit46html46erb(local_assigns)
+_erbout = ''; _erbout.concat "<h1>Editing person</h1>\n"
+_erbout.concat "\n"
+ form_for(@person) do |f| ; _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( f.error_messages ).to_s); _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :first_name ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_field :first_name ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :last_name ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_field :last_name ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :age ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_field :age ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :gender ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_field :gender ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.submit "Update" ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    <h1> Places Visited by "; _erbout.concat((@person.full_name).to_s); _erbout.concat " </h1>\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    ";  for place in Place.find(:all) ; _erbout.concat "\n"
+_erbout.concat "      "; _erbout.concat(( check_box_tag "person[place_ids][]", place.id, @person.places.include?(place) ).to_s); _erbout.concat "\n"
+_erbout.concat "      "; _erbout.concat(( place.place_name ).to_s); _erbout.concat "\n"
+_erbout.concat "</p>\n"
+ end ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat(( link_to 'Add new Places to ' << @person.full_name,new_person_place_path(@person)).to_s); _erbout.concat " <br />\n"
+_erbout.concat(( link_to 'Back to People Listing', people_path ).to_s); _erbout.concat "\n"
+_erbout
+end
+Backtrace: C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:42:in `module_eval'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:42:in `compile_template'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+:1:in `start'
+
+
+ActionView::TemplateError (C:/Users/User/Documents/NetBeansProjects/makany/app/views/people/edit.html.erb:38: , unexpected end-of-file
+) on line #38 of people/edit.html.erb:
+35: <%= link_to 'Add new Places to ' << @person.full_name,new_person_place_path(@person)%> <br />
+36: <%= link_to 'Back to People Listing', people_path %>
+
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:42:in `module_eval'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:42:in `compile_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_with_a_layout'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Users/User/.netbeans/6.5/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:47:58) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.005998)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001966)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+  [4;35;1mPlace Load (0.002866)[0m   [0mSELECT * FROM `places` [0m
+  [4;36;1mPlace Columns (0.008508)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Exists (0.132340)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 1) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.020210)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 2) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.018261)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 3) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000940)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 7) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000862)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 9) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000827)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 10) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000918)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 11) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+Completed in 0.32922 (3 reqs/sec) | Rendering: 0.10599 (32%) | DB: 0.19370 (58%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-06 21:48:16) [PUT]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"_method"=>"put", "authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "person"=>{"first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "place_ids"=>["1", "7"]}, "commit"=>"Update", "controller"=>"people", "action"=>"update", "id"=>"1"}
+  [4;36;1mPerson Columns (0.063424)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001927)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Columns (0.004800)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.031578)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` IN (1,7)) [0m
+  [4;36;1mJoin Table Columns (0.003923)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.002085)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;36;1mSQL (0.029285)[0m   [0;1mBEGIN[0m
+  [4;35;1mpeople_places Columns (0.004333)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mSQL (0.175546)[0m   [0;1mINSERT INTO `people_places` (`person_id`, `place_id`) VALUES (1, 1)[0m
+  [4;35;1mpeople_places Columns (0.004753)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mSQL (0.000483)[0m   [0;1mINSERT INTO `people_places` (`person_id`, `place_id`) VALUES (1, 7)[0m
+  [4;35;1mSQL (0.125521)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000377)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000489)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3002/people/1
+Completed in 0.53619 (1 reqs/sec) | DB: 0.44852 (83%) | 302 Found [http://localhost/people/1]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-06 21:48:16) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJVBlcnNvbiB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0
+ZWQuBjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--3c7d25c3497fe42e728d23619343cf43a2a93efe
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"1"}
+  [4;36;1mPerson Columns (0.005393)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.002965)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mJoin Table Columns (0.004575)[0m   [0;1mSHOW FIELDS FROM `people_places`[0m
+  [4;35;1mPlace Load (0.002578)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;36;1mPlace Columns (0.004397)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+Completed in 0.10805 (9 reqs/sec) | Rendering: 0.04753 (43%) | DB: 0.01991 (18%) | 200 OK [http://localhost/people/1]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:48:39) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJVBlcnNvbiB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0
+ZWQuBjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--57465c93cc5d4353f0d98b71406e933ba6f2d7f7
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.006206)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.002034)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+  [4;35;1mPlace Load (0.001979)[0m   [0mSELECT * FROM `places` [0m
+  [4;36;1mPlace Columns (0.003920)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Exists (0.000964)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 1) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.001490)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 2) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000957)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 3) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.007357)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 7) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.003400)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 9) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000959)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 10) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000928)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 11) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+Completed in 0.14814 (6 reqs/sec) | Rendering: 0.09229 (62%) | DB: 0.03019 (20%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:56:29) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;36;1mPerson Columns (0.004222)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.001297)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+  [4;36;1mPlace Load (0.001632)[0m   [0;1mSELECT * FROM `places` [0m
+  [4;35;1mPlace Columns (0.008123)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Exists (0.000701)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 1) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000633)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 2) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000577)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 3) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000954)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 7) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000615)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 9) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000528)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 10) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.009417)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 11) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+Completed in 0.15215 (6 reqs/sec) | Rendering: 0.10307 (67%) | DB: 0.02870 (18%) | 200 OK [http://localhost/people/1/edit]
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-06 21:56:33) [PUT]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--177ea21b5b8cb1543304afb1b528a354e98a67cd
+  Parameters: {"_method"=>"put", "authenticity_token"=>"8235586a165d6cf120c77a7650512b290db1ef2c", "person"=>{"first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male"}, "commit"=>"Update", "controller"=>"people", "action"=>"update", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004402)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001423)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mJoin Table Columns (0.101038)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPlace Load (0.001925)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;35;1mSQL (0.000621)[0m   [0mBEGIN[0m
+  [4;36;1mPlace Columns (0.013337)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (0.000865)[0m   [0mDELETE FROM `people_places` WHERE person_id = 1 AND place_id IN (1,7)[0m
+  [4;36;1mSQL (0.018844)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000298)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3002/people/1
+Completed in 0.19502 (5 reqs/sec) | DB: 0.14308 (73%) | 302 Found [http://localhost/people/1]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-06 21:56:33) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJVBlcnNvbiB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0
+ZWQuBjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--3c7d25c3497fe42e728d23619343cf43a2a93efe
+  Parameters: {"controller"=>"people", "action"=>"show", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004004)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001413)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mJoin Table Columns (0.003622)[0m   [0mSHOW FIELDS FROM `people_places`[0m
+  [4;36;1mPlace Load (0.001587)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Completed in 0.05133 (19 reqs/sec) | Rendering: 0.02084 (40%) | DB: 0.01063 (20%) | 200 OK [http://localhost/people/1]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-06 21:56:36) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiJVBlcnNvbiB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0
+ZWQuBjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlOTE4MjllNmM3YTVlNWQxZTlm
+YjEwOTgzOTU3NTM0Yzc=--57465c93cc5d4353f0d98b71406e933ba6f2d7f7
+  Parameters: {"controller"=>"people", "action"=>"edit", "id"=>"1"}
+  [4;35;1mPerson Columns (0.004966)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.001550)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+  [4;35;1mPlace Load (0.001981)[0m   [0mSELECT * FROM `places` [0m
+  [4;36;1mPlace Columns (0.005747)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Exists (0.000942)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 1) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.000810)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 2) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.000927)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 3) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.001718)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 7) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.001061)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 9) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;36;1mPlace Exists (0.002900)[0m   [0;1mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 10) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+  [4;35;1mPlace Exists (0.001506)[0m   [0mSELECT `places`.id FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`places`.`id` = 11) AND (`people_places`.person_id = 1 ) LIMIT 1[0m
+Completed in 0.13089 (7 reqs/sec) | Rendering: 0.08486 (64%) | DB: 0.02411 (18%) | 200 OK [http://localhost/people/1/edit]

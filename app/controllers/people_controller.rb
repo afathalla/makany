@@ -57,6 +57,7 @@ class PeopleController < ApplicationController
   # PUT /people/1
   # PUT /people/1.xml
   def update
+    params[:person][:place_ids] ||= []
     @person = Person.find(params[:id])
 
     respond_to do |format|
@@ -81,5 +82,8 @@ class PeopleController < ApplicationController
       format.html { redirect_to(people_url) }
       format.xml  { head :ok }
     end
+  end
+  def add_new_place
+    puts"Hello"
   end
 end

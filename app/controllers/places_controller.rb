@@ -25,10 +25,15 @@ class PlacesController < ApplicationController
   # GET /places/new.xml
   def new
     @place = Place.new
+#    @place.people.create(:person_id)
+#    @place.people<<(Person.find(params[:person_id]) unless (params[:person_id].nil?))
+#    @place.people<<(Person.find(params[:person_id]))
 
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @place }
+
+
     end
   end
 
