@@ -1,6 +1,7 @@
 development:
       host: localhost
-      adapter: mysql
+#      adapter: mysql Changed adapter to jdbcmysql after updating JRuby-1.4.0 and Rails-2.3.4 version
+      adapter: jdbcmysql
       database: makany_dev
       port: 3306
       username: root

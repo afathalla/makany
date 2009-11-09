@@ -7,8 +7,10 @@ class PersonSessionsController < ApplicationController
     @person_session = PersonSession.new(params[:person_session])
    if @person_session.save
      flash[:notice] = "Successfully logged in."
-     redirect_to root_url
-   else
+#     redirect_to root_url
+     redirect_to people_path
+
+    else
      render :action => 'new'
     end
   end
@@ -17,6 +19,7 @@ class PersonSessionsController < ApplicationController
   @person_session = PersonSession.find
   @person_session.destroy
     flash[:notice] = "Successfully logged out."
-  redirect_to root_url
+   #redirect_to root_url
+   redirect_to "public/index.html"
   end
 end
