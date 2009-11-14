@@ -2,7 +2,9 @@
   <b>Name:</b>
   <%=h @person.full_name%>
 </p>
-
+<p>
+<%= image_tag @person.photo.url,:class=>'profile_image' %>
+</p>
 <p>
   <h2>Current Location:</h2>
 </p>

@@ -3,7 +3,7 @@
 # and open the template in the editor.
 %>
 
-<% form_for(@person) do |f| %>
+<% form_for @person , :html=>{:multipart=>true} do |f| %>
   <%= f.error_messages %>
     <p>
     <%= f.label :username, "Username" %><br />
@@ -36,6 +36,10 @@
   <p>
     <%= f.label :gender, "Gender" %><br />
     <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.label :photo, "Profile Photo"%>
+    <%= f.file_field :photo %>
   </p>
   <p>
     <%= f.submit "Submit" %>

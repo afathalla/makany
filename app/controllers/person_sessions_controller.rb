@@ -20,6 +20,6 @@ class PersonSessionsController < ApplicationController
   @person_session.destroy
     flash[:notice] = "Successfully logged out."
    #redirect_to root_url
-   redirect_to "public/index.html"
+   redirect_to login_url
   end
 end

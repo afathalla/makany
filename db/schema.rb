@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091107092907) do
+ActiveRecord::Schema.define(:version => 20091114221018) do
 
   create_table "course_codes", :force => true do |t|
     t.string   "code_name",    :limit => 4
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20091107092907) do
   create_table "people", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "age",               :limit => 11
+    t.integer  "age",                :limit => 11
     t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -45,6 +45,10 @@ ActiveRecord::Schema.define(:version => 20091107092907) do
     t.string   "crypted_password"
     t.string   "password_salt"
     t.string   "persistence_token"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "people_places", :id => false, :force => true do |t|

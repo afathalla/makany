@@ -1,4 +1,5 @@
 class PeopleController < ApplicationController
+  include ApplicationHelper
   # GET /people
   # GET /people.xml
   def index
@@ -34,7 +35,8 @@ class PeopleController < ApplicationController
 
   # GET /people/1/edit
   def edit
-    @person = Person.find(params[:id])
+    #@person = Person.find(params[:id])
+     @person=current_person
   end
 
   # POST /people
@@ -58,7 +60,8 @@ class PeopleController < ApplicationController
   # PUT /people/1.xml
   def update
     params[:person][:place_ids] ||= []
-    @person = Person.find(params[:id])
+   # @person = Person.find(params[:id])
+     @person=current_person
 
     respond_to do |format|
       if @person.update_attributes(params[:person])
@@ -82,8 +85,5 @@ class PeopleController < ApplicationController
       format.html { redirect_to(people_url) }
       format.xml  { head :ok }
     end
-  end
-  def add_new_place
-    puts"Hello"
   end
 end

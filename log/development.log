@@ -13108,3 +13108,2120 @@ Rendering person_sessions/new
 Rendered shared/_header (2.0ms)
 Rendered shared/_footer (0.0ms)
 Completed in 78ms (View: 43, DB: 1) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:20:23) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (2.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 78ms (View: 35, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-09 20:20:33) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 98ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-09 20:20:34) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (8.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 69ms (View: 38, DB: 1) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:37:00) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+  [4;35;1mPerson Load (66.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (101.0ms)
+Rendered shared/_footer (3.0ms)
+Completed in 185ms (View: 59, DB: 67) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:37:06) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000public/index.html
+Completed in 76ms (DB: 2) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:37:07) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000public/index.html
+Completed in 67ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:37:15) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (24.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 117ms (View: 60, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:37:18) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000public/index.html
+Completed in 92ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:37:19) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000public/index.html
+Completed in 69ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:37:22) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000public/index.html
+Completed in 61ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:37:31) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (26.0ms)
+Rendered shared/_footer (14.0ms)
+Completed in 110ms (View: 56, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:40:03) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+NameError (undefined local variable or method `login' for #<PersonSessionsController:0x32dc75>):
+  app/controllers/person_sessions_controller.rb:23:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:40:14) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/person_sessions_controller.rb:20:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:40:30) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/person_sessions_controller.rb:20:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:45:57) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/person_sessions_controller.rb:20:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:46:04) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (8.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 108ms (View: 19, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-09 20:46:22) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 68ms (DB: 2) | 302 Found [http://localhost/person_sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-09 20:46:23) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (22.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 78ms (View: 48, DB: 3) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:46:57) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+NameError (undefined local variable or method `login' for #<PersonSessionsController:0x136083b>):
+  app/controllers/person_sessions_controller.rb:23:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:48:54) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/person_sessions_controller.rb:20:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:49:26) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (4.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 60ms (View: 24, DB: 1) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (7.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-09 20:49:38) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 64ms (DB: 7) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-09 20:49:38) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (21.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 86ms (View: 46, DB: 2) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:49:42) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+NameError (undefined local variable or method `login' for #<PersonSessionsController:0xad8848>):
+  app/controllers/person_sessions_controller.rb:23:in `destroy'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:50:16) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (3.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 54ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-09 20:50:24) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 64ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-09 20:50:24) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (35.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 112ms (View: 70, DB: 2) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-09 20:50:27) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 67ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-09 20:50:27) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (2.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 45ms (View: 14, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-09 20:50:41) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 70ms (DB: 3) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-09 20:50:41) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (33.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 85ms (View: 53, DB: 2) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-09 20:50:45) [GET]
+  Parameters: {"id"=>"current"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=current):
+  app/controllers/people_controller.rb:37:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-13 16:00:25) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 86ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-13 16:00:25) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (3.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 73ms (View: 43, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-13 16:00:37) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 58ms (DB: 2) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-13 16:00:37) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (13.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 83ms (View: 30, DB: 1) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:00:45) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x133fb54>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:02:51) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/people
+Rendering people/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/shared/_person.html.erb:
+1: <%#
+2: # To change this template, choose Tools | Templates
+3: # and open the template in the editor.
+4: %>
+5: 
+6: <% form_for(@person) do |f| %>
+
+    app/views/shared/_person.html.erb:3
+    app/views/people/edit.html.erb:2
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:05:43) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x17fee56>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:09:16) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0xe00985>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:09:18) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x464b6>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (29.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:18:34) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x57968b>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:18:37) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0xacebb0>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-13 16:18:56) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (60.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 110ms (View: 77, DB: 3) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:18:59) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x902925>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-13 16:19:28) [GET]
+  [4;35;1mPerson Load (6.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (38.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 854ms (View: 657, DB: 9) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (12.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-13 16:19:32) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 125ms (DB: 13) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-13 16:19:33) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (14.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 111ms (View: 49, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-13 16:19:42) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 348ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-13 16:19:43) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (22.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 140ms (View: 54, DB: 2) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-13 16:22:01) [GET]
+  Parameters: {"id"=>"current"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x1b829c7>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (13.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:12:14) [GET]
+  [4;35;1mPerson Load (62.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (36.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (76.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 1394ms (View: 948, DB: 104) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 18:12:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=1):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 18:12:45) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=show):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (6.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:12:49) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (45.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 211ms (View: 124, DB: 8) | 200 OK [http://localhost/people/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-14 18:13:08) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (102.0ms)
+  [4;35;1mPerson Load (5.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (25.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 230ms (View: 138, DB: 5) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 18:13:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (3.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mPlace Load (40.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;35;1mPerson Load (8.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (39.0ms)
+Rendered shared/_footer (5.0ms)
+Completed in 252ms (View: 155, DB: 51) | 200 OK [http://localhost/people/4]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:14:07) [GET]
+  [4;35;1mPerson Load (8.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (22.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 134ms (View: 73, DB: 9) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 18:14:17) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (3.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (31.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 144ms (View: 96, DB: 4) | 200 OK [http://localhost/people/4]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:14:21) [GET]
+  [4;36;1mPerson Load (3.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (36.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 131ms (View: 88, DB: 6) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-14 18:14:22) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (40.0ms)
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (15.0ms)
+Rendered shared/_footer (6.0ms)
+Completed in 142ms (View: 73, DB: 2) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-14 18:15:01) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person"=>{"username"=>"amr.garhi", "email"=>"amr.aljarhi@aucegypt.edu", "password"=>"amr", "password_confirmation"=>"amr", "first_name"=>"Amr", "last_name"=>"Garhi", "age"=>"32", "gender"=>"Male"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (26.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@aucegypt.edu') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.garhi') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = 'bba435e15df7f2493a64e5c06dcea1b61b21e5b86408ffe3ff12238f8e273133bed778dac1b3e84629f05af3306b71b64107956f9af16d3986e5e15f8ec9c660') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (377.0ms)
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (22.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 746ms (View: 409, DB: 28) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-14 18:15:27) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person"=>{"username"=>"amr.garhi", "email"=>"amr.aljarhi@aucegypt.edu", "password"=>"amraljarhi", "password_confirmation"=>"amraljarhi", "first_name"=>"Amr", "last_name"=>"Garhi", "age"=>"32", "gender"=>"Male"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@aucegypt.edu') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.garhi') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = 'bdd17387a3b98d910ce78504037d9e62a4fa021b1c634f429b3e34dd4f43237308d39ee510043fa9d7b0578c9a76727278dd9e1ac1e787e40a7c23a13951fe0d') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO `people` (`first_name`, `last_name`, `age`, `gender`, `created_at`, `updated_at`, `username`, `email`, `crypted_password`, `password_salt`, `persistence_token`) VALUES('Amr', 'Garhi', 32, 'Male', '2009-11-14 18:15:27', '2009-11-14 18:15:27', 'amr.garhi', 'amr.aljarhi@aucegypt.edu', 'c83b900b75bf0dca3a27d55ef430b4dbafaef9d5a528f4d1db5a72f76c13d41e5bbb1ca14a5be3ca7409c61ed41855e2e155e7baf9d5874e280a98dbd2a7b30c', '-U2PhU4dJ7Ma5IiFzaPT', 'bdd17387a3b98d910ce78504037d9e62a4fa021b1c634f429b3e34dd4f43237308d39ee510043fa9d7b0578c9a76727278dd9e1ac1e787e40a7c23a13951fe0d')[0m
+Redirected to http://localhost:3000/people/5
+Completed in 213ms (DB: 8) | 302 Found [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 18:15:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 5 ) [0m
+  [4;36;1mPerson Load (3.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (34.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 134ms (View: 76, DB: 5) | 200 OK [http://localhost/people/5]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:15:33) [GET]
+  [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 104ms (View: 62, DB: 4) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#destroy (for 127.0.0.1 at 2009-11-14 18:15:40) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 60ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-14 18:15:41) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (3.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 87ms (View: 52, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-14 18:15:49) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"amr.aljarhi", "password"=>"amraljarhi"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'amr.aljarhi') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (3.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 128ms (View: 42, DB: 3) | 200 OK [http://localhost/person_sessions]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-14 18:15:58) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"amr.aljarhi", "password"=>"amr"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'amr.aljarhi') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (4.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 90ms (View: 29, DB: 2) | 200 OK [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-14 18:16:06) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 61ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 18:16:06) [GET]
+  [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (25.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 102ms (View: 47, DB: 3) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-14 18:16:09) [GET]
+  Parameters: {"id"=>"5"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x1ba4552>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (5.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-14 18:16:21) [GET]
+  [4;36;1mPlace Load (2.0ms)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;35;1mPlaceType Load (1.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;36;1mPlaceType Load (1.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mPlaceType Load (1.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 3) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (87.0ms)
+Completed in 344ms (View: 315, DB: 11) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-14 18:16:28) [GET]
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (1.0ms)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mPerson Load (3.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (51.0ms)
+Completed in 128ms (View: 98, DB: 5) | 200 OK [http://localhost/places/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-14 18:16:53) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "place"=>{"place_name"=>"Lab 671", "type_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (5.0ms)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`) VALUES('Lab 671', 1, NULL, '2009-11-14 18:16:53', '2009-11-14 18:16:53')[0m
+Redirected to http://localhost:3000/places/12
+Completed in 101ms (DB: 5) | 302 Found [http://localhost/places]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-14 18:16:53) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 12) [0m
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (52.0ms)
+Completed in 176ms (View: 135, DB: 1) | 200 OK [http://localhost/places/12]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-14 18:16:55) [GET]
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (1.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 4) [0m
+  [4;36;1mPlaceType Load (1.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (69.0ms)
+Completed in 208ms (View: 184, DB: 4) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2009-11-14 18:17:08) [GET]
+  [4;36;1mCourse Load (62.0ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/courses
+Rendering courses/index
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+Completed in 185ms (View: 109, DB: 63) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#new (for 127.0.0.1 at 2009-11-14 18:17:26) [GET]
+Rendering template within layouts/courses
+Rendering courses/new
+  [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` [0m
+Completed in 64ms (View: 40, DB: 2) | 200 OK [http://localhost/courses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#create (for 127.0.0.1 at 2009-11-14 18:18:04) [POST]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "course"=>{"course_code_id"=>"2", "course_number"=>"210", "name"=>"Data Structures"}, "commit"=>"Create"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO `courses` (`name`, `created_at`, `updated_at`, `course_number`, `course_code_id`) VALUES('Data Structures', '2009-11-14 18:18:04', '2009-11-14 18:18:04', 210, 2)[0m
+Redirected to http://localhost:3000/courses/4
+Completed in 134ms (DB: 1) | 302 Found [http://localhost/courses]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-11-14 18:18:04) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mCourse Load (1.0ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 4) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 4) [0m
+Completed in 246ms (View: 200, DB: 18) | 200 OK [http://localhost/courses/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2009-11-14 18:18:07) [GET]
+  [4;36;1mCourse Load (1.0ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/courses
+Rendering courses/index
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+Completed in 64ms (View: 50, DB: 2) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#edit (for 127.0.0.1 at 2009-11-14 18:18:10) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mCourse Load (1.0ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 4) [0m
+Rendering template within layouts/courses
+Rendering courses/edit
+  [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` [0m
+Completed in 69ms (View: 37, DB: 2) | 200 OK [http://localhost/courses/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#update (for 127.0.0.1 at 2009-11-14 18:18:12) [PUT]
+  Parameters: {"authenticity_token"=>"adDNzBqUZntEZofJ7wzi7XgfzB5Z10mQOZRgKU289sw=", "course"=>{"course_code_id"=>"2", "course_number"=>"210", "name"=>"Data Structures"}, "commit"=>"Update", "id"=>"4"}
+  [4;36;1mCourse Load (1.0ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 4) [0m
+Redirected to http://localhost:3000/courses/4
+Completed in 32ms (DB: 1) | 302 Found [http://localhost/courses/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-11-14 18:18:12) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mCourse Load (1.0ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 4) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 4) [0m
+Completed in 122ms (View: 70, DB: 3) | 200 OK [http://localhost/courses/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-11-14 18:18:17) [GET]
+  Parameters: {"id"=>"sections"}
+  [4;36;1mCourse Load (1.0ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Course with ID=sections):
+  app/controllers/courses_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#1 (for 127.0.0.1 at 2009-11-14 18:18:24) [GET]
+  Parameters: {"id"=>"sections"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2009-11-14 18:18:28) [GET]
+  [4;35;1mCourse Load (1.0ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/courses
+Rendering courses/index
+  [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+Completed in 77ms (View: 61, DB: 3) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SectionsController#index (for 127.0.0.1 at 2009-11-14 18:18:34) [GET]
+  [4;36;1mSection Load (1.0ms)[0m   [0;1mSELECT * FROM `sections` [0m
+Rendering template within layouts/sections
+Rendering sections/index
+Completed in 77ms (View: 61, DB: 1) | 200 OK [http://localhost/sections]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SectionsController#new (for 127.0.0.1 at 2009-11-14 18:18:37) [GET]
+Rendering template within layouts/sections
+Rendering sections/new
+Completed in 46ms (View: 28, DB: 0) | 200 OK [http://localhost/sections/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#new (for 127.0.0.1 at 2009-11-14 18:21:31) [GET]
+Rendering template within layouts/courses
+Rendering courses/new
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` [0m
+Completed in 56ms (View: 36, DB: 1) | 200 OK [http://localhost/courses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:06:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=2):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 19:06:54) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (67.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 169ms (View: 88, DB: 2) | 200 OK [http://localhost/people/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:08:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=2):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:08:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (5.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 5 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (19.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 149ms (View: 112, DB: 7) | 200 OK [http://localhost/people/5]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:09:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=1):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-14 19:09:13) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 75ms (View: 45, DB: 2) | 200 OK [http://localhost/people/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:09:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (36.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 102ms (View: 67, DB: 2) | 200 OK [http://localhost/people/4]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-11-14 19:09:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCourse Load (1.0ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+  [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 1) [0m
+  [4;36;1mSection Load (1.0ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.course_id = 1) [0m
+Completed in 132ms (View: 58, DB: 5) | 200 OK [http://localhost/courses/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:46:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=3):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-14 19:46:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Load (9.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (35.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 129ms (View: 57, DB: 11) | 200 OK [http://localhost/people/4]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#show (for 127.0.0.1 at 2009-11-14 19:48:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCourse Load (0.0ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+  [4;35;1mCourseCode Load (1.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `sections` WHERE (`sections`.course_id = 1) [0m
+  [4;35;1mSection Load (0.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.course_id = 1) [0m
+Completed in 76ms (View: 50, DB: 3) | 200 OK [http://localhost/courses/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+Migrating to CreateSections (20091024120825)
+Migrating to AddCourseNumberToCourse (20091024121036)
+Migrating to CreatePlaces (20091024122024)
+Migrating to AddPlaceIdToSection (20091024123611)
+Migrating to CreateCourseCodes (20091024125439)
+Migrating to RenameCourseCodeInCourses (20091024130000)
+Migrating to CreateLocations (20091026181448)
+Migrating to CreatePeople (20091026181630)
+Migrating to CreatePeoplePlaces (20091030205800)
+Migrating to CreatePlaceTypes (20091031120547)
+Migrating to AddAuthenticationToPeople (20091107092907)
+Migrating to AddAttachmentsPhotoToPerson (20091114221018)
+  [4;36;1mSQL (388.0ms)[0m   [0;1mALTER TABLE `people` ADD `photo_file_name` varchar(255)[0m
+  [4;35;1mSQL (267.0ms)[0m   [0mALTER TABLE `people` ADD `photo_content_type` varchar(255)[0m
+  [4;36;1mSQL (202.0ms)[0m   [0;1mALTER TABLE `people` ADD `photo_file_size` integer(10)[0m
+  [4;35;1mSQL (382.0ms)[0m   [0mALTER TABLE `people` ADD `photo_updated_at` datetime[0m
+  [4;36;1mSQL (64.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091114221018')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 00:20:45) [GET]
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x1bdc523>):
+  app/models/person.rb:5
+  app/models/person.rb:380:in `load'
+  app/controllers/people_controller.rb:5:in `index'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 00:23:09) [GET]
+  [4;35;1mPerson Load (6.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (17.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 401ms (View: 220, DB: 7) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 00:23:14) [GET]
+  Parameters: {"id"=>"4"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x1cd04f1>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (105.0ms)
+Rendered rescues/_request_and_response (12.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-15 00:23:19) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (65.0ms)
+Rendered shared/_header (26.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 174ms (View: 105, DB: 1) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:24:35) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@comics.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoopy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31892>}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (44.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@comics.com') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO `people` (`first_name`, `last_name`, `age`, `gender`, `created_at`, `updated_at`, `username`, `email`, `crypted_password`, `password_salt`, `persistence_token`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES('Snoopy', 'Dogg', 99, 'Male', '2009-11-15 00:24:35', '2009-11-15 00:24:35', 'snoopy', 'snoopy@comics.com', '7c094c755378040d464d3715823ec55516bd03164f55adac4241033a0bef29e7e93f440bb689efec90fb5887031e8c534c13cb5e2ab5560dd451b2b3cb8ac753', 'oh9wpJAqft8Z7UTqyJRz', '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba', '001.gif', 'image/gif', 0, '2009-11-15 00:24:35')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/6/original/001.gif
+Redirected to http://localhost:3000/people/6
+Completed in 468ms (DB: 49) | 302 Found [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:24:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 6 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+Rendered shared/_header (29.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 174ms (View: 97, DB: 4) | 200 OK [http://localhost/people/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:24:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 6 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+Rendered shared/_header (26.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 131ms (View: 78, DB: 1) | 200 OK [http://localhost/people/6]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:26:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 6 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+Rendered shared/_header (29.0ms)
+Rendered shared/_footer (5.0ms)
+Completed in 138ms (View: 91, DB: 3) | 200 OK [http://localhost/people/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:29:31) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 6 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+Rendered shared/_header (31.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 135ms (View: 82, DB: 2) | 200 OK [http://localhost/people/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 00:29:33) [GET]
+  Parameters: {"1258237475"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/6/small/001.gif" with {:method=>:get}):
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 00:29:33) [GET]
+  Parameters: {"id"=>"6"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0x883f8f>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 00:29:38) [GET]
+  Parameters: {"1258237475"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/6/small/001.gif" with {:method=>:get}):
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 00:29:41) [GET]
+  [4;35;1mPerson Load (2.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+Rendered shared/_header (20.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 199ms (View: 69, DB: 3) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#destroy (for 127.0.0.1 at 2009-11-15 00:29:46) [DELETE]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "id"=>"6"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/6/original/001.gif
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 6 ) [0m
+  [4;36;1mPerson Destroy (107.0ms)[0m   [0;1mDELETE FROM `people` WHERE `id` = 6[0m
+Redirected to http://localhost:3000/people
+Completed in 233ms (DB: 108) | 302 Found [http://localhost/people/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 00:29:46) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (33.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 116ms (View: 69, DB: 3) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-15 00:29:47) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (51.0ms)
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (29.0ms)
+Rendered shared/_footer (14.0ms)
+Completed in 146ms (View: 114, DB: 2) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:30:31) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@dogg.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoppy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31894>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\Dock,7736,31895.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@dogg.com') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '314c2d67058b1ca3eef371a7996086d791f8022e2dd1f5467e74de0e6a242085b4828c9fbcaf375231a7b3cc789ed149592ed26526517302537759d420ac4e1f') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (84.0ms)
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (23.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 248ms (View: 125, DB: 1) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:30:41) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@dogg.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoppy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31896>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\Autumn Leaves,7736,31897.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (11.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@dogg.com') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '5a195c9e8bae4a76e1fa9f61740b2b42d4577ba07bfdb4df972c79aad04c651725e8b9af539cf5886f56b367d784466d9366034f27797a242e99a788a83c7d52') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (21.0ms)
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (26.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 180ms (View: 51, DB: 16) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:31:07) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@dogg.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoppy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31898>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\001,7736,31899.gif is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@dogg.com') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = 'd82c8e5b58bf7cdac8dcb5a67572f4d2cb553014926f6665316da20353663afc6e8a253427fbfa0095fb492d37c23f75d4c4281240a55be23378666a88a8886d') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (37.0ms)
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (21.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 173ms (View: 62, DB: 4) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:31:33) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@dogg.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoppy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31900>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\Desert Landscape,7736,31901.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@dogg.com') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '38f062ab2cc5ad5676849b715dd983f3498f0c37634cf4860b497c045cd12e0dc1bbd683b4dacf5fd44872b273918a02ac2654ced50a333bc478eb9f98d125ea') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (46.0ms)
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (20.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 200ms (View: 78, DB: 2) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-15 00:31:46) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (32.0ms)
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (18.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 98ms (View: 54, DB: 2) | 200 OK [http://localhost/people/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:31:48) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"", "email"=>"", "password"=>"", "password_confirmation"=>"", "first_name"=>"", "last_name"=>"", "age"=>"", "gender"=>""}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = '') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = '') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '319ff2e0a440eda73935702df06f296aa02f084babf69c49508473501be2b2d08f9c85016f989e5729e660ddb4f79c0db2b8f7fffad70c9e21a3b89c65460ec8') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (77.0ms)
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (24.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 271ms (View: 108, DB: 2) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-15 00:32:21) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"snoopy", "email"=>"snoopy@dogg.com", "password"=>"snoopy", "password_confirmation"=>"snoopy", "first_name"=>"Snoopy", "last_name"=>"Dogg", "age"=>"99", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.7736.31903>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\Autumn Leaves,7736,31904.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPerson Load (14.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'snoopy@dogg.com') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'snoopy') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = 'af094188ec30b0ec01cd0d8689a072b82911c312341b163ed75ec20918f1c510158c2f6b1a29d7aeaf379c27af5d1e22247ecb20313350ad47d3973590f71035') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (36.0ms)
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 166ms (View: 58, DB: 18) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:32:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (2.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=1):
+  app/controllers/people_controller.rb:16:in `show'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (101.0ms)
+Rendered rescues/_request_and_response (13.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 00:32:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (4.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (304.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 539ms (View: 466, DB: 7) | 200 OK [http://localhost/people/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 00:32:58) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 00:33:00) [GET]
+  Parameters: {"id"=>"4"}
+
+NameError (undefined local variable or method `current_person' for #<PeopleController:0xba8af9>):
+  app/controllers/people_controller.rb:38:in `edit'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 01:36:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/shared/_person.html.erb:
+1: <%#
+2: # To change this template, choose Tools | Templates
+3: # and open the template in the editor.
+4: %>
+5: 
+6: <% form_for @person , :html=>{:multipart=>true} do |f| %>
+
+    app/views/shared/_person.html.erb:3
+    app/views/people/edit.html.erb:2
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 01:36:53) [GET]
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (30.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 148ms (View: 92, DB: 2) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 01:36:55) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/shared/_person.html.erb:
+1: <%#
+2: # To change this template, choose Tools | Templates
+3: # and open the template in the editor.
+4: %>
+5: 
+6: <% form_for @person , :html=>{:multipart=>true} do |f| %>
+
+    app/views/shared/_person.html.erb:3
+    app/views/people/edit.html.erb:2
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 01:37:15) [GET]
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (29.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 127ms (View: 79, DB: 1) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-15 01:37:18) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (13.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 110ms (View: 57, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-15 01:37:27) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"omarkhalid"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering person_sessions/new
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '0ea6ea3e21abcf39cb007513d199fc451754881189567b91836560725dda21a2e7f96042c2e590ed7ccd13a2f5f35942a62e1b6fedafc6e7fd176cccb064edba') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 6) LIMIT 1[0m
+Rendered shared/_header (19.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 348ms (View: 72, DB: 3) | 200 OK [http://localhost/person_sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-15 01:37:31) [POST]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 92ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-15 01:37:31) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 101ms (View: 55, DB: 2) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 01:37:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (26.0ms)
+Rendered shared/_header (20.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 118ms (View: 58, DB: 2) | 200 OK [http://localhost/people/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-15 01:37:43) [PUT]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.8152.33545>}, "commit"=>"Submit", "id"=>"4"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\Users\User\AppData\Local\Temp\Humpback Whale,8152,33546.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (27.0ms)
+Rendered shared/_header (2.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 206ms (View: 44, DB: 1) | 200 OK [http://localhost/people/4]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-15 01:38:18) [PUT]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.8152.33547>}, "commit"=>"Submit", "id"=>"4"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;35;1mPerson Update (56.0ms)[0m   [0mUPDATE `people` SET `photo_file_name` = 'Autumn_Leaves.jpg', `photo_content_type` = 'image/jpeg', `photo_file_size` = 0, `photo_updated_at` = '2009-11-15 01:38:19', `updated_at` = '2009-11-15 01:38:19' WHERE `id` = 4[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/Autumn_Leaves.jpg
+Redirected to http://localhost:3000/people/4
+Completed in 234ms (DB: 58) | 302 Found [http://localhost/people/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 01:38:19) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (14.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 97ms (View: 56, DB: 3) | 200 OK [http://localhost/people/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 01:41:07) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPerson Load (2.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (33.0ms)
+Rendered shared/_header (1.0ms)
+Rendered shared/_footer (2.0ms)
+Completed in 135ms (View: 42, DB: 2) | 200 OK [http://localhost/people/4/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-15 01:41:16) [PUT]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.8152.33549>}, "commit"=>"Submit", "id"=>"4"}
+  [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+  [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (95.0ms)
+Rendered shared/_header (8.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 301ms (View: 110, DB: 3) | 200 OK [http://localhost/people/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-15 01:43:23) [PUT]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.8152.33551>}, "commit"=>"Submit", "id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Update (1.0ms)[0m   [0;1mUPDATE `people` SET `photo_file_name` = 'pyramids3.jpg', `photo_updated_at` = '2009-11-15 01:43:23', `updated_at` = '2009-11-15 01:43:23' WHERE `id` = 4[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/Autumn_Leaves.jpg
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/pyramids3.jpg
+Redirected to http://localhost:3000/people/4
+Completed in 210ms (DB: 3) | 302 Found [http://localhost/people/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 01:43:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (28.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 182ms (View: 102, DB: 4) | 200 OK [http://localhost/people/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-15 01:43:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (18.0ms)
+Rendered shared/_header (1.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 91ms (View: 28, DB: 1) | 200 OK [http://localhost/people/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-15 01:43:38) [PUT]
+  Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.8152.33553>}, "commit"=>"Submit", "id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Update (1.0ms)[0m   [0;1mUPDATE `people` SET `photo_file_name` = 'P1050467.JPG', `photo_updated_at` = '2009-11-15 01:43:38', `updated_at` = '2009-11-15 01:43:38' WHERE `id` = 4[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/pyramids3.jpg
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/P1050467.JPG
+Redirected to http://localhost:3000/people/4
+Completed in 628ms (DB: 2) | 302 Found [http://localhost/people/4]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-15 01:43:39) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+Rendered shared/_header (19.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 98ms (View: 55, DB: 3) | 200 OK [http://localhost/people/4]
