@@ -15225,3 +15225,831 @@ Rendering people/show
 Rendered shared/_header (19.0ms)
 Rendered shared/_footer (0.0ms)
 Completed in 98ms (View: 55, DB: 3) | 200 OK [http://localhost/people/4]
+15-Nov-2009 18:32:37 null
+INFO: Listening on port 3000
+15-Nov-2009 18:32:37 javax.enterprise.system.tools.admin.org.glassfish.server
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:32:37 null
+INFO: The Admin Console Application is not yet installed.
+15-Nov-2009 18:32:37 null
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:32:37 javax.enterprise.system.tools.admin.org.glassfish.server
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:32:37 javax.enterprise.system.tools.deployment.org.glassfish.deployment.common
+WARNING: Error scan jar entrytmp/.glassfish/static-cache/gf/glassfish.jarerror in opening zip file
+15-Nov-2009 18:32:37 javax.enterprise.system.core.com.sun.enterprise.v3.server
+INFO: Loading application makany at /
+15-Nov-2009 18:32:37 com.sun.grizzly.jruby.RubyRuntime
+INFO: Environment: development
+15-Nov-2009 18:32:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Jruby version is: 1.4.0
+15-Nov-2009 18:32:37  
+INFO: Read to serve the request
+15-Nov-2009 18:32:37 javax.enterprise.system.core.com.sun.enterprise.v3.server
+INFO: GlassFish v3  startup time : Static(1509ms) startup services(1159ms) total(2668ms)
+15-Nov-2009 18:32:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Detected Rails application
+15-Nov-2009 18:32:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rails not in thread-safe mode, starting in single-thread mode
+15-Nov-2009 18:32:37 com.sun.grizzly.scripting.pool.DynamicPool
+INFO: Pool started without dynamic resizing enabled. Pool will not attempt to determine the upper and lower bounds that it should be using, and will stay at 1
+15-Nov-2009 18:32:40  
+SEVERE: JRuby limited openssl loaded. gem install jruby-openssl for full support.
+http://jruby.kenai.com/pages/JRuby_Builtin_OpenSSL
+15-Nov-2009 18:32:40  
+SEVERE: 
+
+15-Nov-2009 18:32:41 null
+INFO: Finished cache creation
+15-Nov-2009 18:32:44 com.sun.grizzly.scripting.pool.DynamicPool
+INFO: New instance created in 6,448 milliseconds
+15-Nov-2009 18:33:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (13.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+15-Nov-2009 18:33:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-15 18:33:54) [GET]
+
+15-Nov-2009 18:33:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (7.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+15-Nov-2009 18:33:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+15-Nov-2009 18:33:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+15-Nov-2009 18:33:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+15-Nov-2009 18:33:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (47.0ms)
+
+15-Nov-2009 18:33:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (2.0ms)
+
+15-Nov-2009 18:33:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 733ms (View: 489, DB: 21) | 200 OK [http://localhost/people]
+
+15-Nov-2009 18:34:53 null
+INFO: Listening on port 3000
+15-Nov-2009 18:34:53 javax.enterprise.system.tools.admin.org.glassfish.server
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:34:53 null
+INFO: The Admin Console Application is not yet installed.
+15-Nov-2009 18:34:53 null
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:34:53 javax.enterprise.system.tools.admin.org.glassfish.server
+INFO: Admin Console Adapter: context root: /_____admingui
+15-Nov-2009 18:34:54 javax.enterprise.system.core.com.sun.enterprise.v3.server
+INFO: Loading application makany at /
+15-Nov-2009 18:34:54 com.sun.grizzly.jruby.RubyRuntime
+INFO: Environment: development
+15-Nov-2009 18:34:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Jruby version is: 1.4.0
+15-Nov-2009 18:34:54  
+INFO: Read to serve the request
+15-Nov-2009 18:34:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Detected Rails application
+15-Nov-2009 18:34:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rails not in thread-safe mode, starting in single-thread mode
+15-Nov-2009 18:34:54 javax.enterprise.system.core.com.sun.enterprise.v3.server
+INFO: GlassFish v3  startup time : Static(698ms) startup services(1000ms) total(1698ms)
+15-Nov-2009 18:34:54 com.sun.grizzly.scripting.pool.DynamicPool
+INFO: Pool started without dynamic resizing enabled. Pool will not attempt to determine the upper and lower bounds that it should be using, and will stay at 1
+15-Nov-2009 18:34:56  
+SEVERE: JRuby limited openssl loaded. gem install jruby-openssl for full support.
+http://jruby.kenai.com/pages/JRuby_Builtin_OpenSSL
+15-Nov-2009 18:34:56  
+SEVERE: 
+
+15-Nov-2009 18:34:59 com.sun.grizzly.scripting.pool.DynamicPool
+INFO: New instance created in 5,241 milliseconds
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-15 19:00:21) [GET]
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (6.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (56.0ms)
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+15-Nov-2009 19:00:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 525ms (View: 404, DB: 9) | 200 OK [http://localhost/people]
+
+15-Nov-2009 19:04:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+15-Nov-2009 19:04:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-15 19:04:49) [GET]
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (27.0ms)
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+15-Nov-2009 19:04:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 161ms (View: 81, DB: 3) | 200 OK [http://localhost/people]
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#destroy (for  at 2009-11-16 00:21:43) [GET]
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/login
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 137ms (DB: 1) | 302 Found [http://localhost/logout]
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:21:43) [GET]
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (11.0ms)
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:21:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 155ms (View: 56, DB: 1) | 200 OK [http://localhost/login]
+
+16-Nov-2009 00:21:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#create (for  at 2009-11-16 00:21:50) [POST]
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"root"}, "commit"=>"Submit"}
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (30.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (8.0ms)
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:21:50 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 407ms (View: 40, DB: 31) | 200 OK [http://localhost/person_sessions]
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#create (for  at 2009-11-16 00:21:54) [POST]
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 80ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:21:54) [GET]
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (24.0ms)
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+16-Nov-2009 00:21:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 109ms (View: 69, DB: 2) | 200 OK [http://localhost/people]
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#edit (for  at 2009-11-16 00:22:05) [GET]
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (2.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/edit
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_person (42.0ms)
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (1.0ms)
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (5.0ms)
+
+16-Nov-2009 00:22:05 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 212ms (View: 127, DB: 2) | 200 OK [http://localhost/people/current/edit]
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#update (for  at 2009-11-16 00:22:31) [PUT]
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"omar", "password_confirmation"=>"omar", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"25", "gender"=>"Male", "photo"=>#<File:C:\Users\User\AppData\Local\Temp\RackMultipart.2600.64142>}, "commit"=>"Submit", "id"=>"4"}
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (40.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '3d67cf5dad16af4f0aac3e03c270b7e5c61759f00ee5527404861727dcf328437834082fcb855a44e08765a48e3cfb699903c4c30bd2d7e7e471c48d39d8eb4d' AND `people`.id <> 4) LIMIT 1[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Update (1.0ms)[0m   [0mUPDATE `people` SET `password_salt` = 'oI0aipWHJi-UDdrppEh9', `crypted_password` = 'e9d0771ac3f84906d8544a725e78c00fdbc542d819f4887ee56d46ffe01bcf3d9f4ceda72ebd25acaa450a1c468b6112bb754c8134877cd2c2189602ca47f56a', `persistence_token` = '3d67cf5dad16af4f0aac3e03c270b7e5c61759f00ee5527404861727dcf328437834082fcb855a44e08765a48e3cfb699903c4c30bd2d7e7e471c48d39d8eb4d', `photo_file_name` = 'raya.jpg', `photo_updated_at` = '2009-11-16 00:22:31', `updated_at` = '2009-11-16 00:22:31' WHERE `id` = 4[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: [paperclip] Saving attachments.
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: [paperclip] deleting C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/P1050467.JPG
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: [paperclip] There was an unexpected error while deleting directories: SystemCallError
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: [paperclip] saving C:/Users/User/Documents/NetBeansProjects/makany/public/system/photos/4/original/raya.jpg
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/4
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 300ms (DB: 42) | 302 Found [http://localhost/people/4]
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-16 00:22:31) [GET]
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"4"}
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 4) [0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 4 ) [0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (18.0ms)
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+16-Nov-2009 00:22:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 136ms (View: 65, DB: 2) | 200 OK [http://localhost/people/4]
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#destroy (for  at 2009-11-16 00:22:37) [GET]
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/login
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 69ms (DB: 2) | 302 Found [http://localhost/logout]
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:22:37) [GET]
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (3.0ms)
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:22:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 62ms (View: 15, DB: 0) | 200 OK [http://localhost/login]
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:32:59) [GET]
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/person_sessions/new
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Filter chain halted as [:require_person] rendered_or_redirected.
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 72ms (DB: 0) | 302 Found [http://localhost/people]
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:32:59) [GET]
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (4.0ms)
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:32:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 71ms (View: 25, DB: 0) | 200 OK [http://localhost/person_sessions/new]
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:33:07) [GET]
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/person_sessions/new
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Filter chain halted as [:require_person] rendered_or_redirected.
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 52ms (DB: 0) | 302 Found [http://localhost/people]
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:33:07) [GET]
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (13.0ms)
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:33:07 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 77ms (View: 44, DB: 1) | 200 OK [http://localhost/person_sessions/new]
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#create (for  at 2009-11-16 00:33:24) [POST]
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 100ms (DB: 1) | 302 Found [http://localhost/person_sessions]
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:33:24) [GET]
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (1.0ms)
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+16-Nov-2009 00:33:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 84ms (View: 33, DB: 2) | 200 OK [http://localhost/people]
+
+16-Nov-2009 00:35:15 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing CoursesController#index (for  at 2009-11-16 00:35:16) [GET]
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCourse Load (54.0ms)[0m   [0mSELECT * FROM `courses` [0m
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/courses
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering courses/index
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:16 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 236ms (View: 117, DB: 56) | 200 OK [http://localhost/courses]
+
+16-Nov-2009 00:35:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing CoursesController#index (for  at 2009-11-16 00:35:31) [GET]
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCourse Load (1.0ms)[0m   [0mSELECT * FROM `courses` [0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/courses
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering courses/index
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCourseCode Load (1.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `course_codes` WHERE (`course_codes`.`id` = 2) [0m
+
+16-Nov-2009 00:35:31 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 194ms (View: 114, DB: 4) | 200 OK [http://localhost/courses]
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing SectionsController#index (for  at 2009-11-16 00:35:36) [GET]
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSection Load (29.0ms)[0m   [0mSELECT * FROM `sections` [0m
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/sections
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering sections/index
+
+16-Nov-2009 00:35:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 208ms (View: 84, DB: 30) | 200 OK [http://localhost/sections]
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:35:44) [GET]
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (2.0ms)
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+16-Nov-2009 00:35:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 117ms (View: 18, DB: 5) | 200 OK [http://localhost/people]
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#destroy (for  at 2009-11-16 00:35:48) [GET]
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/login
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 59ms (DB: 1) | 302 Found [http://localhost/logout]
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:35:48) [GET]
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (3.0ms)
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (0.0ms)
+
+16-Nov-2009 00:35:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 58ms (View: 14, DB: 0) | 200 OK [http://localhost/login]
+
+16-Nov-2009 00:35:53 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:53 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing SectionsController#index (for  at 2009-11-16 00:35:53) [GET]
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/person_sessions/new
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Filter chain halted as [:require_person] rendered_or_redirected.
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 37ms (DB: 0) | 302 Found [http://localhost/sections]
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-16 00:35:54) [GET]
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (3.0ms)
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:35:54 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 68ms (View: 21, DB: 0) | 200 OK [http://localhost/person_sessions/new]
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#create (for  at 2009-11-16 00:39:00) [POST]
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"q+JoYZ8EfEQfTp2mwYubCphC4YZsMzuOczkSmgfZq6o=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 64ms (DB: 2) | 302 Found [http://localhost/person_sessions]
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-16 00:39:00) [GET]
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (2.0ms)
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:39:00 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 83ms (View: 25, DB: 2) | 200 OK [http://localhost/people]
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#new (for  at 2009-11-16 00:39:06) [GET]
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '4') LIMIT 1[0m
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/new
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_person (23.0ms)
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_header (2.0ms)
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_footer (1.0ms)
+
+16-Nov-2009 00:39:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 89ms (View: 41, DB: 2) | 200 OK [http://localhost/people/new]
+

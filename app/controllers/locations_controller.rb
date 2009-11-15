@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  before_filter :require_person
   # GET /locations
   # GET /locations.xml
   def index

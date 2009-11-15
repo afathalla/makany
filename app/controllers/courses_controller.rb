@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  before_filter :require_person
+ 
   # GET /courses
   # GET /courses.xml
   def index

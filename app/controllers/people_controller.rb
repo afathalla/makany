@@ -1,5 +1,5 @@
 class PeopleController < ApplicationController
-  include ApplicationHelper
+  before_filter :require_person
   # GET /people
   # GET /people.xml
   def index
