@@ -1,5 +1,6 @@
 class PeopleController < ApplicationController
-  before_filter :require_person
+  before_filter :require_person, :except=> [:new,:create]
+
   # GET /people
   # GET /people.xml
   def index
@@ -86,4 +87,5 @@ class PeopleController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

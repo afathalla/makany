@@ -1,3 +1,7 @@
+h2 {
+    font-family:'Apple Chancery',helvetica,serif;
+    color:#ff9933;
+}
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
@@ -18,26 +22,30 @@ a:hover { color: #fff; background-color:#000; }
 
 .fieldWithErrors {
   padding: 2px;
-  background-color: red;
+  background-color: #ffcc33;
   display: table;
 }
 
 #errorExplanation {
   width: 400px;
-  border: 2px solid red;
+  border: 2px solid #ffcc33;
   padding: 7px;
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+  font-family:sans-serif
 }
 
 #errorExplanation h2 {
   text-align: left;
   font-weight: bold;
-  padding: 5px 5px 5px 15px;
+  padding: 20px 5px 5px 15px;
   font-size: 12px;
   margin: -7px;
-  background-color: #c00;
+  background-color: #ffcc33;
+  background-image:url(../images/alert.png);
+  background-repeat: no-repeat;
+  background-position:1px 1px;
   color: #fff;
 }
 
@@ -49,6 +57,11 @@ a:hover { color: #fff; background-color:#000; }
 
 #errorExplanation ul li {
   font-size: 12px;
-  list-style: square;
+  list-style:circle;
 }
 
+input:focus {
+     border: 2px solid black;
+     background-color: #ffcc33;
+
+}

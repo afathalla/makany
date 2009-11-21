@@ -1,7 +1,7 @@
  <h2> Welcome to Makany </h2>
 
  <% form_for @person_session do |form| %>
- <%= form.error_messages %>
+   <%= error_messages_for :person_session,:header_message=>'Makany has problems logging you in. Please try again'%>
    <p>
      <%= form.label :username, "Username" %>
      <%= form.text_field :username %>

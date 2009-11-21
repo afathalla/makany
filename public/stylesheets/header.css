@@ -16,6 +16,12 @@ root {
 }
 
 div#person_nav {
-    float: right; font-size: 0.9em;
+    /*float: right; font-size: 0.9em;*/
+    font-size:0.9em;
+    background-image: url(../images/bonjour_header.png);
+    background-repeat:no-repeat;
+    background-position:left;
+    width:850px;
+    height:200px;
 }
 
