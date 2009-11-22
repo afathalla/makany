@@ -23040,3 +23040,75 @@ Rendering people/show
 Rendered shared/_header (0.0ms)
 Rendered shared/_footer (0.0ms)
 Completed in 391ms (View: 158, DB: 46) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-22 20:04:13) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 187ms (DB: 0) | 302 Found [http://localhost/person_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:04:14) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 188ms (View: 63, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-22 20:05:26) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered layouts/_menu (0.0ms)
+Completed in 1344ms (View: 844, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-22 20:05:39) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 594ms (DB: 0) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:05:40) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 344ms (View: 110, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:06:25) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 359ms (View: 47, DB: 0) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 20:06:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 406ms (View: 187, DB: 16) | 200 OK [http://localhost/people/1]
