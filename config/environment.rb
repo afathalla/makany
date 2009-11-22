@@ -62,4 +62,6 @@ Rails::Initializer.run do |config|
 
   #Adding Declaritive Authroization Gem
   config.gem "declarative_authorization", :source => "http://gemcutter.org"
+  
+  config.gem "install_theme"
 end

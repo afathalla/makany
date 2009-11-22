@@ -22816,3 +22816,227 @@ ActionController::UnknownAction (No action responded to 5. Actions: create, dest
 21-Nov-2009 22:43:48 com.sun.grizzly.config.GrizzlyServiceListener
 INFO: Rendering rescues/layout (not_found)
 
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-22 19:35:20) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+
+ActionView::TemplateError (undefined method `username' for #<PersonSession: no credentials provided>) on line #7 of app/views/person_sessions/new.html.erb:
+4:    <%= error_messages_for :person_session,:header_message=>'Makany has problems logging you in. Please try again'%>
+5:    <p>
+6:      <%= form.label :username, "Username" %>
+7:      <%= form.text_field :username %>
+8:    </p>
+9:    <p>
+10:       <%= form.label :password, "Password" %>
+
+    app/views/person_sessions/new.html.erb:7
+    app/views/person_sessions/new.html.erb:3
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (359.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (344.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_info`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mDROP TABLE `schema_info`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+Migrating to CreateSections (20091024120825)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `sections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `course_id` integer(10), `section_number` integer(10), `student_enrollment` integer(10), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024120825')[0m
+Migrating to AddCourseNumberToCourse (20091024121036)
+  [4;36;1mSQL (297.0ms)[0m   [0;1mALTER TABLE `courses` ADD `course_number` integer(10)[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024121036')[0m
+Migrating to CreatePlaces (20091024122024)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `place_name` varchar(255), `type_id` integer(10), `location_id` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024122024')[0m
+Migrating to AddPlaceIdToSection (20091024123611)
+  [4;36;1mSQL (265.0ms)[0m   [0;1mALTER TABLE `sections` ADD `place_id` integer(10)[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024123611')[0m
+Migrating to CreateCourseCodes (20091024125439)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `course_codes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code_name` varchar(4), `code_subject` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024125439')[0m
+Migrating to RenameCourseCodeInCourses (20091024130000)
+  [4;36;1mSQL (265.0ms)[0m   [0;1mALTER TABLE `courses` ADD `course_code_id` integer(10)[0m
+  [4;35;1mSQL (266.0ms)[0m   [0mALTER TABLE `courses` DROP `code`[0m
+  [4;36;1mSQL (328.0ms)[0m   [0;1mALTER TABLE `courses` DROP `subject`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024130000')[0m
+Migrating to CreateLocations (20091026181448)
+  [4;36;1mSQL (547.0ms)[0m   [0;1mCREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `longitude` float, `latitude` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091026181448')[0m
+Migrating to CreatePeople (20091026181630)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `age` integer(10), `gender` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091026181630')[0m
+Migrating to CreatePeoplePlaces (20091030205800)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `people_places` (`person_id` integer(10), `place_id` integer(10)) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091030205800')[0m
+Migrating to CreatePlaceTypes (20091031120547)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `place_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `place_type` varchar(255), `place_description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031120547')[0m
+Migrating to AddAuthenticationToPeople (20091107092907)
+  [4;36;1mSQL (313.0ms)[0m   [0;1mALTER TABLE `people` ADD `username` varchar(255)[0m
+  [4;35;1mSQL (328.0ms)[0m   [0mALTER TABLE `people` ADD `email` varchar(255)[0m
+  [4;36;1mSQL (344.0ms)[0m   [0;1mALTER TABLE `people` ADD `crypted_password` varchar(255)[0m
+  [4;35;1mSQL (250.0ms)[0m   [0mALTER TABLE `people` ADD `password_salt` varchar(255)[0m
+  [4;36;1mSQL (218.0ms)[0m   [0;1mALTER TABLE `people` ADD `persistence_token` varchar(255)[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091107092907')[0m
+Migrating to AddAttachmentsPhotoToPerson (20091114221018)
+  [4;36;1mSQL (469.0ms)[0m   [0;1mALTER TABLE `people` ADD `photo_file_name` varchar(255)[0m
+  [4;35;1mSQL (250.0ms)[0m   [0mALTER TABLE `people` ADD `photo_content_type` varchar(255)[0m
+  [4;36;1mSQL (219.0ms)[0m   [0;1mALTER TABLE `people` ADD `photo_file_size` integer(10)[0m
+  [4;35;1mSQL (312.0ms)[0m   [0mALTER TABLE `people` ADD `photo_updated_at` datetime[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091114221018')[0m
+Migrating to CreateFriendships (20091121184244)
+  [4;35;1mSQL (110.0ms)[0m   [0mCREATE TABLE `friendships` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` integer(10), `friend_id` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091121184244')[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-22 19:36:51) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (15.0ms)
+Rendered shared/_footer (31.0ms)
+Completed in 297ms (View: 140, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-22 19:36:56) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (63.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (0.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 797ms (View: 109, DB: 63) | 200 OK [http://localhost/person_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-22 19:37:03) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered shared/_header (0.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 344ms (View: 172, DB: 0) | 200 OK [http://localhost/person_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-22 19:37:09) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (141.0ms)
+Rendered shared/_header (31.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 391ms (View: 235, DB: 0) | 200 OK [http://localhost/people/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 19:37:42) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"omar", "password_confirmation"=>"omar", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.3560.17106>}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'afathalla@gmail.com') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'afathalla') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '219911733815e660334e3abcbba501ff13d75bbf93d37428013f13f52d1afe249ea9ffbd58e970da2b71431ed1339475819e851270476fcf0ef0339c29ebf299') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `people` (`first_name`, `last_name`, `age`, `gender`, `created_at`, `updated_at`, `username`, `email`, `crypted_password`, `password_salt`, `persistence_token`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES('Ahmed', 'Fathalla', 24, 'Male', '2009-11-22 19:37:42', '2009-11-22 19:37:42', 'afathalla', 'afathalla@gmail.com', 'a82c51adc7659e92e948ff9ff4174e78931f24f6dc57dc82822f853a72fe9e4aa66dbce3eb098c341757b509d95ffffa23f9bcdaa27fe61a2d1647288ff12302', 'pEQrlFtH-ODzbBRqJzRZ', '219911733815e660334e3abcbba501ff13d75bbf93d37428013f13f52d1afe249ea9ffbd58e970da2b71431ed1339475819e851270476fcf0ef0339c29ebf299', 'Laila_small.JPG', 'image/jpeg', 0, '2009-11-22 19:37:42')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+Redirected to http://localhost:3000/people/1
+Completed in 469ms (DB: 0) | 302 Found [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 19:37:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`persistence_token` = '219911733815e660334e3abcbba501ff13d75bbf93d37428013f13f52d1afe249ea9ffbd58e970da2b71431ed1339475819e851270476fcf0ef0339c29ebf299') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered shared/_header (15.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 390ms (View: 171, DB: 32) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-22 19:52:12) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered layouts/_menu (0.0ms)
+Completed in 453ms (View: 109, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-22 19:52:24) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Submit"}
+  [4;36;1mPerson Load (172.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people
+Completed in 422ms (DB: 172) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 19:52:24) [GET]
+  [4;36;1mPerson Load (15.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (15.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 296ms (View: 62, DB: 30) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#create (for 127.0.0.1 at 2009-11-22 19:52:35) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "friend_id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mINSERT INTO `friendships` (`person_id`, `friend_id`, `created_at`, `updated_at`) VALUES(1, 1, '2009-11-22 19:52:36', '2009-11-22 19:52:36')[0m
+Redirected to http://localhost:3000/people
+Completed in 422ms (DB: 63) | 302 Found [http://localhost/friendships?friend_id=1]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 19:52:36) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered shared/_header (16.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 203ms (View: 47, DB: 16) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 19:52:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (15.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (15.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered shared/_header (0.0ms)
+Rendered shared/_footer (0.0ms)
+Completed in 391ms (View: 158, DB: 46) | 200 OK [http://localhost/people/1]

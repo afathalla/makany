@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20091121184244) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "course_number",  :limit => 11
-    t.integer  "course_code_id", :limit => 11
+    t.integer  "course_number"
+    t.integer  "course_code_id"
   end
 
   create_table "friendships", :force => true do |t|
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20091121184244) do
   create_table "people", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "age",                :limit => 11
+    t.integer  "age"
     t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -59,8 +59,8 @@ ActiveRecord::Schema.define(:version => 20091121184244) do
   end
 
   create_table "people_places", :id => false, :force => true do |t|
-    t.integer "person_id", :limit => 11
-    t.integer "place_id",  :limit => 11
+    t.integer "person_id"
+    t.integer "place_id"
   end
 
   create_table "place_types", :force => true do |t|
@@ -72,20 +72,20 @@ ActiveRecord::Schema.define(:version => 20091121184244) do
 
   create_table "places", :force => true do |t|
     t.string   "place_name"
-    t.integer  "type_id",     :limit => 11
-    t.integer  "location_id", :limit => 11
+    t.integer  "type_id"
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "sections", :force => true do |t|
-    t.integer  "course_id",          :limit => 11
-    t.integer  "section_number",     :limit => 11
-    t.integer  "student_enrollment", :limit => 11
+    t.integer  "course_id"
+    t.integer  "section_number"
+    t.integer  "student_enrollment"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "place_id",           :limit => 11
+    t.integer  "place_id"
   end
 
 end
