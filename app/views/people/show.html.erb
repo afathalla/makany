@@ -3,13 +3,15 @@
   <%=h @person.full_name%>
 </p>
 <p>
-<%= image_tag @person.photo.url,:class=>'profile_image' %>
+<%= image_tag @person.photo.url(:medium),:class=>'profile_image' %>
 </p>
 <p>
  <h2>Your Friends</h2>
  <ul>
    <% for friendship in @person.friendships %>
-     <li><%=h friendship.friend.full_name %></li>
+     <li><%=image_tag friendship.friend.photo.url(:small)  %>
+      <%=h friendship.friend.full_name %>
+     </li>
      (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
   <% end %>
  </ul>

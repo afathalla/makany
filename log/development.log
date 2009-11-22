@@ -23112,3 +23112,1108 @@ Rendering people/show
   [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
 Rendered layouts/_menu (0.0ms)
 Completed in 406ms (View: 187, DB: 16) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 20:10:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (110.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 406ms (View: 203, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 20:10:49) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.2292.20598>}, "commit"=>"Submit", "id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;36;1mPerson Update (31.0ms)[0m   [0;1mUPDATE `people` SET `photo_file_name` = 'Water_lilies.jpg', `photo_updated_at` = '2009-11-22 20:10:49', `updated_at` = '2009-11-22 20:10:49' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Water_lilies.jpg
+Redirected to http://localhost:3000/people/1
+Completed in 546ms (DB: 31) | 302 Found [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 20:10:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 344ms (View: 157, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 20:18:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 375ms (View: 204, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 20:18:54) [GET]
+  Parameters: {"1258913449"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/small/Water_lilies.jpg" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 20:19:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 265ms (View: 62, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 20:19:18) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.2292.20600>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Sunset,2292,20601.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (140.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 578ms (View: 203, DB: 16) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 20:21:45) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7864.3165>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Blue hills,7864,3166.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPlace Load (15.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (125.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 1438ms (View: 219, DB: 30) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#1 (for 127.0.0.1 at 2009-11-22 20:27:09) [GET]
+  Parameters: {"id"=>"delete"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#1 (for 127.0.0.1 at 2009-11-22 20:27:14) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#1 (for 127.0.0.1 at 2009-11-22 20:27:18) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 20:27:23) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=destroy):
+  app/controllers/people_controller.rb:18:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#1 (for 127.0.0.1 at 2009-11-22 20:27:32) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 20:27:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (16.0ms)
+Completed in 344ms (View: 203, DB: 0) | 200 OK [http://localhost/people/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 20:27:40) [GET]
+  Parameters: {"1258913449"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/small/Water_lilies.jpg" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:27:47) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-22 20:27:53) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (94.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 250ms (View: 140, DB: 0) | 200 OK [http://localhost/people/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:28:26) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmail.com", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"31", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7864.3167>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,7864,3168.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmail.com') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '1a8f8793820ca713331064ef5ee92b3dac644f1f5059dc0fcc968bc06eae7fed902ded4436828025dd7dc5259415a18262e11736f89852fa633e81ce62901463') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (109.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 875ms (View: 141, DB: 16) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:35:32) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmail.com", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"31", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7864.3169>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Water lilies,7864,3170.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmail.com') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '286cfec6cf3e277461a8281e6c585c02f9d5bd45fcd4edb0665727ca76f846d50a4dda7f121a7127cb5cfcb5a5e6e15808e8d45be68348dc970eae57cee4acf0') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 359ms (View: 78, DB: 0) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:36:06) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmail.com", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"31", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7864.3171>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,7864,3172.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmail.com') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = 'fc8410625ab1c56be6a340d4c0d424d65676d4b17c66ec12be9a1b0b17a71d258b504426e11d4f5a2b8799a4c212f1f01f9f21fbd46a473168f053caa85735bf') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (62.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 375ms (View: 94, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:37:36) [GET]
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 1094ms (View: 203, DB: 16) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-22 20:37:39) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (156.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 375ms (View: 250, DB: 0) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:37:42) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"", "email"=>"", "password"=>"", "password_confirmation"=>"", "first_name"=>"", "last_name"=>"", "age"=>"", "gender"=>""}, "commit"=>"Submit"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = '') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = '') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '9c2f344e5ca48102207c02194c90f0a13191dfaa95a443e4e50d79ed4e43b34d68b0519c8c7d34131058c94cd109b0e5edaf68d533392960c5cfe987818ccd41') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (297.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 641ms (View: 344, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:38:20) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmail.com", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.6824.8318>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,6824,8319.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmail.com') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '6f683573ef80b4103be7dde183d81122fb8664b7eb5856c7e09ea5241f0ef49598dd1c6e1e4d8d10e872e3ec5d4e3a905d734ce54f76ef16eeba671dee6a36b7') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (110.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 953ms (View: 140, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:46:23) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmail.com", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.6580.40264>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Sunset,6580,40265.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmail.com') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '69786bbb77d538a2642518f79dc91cd628317ec90e2f3f1be40e38e9e5ab379862021176c3dfc018a23570dcff666c380827e74b779d5569a78b9c0d5a23f2a3') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (125.0ms)
+Rendered layouts/_menu (15.0ms)
+Completed in 1859ms (View: 250, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:49:17) [GET]
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 1125ms (View: 218, DB: 32) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-11-22 20:49:25) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (125.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 344ms (View: 204, DB: 0) | 200 OK [http://localhost/people/new]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-11-22 20:50:06) [POST]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"amr.aljarhi", "email"=>"amr.aljarhi@gmailc.om", "password"=>"amr.aljarhi", "password_confirmation"=>"amr.aljarhi", "first_name"=>"Amr", "last_name"=>"Aljarhi", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.2264.49970>}, "commit"=>"Submit"}
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,2264,49971.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`email`) = 'amr.aljarhi@gmailc.om') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` WHERE (LOWER(`people`.`username`) = 'amr.aljarhi') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` WHERE (`people`.`persistence_token` = '9eaa03c1df8935d2265cd043cef9c9eec7a0fb13eade225b1c5b6c0336032cc9eb077277ed9bb279703a897d25b98b8f429812fdc0d1f5fa2438b5b4995178b5') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered shared/_person (110.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 984ms (View: 156, DB: 15) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 20:55:27) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 1172ms (View: 235, DB: 16) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 20:55:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (79.0ms)
+Rendered layouts/_menu (16.0ms)
+Completed in 406ms (View: 141, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 20:55:43) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7620.46489>}, "commit"=>"Submit", "id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Water lilies,7620,46490.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (110.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 750ms (View: 156, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 20:59:43) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.5928.4063>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Sunset,5928,4064.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (125.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 1562ms (View: 266, DB: 32) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:01:56) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.6980.19642>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Blue hills,6980,19643.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (140.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 1562ms (View: 265, DB: 16) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 21:04:22) [GET]
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 1094ms (View: 188, DB: 15) | 200 OK [http://localhost/people/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 21:04:29) [GET]
+  Parameters: {"id"=>"q"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (93.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 422ms (View: 141, DB: 0) | 200 OK [http://localhost/people/q/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:04:35) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.3552.32542>}, "commit"=>"Submit", "id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,3552,32543.jpg is not recognized by the 'identify' command.>
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (109.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 703ms (View: 141, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-22 21:06:20) [GET]
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Completed in 1000ms (View: 172, DB: 15) | 200 OK [http://localhost/people/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:06:25) [GET]
+  Parameters: {"id"=>"q"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=q):
+  app/controllers/people_controller.rb:18:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 21:06:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (94.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 343ms (View: 140, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:06:37) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7216.35572>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Winter,7216,35573.jpg is not recognized by the 'identify' command.>
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (94.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 656ms (View: 125, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:08:34) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7856.65471>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;35;1mPerson Update (15.0ms)[0m   [0mUPDATE `people` SET `photo_file_name` = 'Winter.jpg', `photo_updated_at` = '2009-11-22 21:08:35', `updated_at` = '2009-11-22 21:08:36' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Water_lilies.jpg
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Winter.jpg
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Winter.jpg
+Redirected to http://localhost:3000/people/1
+Completed in 2797ms (DB: 15) | 302 Found [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:08:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 484ms (View: 234, DB: 16) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 21:08:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (62.0ms)
+Rendered layouts/_menu (16.0ms)
+Completed in 406ms (View: 125, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:09:11) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7856.65474>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;35;1mPerson Update (0.0ms)[0m   [0mUPDATE `people` SET `photo_file_name` = 'Laila_small.JPG', `photo_updated_at` = '2009-11-22 21:09:12', `updated_at` = '2009-11-22 21:09:14' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Winter.jpg
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Winter.jpg
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Laila_small.JPG
+Redirected to http://localhost:3000/people/1
+Completed in 2421ms (DB: 0) | 302 Found [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:09:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (15.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 359ms (View: 172, DB: 15) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 21:09:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (78.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 281ms (View: 109, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:09:28) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7856.65477>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;35;1mPerson Update (0.0ms)[0m   [0mUPDATE `people` SET `photo_file_name` = 'P1070738_2_.JPG', `photo_updated_at` = '2009-11-22 21:09:28', `updated_at` = '2009-11-22 21:09:30' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Laila_small.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/P1070738_2_.JPG
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/P1070738_2_.JPG
+Redirected to http://localhost:3000/people/1
+Completed in 2265ms (DB: 0) | 302 Found [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:09:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 312ms (View: 124, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:10:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 437ms (View: 171, DB: 32) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:10:35) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7856.65480>}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;35;1mPerson Update (0.0ms)[0m   [0mUPDATE `people` SET `photo_file_name` = 'Laila_small.JPG', `photo_updated_at` = '2009-11-22 21:10:35', `updated_at` = '2009-11-22 21:10:38' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/P1070738_2_.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/P1070738_2_.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Laila_small.JPG
+Redirected to http://localhost:3000/people/1
+Completed in 2797ms (DB: 16) | 302 Found [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:10:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 391ms (View: 219, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:13:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (16.0ms)
+Completed in 938ms (View: 609, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 21:13:03) [GET]
+  Parameters: {"1258917035"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/medium/Laila_small.JPG" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-11-22 21:13:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered shared/_person (140.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 625ms (View: 203, DB: 0) | 200 OK [http://localhost/people/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#update (for 127.0.0.1 at 2009-11-22 21:13:24) [PUT]
+  Parameters: {"authenticity_token"=>"k0ehveTreU2p/b8x6oz6ZTlbLeZf4T0nXqWaLWLVi0A=", "person"=>{"username"=>"afathalla", "email"=>"afathalla@gmail.com", "password"=>"", "password_confirmation"=>"", "first_name"=>"Ahmed", "last_name"=>"Fathalla", "age"=>"24", "gender"=>"Male", "photo"=>#<File:C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RackMultipart.7856.65483>}, "commit"=>"Submit", "id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+  [4;36;1mPerson Update (0.0ms)[0m   [0;1mUPDATE `people` SET `photo_updated_at` = '2009-11-22 21:13:24', `updated_at` = '2009-11-22 21:13:37' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] deleting C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Laila_small.JPG
+[paperclip] There was an unexpected error while deleting directories: SystemCallError
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/original/Laila_small.JPG
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/small/Laila_small.JPG
+[paperclip] saving C:/Documents and Settings/Administrator/My Documents/NetBeansProjects/makany/public/system/photos/1/medium/Laila_small.JPG
+Redirected to http://localhost:3000/people/1
+Completed in 13250ms (DB: 0) | 302 Found [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:13:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 563ms (View: 172, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:17:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `frienship' for #<ActionView::Base:0x16cab6b>) on line #12 of app/views/people/show.html.erb:
+9:  <h2>Your Friends</h2>
+10:  <ul>
+11:    <% for friendship in @person.friendships %>
+12:      <li><%=image_tag frienship.friend.photo.url(:small)  %>
+13:       <%=h friendship.friend.full_name %>
+14:      </li>
+15:      (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
+
+    app/views/people/show.html.erb:12
+    app/views/people/show.html.erb:11
+    app/controllers/people_controller.rb:20:in `show'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:18:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `friensship' for #<ActionView::Base:0x11323b2>) on line #12 of app/views/people/show.html.erb:
+9:  <h2>Your Friends</h2>
+10:  <ul>
+11:    <% for friendship in @person.friendships %>
+12:      <li><%=image_tag friensship.friend.photo.url(:small)  %>
+13:       <%=h friendship.friend.full_name %>
+14:      </li>
+15:      (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
+
+    app/views/people/show.html.erb:12
+    app/views/people/show.html.erb:11
+    app/controllers/people_controller.rb:20:in `show'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:18:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `friensship' for #<ActionView::Base:0x16ac749>) on line #12 of app/views/people/show.html.erb:
+9:  <h2>Your Friends</h2>
+10:  <ul>
+11:    <% for friendship in @person.friendships %>
+12:      <li><%=image_tag friensship.friend.photo.url(:small)  %>
+13:       <%=h friendship.friend.full_name %>
+14:      </li>
+15:      (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
+
+    app/views/people/show.html.erb:12
+    app/views/people/show.html.erb:11
+    app/controllers/people_controller.rb:20:in `show'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    script\server:3
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:18:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 375ms (View: 250, DB: 0) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:19:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (15.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (16.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 282ms (View: 141, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 21:19:43) [GET]
+  Parameters: {"1258917204"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/very_small/Laila_small.JPG" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:19:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (15.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (15.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (15.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 844ms (View: 79, DB: 45) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 21:19:47) [GET]
+  Parameters: {"1258917204"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/very_small/Laila_small.JPG" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:20:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (15.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 328ms (View: 141, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 21:20:19) [GET]
+  Parameters: {"1258917204"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/very_small/Laila_small.JPG" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:20:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (15.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 313ms (View: 141, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 21:20:22) [GET]
+  Parameters: {"1258917204"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/very_small/Laila_small.JPG" with {:method=>:get}):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-22 21:22:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 312ms (View: 171, DB: 16) | 200 OK [http://localhost/people/1]

@@ -8,7 +8,7 @@ has_many :friends, :through => :friendships
 has_many :inverse_friendships, :class_name => 'Friendship',:foreign_key => 'friend_id'
 has_many :inverse_friends, :through => :inverse_friendships, :source=>:people
 #PaperClip Properties
-has_attached_file :photo #,:styles => {:small=>'150x150>'} # No ImageMagic
+has_attached_file :photo ,:styles => {:small=>'100x100>',:medium=>'200x200'}
 validates_attachment_size :photo, :less_than => 5.megabytes
 validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
 
