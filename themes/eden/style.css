@@ -1,0 +1,152 @@
+/* 
+Theme Name: That Other Eden
+Theme URL: http://grabatheme.com/grab/thatothereden
+Description: Get More Free Wordpress Themes By Visiting <a href="http://greatwordpressthemes.com">Wordpress Com Themes</a>
+Author: Drogue Designs
+*/
+
+body { 
+  background: #fca000 url(images/eden2.gif) top center repeat-y;
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+  font-size: 0.71em;
+  color: #eff; 
+  scrollbar-face-color: #000000;
+  scrollbar-highlight-color: #000000; 
+  scrollbar-shadow-color: #000000; 
+  scrollbar-3dlight-color: #000000; 
+  scrollbar-arrow-color: #fca000;
+  scrollbar-track-color: #fca000; 
+  scrollbar-darkshadow-color: #000000; 
+  } 
+
+#rap { 
+margin:auto;
+margin-top:-15px;
+  width: 800px; 
+  background-image: url('images/eden1.gif'); 
+  background-repeat: no-repeat;
+  }
+
+#content { 
+float:left;
+  padding: 275px 0px 0px 100px;
+  width: 365px;
+  }
+#menu { 
+float:right;
+  padding: 410px 150px 20px 0;
+  width: 150px;
+  text-align: right;
+  } 
+#menu ul { 
+  margin: 3px 0px 0px 0px; 
+  padding: 0px;
+  list-style-type: none;
+  }
+#menu ul li {
+  margin: 3px;
+  }
+#menu p { 
+  margin: 3px 0px 0px 0px;
+  }
+#menu ul a{
+  color: #fca000;
+  font-weight: bold;
+  font-size: 1em;
+  padding-right: 20px; 
+  background-image: url(images/eden4.gif); 
+  background-repeat: no-repeat; 
+  background-position: right top; 
+  text-decoration: none;
+  }
+#menu ul a:hover { 
+  color: #fca000; 
+  background-image: url(images/eden3.gif); 
+  background-repeat: no-repeat;
+  background-position: right top;
+  }
+
+.page_item{font-size:9pt;
+letter-spacing:0}
+
+a {
+  color: #fca000;
+  font-weight: bold;
+  font-size: 1em; 
+  text-decoration: none;
+  }
+a:hover { 
+  color: #FFFFFF;
+  }
+strong, em, i, b { 
+  color: #FFFFFF;
+  }
+
+.commentlink {
+  padding-left: 20px; 
+  background-image: url(images/eden4.gif); 
+  background-repeat: no-repeat; 
+  background-position: top left; }
+
+.commentlink a {color:#fff}
+
+.commentlink a:hover {color: #fca000}
+
+u { 
+  text-decoration: none;
+  color: #FFFFFF;
+  border-bottom: 1px solid #fca000;
+  }
+
+blockquote, textarea{ 
+  color: #000000; 
+  background-color: #fca000; 
+  border: 1px solid #000000;
+  padding: 3px;
+  }
+
+#content ul li{list-style:none;
+  padding-left: 20px; 
+  background-image: url(images/eden4.gif); 
+  background-repeat: no-repeat; 
+  background-position: left top; }
+
+input {background:#000;
+color:#eff;
+border:1px #fca000 solid;}
+
+}
+
+h1 {
+display:none
+  }
+
+#content h2 {
+  color: #fca000;
+  text-transform: lowercase;
+  font-size: 15pt;
+  line-height: 15px;
+  text-align: left;
+  letter-spacing: -1.5pt;
+margin:0
+  }
+
+#content h3 {margin:0;
+font-size:10pt;
+text-align:right}
+
+#menu h2, .pagenav {
+  color: #FFFFFF;
+  text-transform: lowercase;
+  font-size: 15pt;
+  line-height: 15px;
+  letter-spacing: -1.5pt;
+margin:15px 0 7px 0;
+padding:0
+  }
+
+#footer {clear:both;
+text-align:center;
+padding:10px 150px 10px 120px}
