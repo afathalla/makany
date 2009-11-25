@@ -20,6 +20,13 @@ validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image
 #Methods
   def full_name
     "#{first_name} #{last_name}"
-    
+  end
+
+  def role_sumbols
+    if admin?
+      [:admin]
+    else
+      [:user]
+    end
   end
 end
