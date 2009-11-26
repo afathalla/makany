@@ -1,1 +1,11 @@
-<div class="nav"> <a href="#">home</a> <a href="#">about</a> <a href="#">forum</a> <a href="#">design</a> <a href="#">info</a> <a href="#">contact</a> </div>
+<div class="nav">
+   <% if current_person %>
+   <%= link_to "Home", person_path(current_person.id) %>
+   <%= link_to "Edit Profile", edit_person_path(:current) %>
+   <%= link_to "Logout", logout_path %>
+   <% else %>
+   <%= link_to "Register", new_person_path %>
+   <%= link_to "Login", login_path %>
+   <%end%>
+   <a href="#">About</a>
+  </div>

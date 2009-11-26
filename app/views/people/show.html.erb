@@ -5,6 +5,7 @@
 <p>
 <%= image_tag @person.photo.url(:medium),:class=>'profile_image' %>
 </p>
+<%if (@person.friendships.count >0)%>
 <p>
  <h2>Your Friends</h2>
  <ul>
@@ -16,6 +17,12 @@
   <% end %>
  </ul>
 </p>
+<%else%>
+<p>
+  You currently have no Friends.
+  <%=link_to 'Add Friends',people_path%>
+</p>
+<%end%>
 <p>
  <h2>Your Friend Requests</h2>
  <ul>

@@ -14,6 +14,9 @@ config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 #config.action_view.cache_template_extensions         = false
 
-# Don't care if the mailer can't send
-config.action_mailer.raise_delivery_errors = false
+# I canre if mailer doesn't send
+config.action_mailer.raise_delivery_errors = true #Changed to true
+config.action_mailer.delivery_method = :test #Test for now, should change to smtp later
+
+
 

@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller=>'person_sessions',:action=>'new'
+ # map.root :controller=>'person_sessions',:action=>'new'
 
   map.resources :place_types
 
@@ -16,6 +16,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :courses
 
   map.login 'login',:controller => 'person_sessions', :action=>'new'
+ 
+  map.root :login
+
   map.logout 'logout',:controller => 'person_sessions', :action=>'destroy'
 
 

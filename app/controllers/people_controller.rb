@@ -47,6 +47,7 @@ class PeopleController < ApplicationController
 
     respond_to do |format|
       if @person.save
+        PersonMailer.deliver_registration_confirmation(@person)
         flash[:notice] = 'Registration Successful.'
         format.html { redirect_to(@person) }
         format.xml  { render :xml => @person, :status => :created, :location => @person }

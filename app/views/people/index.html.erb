@@ -9,6 +9,7 @@
   </tr>
 
 <% for person in @people %>
+  <%if (person.username != current_person.username)%>
   <tr>
     <td><%=h person.first_name %></td>
     <td><%=h person.last_name %></td>
@@ -16,8 +17,8 @@
     <td><%=h person.gender %></td>
     <td><%= link_to 'Show Limited Profile', person %></td>
     <td><%= link_to 'Add as a friend', friendships_path(:friend_id=>person), :method=>:post %></td>
-
   </tr>
+  <% end %>
 <% end %>
 </table>
 
