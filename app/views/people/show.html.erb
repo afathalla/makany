@@ -3,15 +3,53 @@
   <%=h @person.full_name%>
 </p>
 <p>
-<%= image_tag @person.photo.url(:medium),:class=>'profile_image' %>
+<%= image_tag @person.photo.url(:small),:class=>'profile_image' %>
 </p>
-<%if (@person.friendships.count >0)%>
+
+<%if (@person.sent_friend_invitations.count >0)%>
+<p>
+ <h2>Your Sent Friend Invitations </h2>
+ <ul>
+   <% for sent_friend_invitation in @person.sent_friend_invitations %>
+     <li>
+       <%=image_tag Person.find(sent_friend_invitation.receiver_id).photo.url(:small)  %>
+       <%=h Person.find(sent_friend_invitation.receiver_id).full_name %>
+     </li>
+  <% end %>
+ </ul>
+</p>
+<%end%>
+
+<%if (@person.received_friend_invitations.count >0)%>
+<p>
+ <h2>People who want to be your friends</h2>
+ <ul>
+   <% for received_friend_invitation in @person.received_friend_invitations %>
+     <li>
+       <%=image_tag received_friend_invitation.sender.photo.url(:small)  %>
+       <%=h received_friend_invitation.sender.full_name %>
+       <%= link_to 'Accept Friendship', friendships_path(:friend_id=>received_friend_invitation.sender), :method=>:post %>
+     </li>
+  <% end %>
+ </ul>
+</p>
+<%end%>
+
+<%if (@person.friendships.count >0) || (@person.inverse_friendships.count >0) %>
 <p>
  <h2>Your Friends</h2>
  <ul>
    <% for friendship in @person.friendships %>
-     <li><%=image_tag friendship.friend.photo.url(:small)  %>
+     <li>
+      <%=image_tag friendship.friend.photo.url(:small)  %>
       <%=h friendship.friend.full_name %>
+     </li>
+     (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
+  <% end %>
+   <% for inverse_friendship in @person.inverse_friendships %>
+     <li>
+      <%=image_tag inverse_friendship.person.photo.url(:small)  %>
+      <%=h inverse_friendship.person.full_name %>
      </li>
      (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
   <% end %>
@@ -23,16 +61,6 @@
   <%=link_to 'Add Friends',people_path%>
 </p>
 <%end%>
-<p>
- <h2>Your Friend Requests</h2>
- <ul>
-   <% for inverse_friendship in @person.inverse_friendships %>
-     <li><%=h inverse_friendship.person.full_name %></li>
-     (<%=link_to 'Add ' << inverse_friendship.person.full_name << ' as a friend', friendships_path(:friend_id=>inverse_friendship.person), :method=>:post%>)
-  <% end %>
- </ul>
-</p>
-
 <p>
   <h2>Current Location:</h2>
 </p>

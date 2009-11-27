@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :friend_invitations
+
  # map.root :controller=>'person_sessions',:action=>'new'
 
   map.resources :place_types

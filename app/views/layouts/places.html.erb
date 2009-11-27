@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>refreshed</title>
+<title>Makany</title>
 <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
   <%= javascript_include_tag :all %>
@@ -10,11 +10,12 @@
 </head>
 <body>
 <div class="header">
-  <h1>refreshed</h1>
+  <h1>Makany</h1>
   <%= yield(:menu) || render_or_default('menu') %>
 </div>
 <div class="upperleft">
   <div class="upperright">
+    <%= yield(:login_status) || render_or_default('login_status') %>
     <div class="lowerleft">
       <div class="lowerright"><%= yield %></div>
     </div>

@@ -1,6 +1,6 @@
 html,body {
 	background-color: #D3E9D0;
-	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
 	font-size: 10pt;
 	text-align:center;
 }
@@ -83,6 +83,9 @@ div.nav {
 	border-top:3px solid #FFFFFF;
 }
 
+div.loginstatus {
+	text-align:right;
+}
 div.footer {
 	background-image:url(/images/footer.png);
 	text-align:center;
