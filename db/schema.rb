@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091121184244) do
+ActiveRecord::Schema.define(:version => 20091127191021) do
 
   create_table "course_codes", :force => true do |t|
     t.string   "code_name",    :limit => 4
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(:version => 20091121184244) do
     t.datetime "updated_at"
     t.integer  "course_number",  :limit => 11
     t.integer  "course_code_id", :limit => 11
+  end
+
+  create_table "friend_invitations", :force => true do |t|
+    t.integer  "sender_id"
+    t.integer  "receiver_id"
+    t.datetime "sent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "friendships", :force => true do |t|

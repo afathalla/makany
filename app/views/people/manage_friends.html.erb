@@ -1,0 +1,84 @@
+<%if (@person.sent_friend_invitations.count >0)%>
+<p>
+<table>
+ <tr>
+ <th><h2>Waiting to hear from</h2></th>
+ </tr>
+   <% for sent_friend_invitation in @person.sent_friend_invitations %>
+    <tr>
+     <td>
+       <%=image_tag Person.find(sent_friend_invitation.receiver_id).photo.url(:small)  %>
+     </td>
+     <td>
+      <h3><%= Person.find(sent_friend_invitation.receiver_id).full_name %></h3>
+     </td>
+    </tr>
+  <% end %>
+</table>
+</p>
+<%end%>
+
+<%if (@person.received_friend_invitations.count >0)%>
+<p>
+  <table>
+   <tr>
+ <th><h2>People who want to be your friends</h2></th>
+   </tr>
+   <% for received_friend_invitation in @person.received_friend_invitations %>
+     <tr>
+      <td>
+       <%=image_tag received_friend_invitation.sender.photo.url(:small)  %>
+      </td>
+      <td>
+       <h3><%=h received_friend_invitation.sender.full_name %></h3>
+      </td>
+       <td>
+       <%= link_to 'ACCEPT', friendships_path(:friend_id=>received_friend_invitation.sender), :method=>:post %>
+       </td>
+      </tr>
+  <% end %>
+ </table>
+</p>
+<%end%>
+
+<%if (@person.friendships.count >0) || (@person.inverse_friendships.count >0) %>
+<p>
+  <table>
+    <tr>
+      <th>
+        <h2>Your Friends</h2>
+      </th>
+    </tr>
+   <% for friendship in @person.friendships %>
+   <tr>
+     <td>
+      <%=image_tag friendship.friend.photo.url(:small)  %>
+     </td>
+     <td>
+      <h3><%= friendship.friend.full_name %></h3>
+     </td>
+     <td>
+    <%=link_to 'REMOVE',friendship,:method=>:delete%>
+     </td>
+   </tr>
+  <% end %>
+   <% for inverse_friendship in @person.inverse_friendships %>
+    <tr>
+     <td>
+      <%=image_tag inverse_friendship.person.photo.url(:small)  %>
+     </td>
+     <td>
+      <h3><%=inverse_friendship.person.full_name %></h3>
+     </td>
+     <td>
+    <%=link_to 'REMOVE',inverse_friendship,:method=>:delete%>
+     </td>
+    </tr>
+  <% end %>
+ </table>
+</p>
+<%else%>
+<%end%>
+<p>
+   <%=link_to 'Add Friends',people_path%>
+</p>

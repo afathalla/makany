@@ -23,6 +23,17 @@ class PeopleController < ApplicationController
     end
   end
 
+  # GET /people/1/manage_friends
+  # GET /people/1/manage_friends.xml
+  def manage_friends
+    @person=current_person
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @person }
+    end
+  end
+
   # GET /people/new
   # GET /people/new.xml
   def new
@@ -47,6 +58,7 @@ class PeopleController < ApplicationController
 
     respond_to do |format|
       if @person.save
+        PersonMailer.deliver_registration_confirmation(@person)
         flash[:notice] = 'Registration Successful.'
         format.html { redirect_to(@person) }
         format.xml  { render :xml => @person, :status => :created, :location => @person }

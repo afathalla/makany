@@ -1,37 +1,16 @@
-<p>
-  <b>Name:</b>
-  <%=h @person.full_name%>
-</p>
-<p>
-<%= image_tag @person.photo.url,:class=>'profile_image' %>
-</p>
-<p>
- <h2>Your Friends</h2>
- <ul>
-   <% for friendship in @person.friendships %>
-     <li><%=h friendship.friend.full_name %></li>
-     (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
-  <% end %>
- </ul>
-</p>
-<p>
- <h2>Your Friend Requests</h2>
- <ul>
-   <% for inverse_friendship in @person.inverse_friendships %>
-     <li><%=h inverse_friendship.person.full_name %></li>
-     (<%=link_to 'Add ' << inverse_friendship.person.full_name << ' as a friend', friendships_path(:friend_id=>inverse_friendship.person), :method=>:post%>)
-  <% end %>
- </ul>
-</p>
-
-<p>
-  <h2>Current Location:</h2>
-</p>
-
+<table>
+  <tr>
+    <td>
+      <%= image_tag @person.photo.url(:small),:class=>'profile_image' %>
+    </td>
+    <td>
+      <h1><%=@person.full_name%></h1>
+    </td>
+  </tr>
+</table>
 <div id="recentLocations" class="recentLocations">
  <h2> Places Visited Recently </h2>
   <table>
-  <th>Place name</th>
   <% for place in @person.places %>
   <tr>
     <td><%=h place.place_name %></td>
