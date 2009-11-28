@@ -1,20 +1,16 @@
 <h1>People on Makany</h1>
 
 <table>
-  <tr>
-    <th>First name</th>
-    <th>Last name</th>
-    <th>Age</th>
-    <th>Gender</th>
-  </tr>
-
 <% for person in @people %>
   <%if (person.username != current_person.username)%>
   <tr>
-    <td><%=h person.first_name %></td>
-    <td><%=h person.last_name %></td>
-    <td colspan="2"><%= link_to 'Show Limited Profile', person %></td>
+    <td colspan="2"><%= image_tag person.photo(:small)%></td>
+    <td colspan="2"><%= link_to person.full_name, person %></td>
+    <% if (!current_person.friends.include?(person)) %>
     <td colspan="2"><%= link_to 'Request Friendship', friend_invitations_path(:receiver_id=>person), :method=>:post %></td>
+    <%else%>
+    <td colspan="2">Already your friend</td>
+    <%end%>
   </tr>
   <% end %>
 <% end %>

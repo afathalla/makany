@@ -4,9 +4,11 @@ class FriendshipsController < ApplicationController
      friend_name= @friendship.friend.full_name
     if @friendship.save
       flash[:notice] = friend_name << " is now your friend"
+
       #Removing friendship request now that they are friends
       @friend_invitation=current_person.received_friend_invitations.find_by_sender_id(params[:friend_id])
       @friend_invitation.destroy
+
       #Sending an email that invitation has been accepted
       PersonMailer.deliver_friend_invitation_accepted(@friendship)
       redirect_to current_person

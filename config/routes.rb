@@ -1,11 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :friend_invitations
 
- # map.root :controller=>'person_sessions',:action=>'new'
-
   map.resources :place_types
 
-  map.resources :people,:has_many=>:places
+  map.resources :people,:member=>{:manage_friends=>:get},:has_many=>:places
 
   map.resources :locations
 
@@ -22,7 +20,6 @@ ActionController::Routing::Routes.draw do |map|
   map.root :login
 
   map.logout 'logout',:controller => 'person_sessions', :action=>'destroy'
-
 
   map.resources :person_sessions
 

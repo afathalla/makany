@@ -3743,3 +3743,2798 @@ INFO: Rendered layouts/_login_status (0.0ms)
 28-Nov-2009 14:44:41 com.sun.grizzly.config.GrizzlyServiceListener
 INFO: Completed in 136ms (View: 86, DB: 3) | 200 OK [http://localhost/people/8]
 
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#edit (for  at 2009-11-28 16:34:36) [GET]
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/edit
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_person (16.0ms)
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 16:34:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 168ms (View: 78, DB: 2) | 200 OK [http://localhost/people/current/edit]
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#edit (for  at 2009-11-28 16:34:38) [GET]
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/edit
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_person (9.0ms)
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 16:34:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 77ms (View: 22, DB: 1) | 200 OK [http://localhost/people/current/edit]
+
+28-Nov-2009 16:34:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:34:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:34:41) [GET]
+
+28-Nov-2009 16:34:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:34:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:34:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (1.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:34:42 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 189ms (View: 128, DB: 7) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:34:48) [GET]
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"index"}
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=index):
+  app/controllers/people_controller.rb:18:in `show'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_trace (27.0ms)
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_request_and_response (1.0ms)
+
+28-Nov-2009 16:34:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:34:52) [GET]
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionView::TemplateError (wrong argument type Person (expected Module)) on line #8 of app/views/people/index.html.erb:
+5:   <%if (person.username != current_person.username)%>
+6:   <tr>
+7:     <td colspan="2"><%= link_to person.full_name, person %></td>
+8:     <% if (!current_person.friends.include(person)) %>
+9:     <td colspan="2"><%= link_to 'Request Friendship', friend_invitations_path(:receiver_id=>person), :method=>:post %></td>
+10:     <%else%>
+11:     <td colspan="2">Already your friend</td>
+
+    app/views/people/index.html.erb:8
+    app/views/people/index.html.erb:4:in `each'
+    app/views/people/index.html.erb:4
+    app/controllers/people_controller.rb:9:in `index'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+    :1
+
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_trace (43.0ms)
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_request_and_response (1.0ms)
+
+28-Nov-2009 16:34:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (internal_server_error)
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:35:06) [GET]
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:35:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 105ms (View: 41, DB: 3) | 200 OK [http://localhost/people]
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:36:38) [GET]
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionView::TemplateError (undefined method `image' for #<Person:0x5e18b>) on line #7 of app/views/people/index.html.erb:
+4: <% for person in @people %>
+5:   <%if (person.username != current_person.username)%>
+6:   <tr>
+7:     <td colspan="2"><%= current_person.image(:small)%></td>
+8:     <td colspan="2"><%= link_to person.full_name, person %></td>
+9:     <% if (!current_person.friends.include?(person)) %>
+10:     <td colspan="2"><%= link_to 'Request Friendship', friend_invitations_path(:receiver_id=>person), :method=>:post %></td>
+
+    app/views/people/index.html.erb:7
+    app/views/people/index.html.erb:4:in `each'
+    app/views/people/index.html.erb:4
+    app/controllers/people_controller.rb:9:in `index'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+    :1
+
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_trace (45.0ms)
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_request_and_response (1.0ms)
+
+28-Nov-2009 16:36:38 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (internal_server_error)
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:36:52) [GET]
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 16:36:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 88ms (View: 32, DB: 1) | 200 OK [http://localhost/people]
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:37:09) [GET]
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:37:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 133ms (View: 45, DB: 3) | 200 OK [http://localhost/people]
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 16:37:26) [GET]
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 16:37:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 97ms (View: 41, DB: 2) | 200 OK [http://localhost/people]
+
+28-Nov-2009 16:37:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:37:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 16:37:29) [GET]
+
+28-Nov-2009 16:37:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 16:37:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:38:13) [GET]
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (1.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (1.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:38:13 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 125ms (View: 54, DB: 6) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:39:33) [GET]
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionView::TemplateError (undefined method `h1' for #<ActionView::Base:0x1591d82>) on line #2 of app/views/people/show.html.erb:
+1: <p>
+2:   <%=h1 @person.full_name%>
+3: </p>
+4: <p>
+5: <%= image_tag @person.photo.url(:small),:class=>'profile_image' %>
+
+    app/views/people/show.html.erb:2
+    app/controllers/people_controller.rb:20:in `show'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+    file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+    :1
+
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_trace (36.0ms)
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_request_and_response (1.0ms)
+
+28-Nov-2009 16:39:33 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (internal_server_error)
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:40:08) [GET]
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:40:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 137ms (View: 79, DB: 5) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:40:32) [GET]
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:40:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 122ms (View: 66, DB: 4) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:41:43) [GET]
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 16:41:43 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 127ms (View: 70, DB: 3) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 16:42:37) [GET]
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 16:42:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 125ms (View: 74, DB: 2) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 17:57:55) [GET]
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 17:57:55 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 17:57:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (1.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 17:57:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (5.0ms)
+
+28-Nov-2009 17:57:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 17:57:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 399ms (View: 337, DB: 3) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 17:58:01 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 17:58:02) [GET]
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=current):
+  app/controllers/people_controller.rb:29:in `manage_friends'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_trace (38.0ms)
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered rescues/_request_and_response (2.0ms)
+
+28-Nov-2009 17:58:02 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 17:59:11) [GET]
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 17:59:11 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 108ms (View: 53, DB: 1) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#edit (for  at 2009-11-28 17:59:28) [GET]
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/edit
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered shared/_person (10.0ms)
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 17:59:28 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 75ms (View: 23, DB: 0) | 200 OK [http://localhost/people/current/edit]
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 17:59:29) [GET]
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (4.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 17:59:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 130ms (View: 65, DB: 9) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:01:04) [GET]
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (0.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:01:04 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 115ms (View: 61, DB: 6) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:01:08) [GET]
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:01:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 107ms (View: 53, DB: 2) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:01:26) [GET]
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:01:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 114ms (View: 61, DB: 3) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:02:06) [GET]
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:02:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 115ms (View: 61, DB: 1) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:02:10) [GET]
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:02:10 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 123ms (View: 72, DB: 5) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:02:40) [GET]
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (2.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:02:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 115ms (View: 51, DB: 5) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:03:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:03:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:03:08) [GET]
+
+28-Nov-2009 18:03:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:03:08 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:03:09 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 108ms (View: 53, DB: 3) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:07:51) [GET]
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:07:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 110ms (View: 58, DB: 3) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:10:19) [GET]
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:10:19 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 103ms (View: 49, DB: 4) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing FriendshipsController#destroy (for  at 2009-11-28 18:10:26) [DELETE]
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "id"=>"22"}
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Load (2.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 22 AND (`friendships`.person_id = 8)) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendship Destroy (0.0ms)[0m   [0mDELETE FROM `friendships` WHERE `id` = 22[0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/8
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 105ms (DB: 2) | 302 Found [http://localhost/friendships/22]
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:10:26) [GET]
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:10:26 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:10:27 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (25.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:10:27 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:10:27 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:10:27 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 158ms (View: 75, DB: 28) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 18:10:32) [GET]
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 91ms (View: 31, DB: 5) | 200 OK [http://localhost/people]
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 18:10:32) [GET]
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 18:10:32 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing FriendInvitationsController#create (for  at 2009-11-28 18:10:36) [POST]
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "receiver_id"=>"9"}
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO `friend_invitations` (`sender_id`, `receiver_id`, `sent_at`, `created_at`, `updated_at`) VALUES(8, 9, NULL, '2009-11-28 18:10:36', '2009-11-28 18:10:36')[0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Sent mail to omarf@gmail.com
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+Date: Sat, 28 Nov 2009 18:10:36 +0200
+From: Makany <webmaster@auccentral.com>
+To: omarf@gmail.com
+Subject: Ahmed Fathalla wants to be your friend
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h1>Hello Omar,
+</h1>
+<p>
+Ahmed Fathalla wants to be your friend. <br/>
+To view and accept friend invitations visit your profile page at <br/>
+http://www.auccentral.com/people/8
+</p>
+<p>
+  Have a great day! <br/>
+  -- Makany
+</p>
+</body>
+</html>
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/8
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 161ms (DB: 3) | 302 Found [http://localhost/friend_invitations?receiver_id=9]
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:10:36) [GET]
+
+28-Nov-2009 18:10:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (2.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (1.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:10:37 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 121ms (View: 58, DB: 9) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:10:40) [GET]
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (1.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:10:40 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 94ms (View: 41, DB: 6) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:11:41) [GET]
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendInvitation Load (0.0ms)[0m   [0;1mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:11:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 109ms (View: 57, DB: 2) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:11:46) [GET]
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:11:46 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 85ms (View: 33, DB: 2) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:12:18) [GET]
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (1.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (10.0ms)
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:12:18 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 101ms (View: 49, DB: 5) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:12:23) [GET]
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendInvitation Load (0.0ms)[0m   [0;1mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:12:23 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 95ms (View: 48, DB: 3) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:18:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:18:49) [GET]
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (1.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:18:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 114ms (View: 59, DB: 4) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 18:19:14) [GET]
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 9) AND ((`friendships`.person_id = 8)) LIMIT 1[0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 102ms (View: 45, DB: 2) | 200 OK [http://localhost/people]
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 18:19:14) [GET]
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 18:19:14 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing FriendInvitationsController#create (for  at 2009-11-28 18:19:21) [POST]
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "receiver_id"=>"5"}
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `friend_invitations` (`sender_id`, `receiver_id`, `sent_at`, `created_at`, `updated_at`) VALUES(8, 5, NULL, '2009-11-28 18:19:21', '2009-11-28 18:19:21')[0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Sent mail to amr.aljarhi@aucegypt.edu
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+Date: Sat, 28 Nov 2009 18:19:21 +0200
+From: Makany <webmaster@auccentral.com>
+To: amr.aljarhi@aucegypt.edu
+Subject: Ahmed Fathalla wants to be your friend
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h1>Hello Amr,
+</h1>
+<p>
+Ahmed Fathalla wants to be your friend. <br/>
+To view and accept friend invitations visit your profile page at <br/>
+http://www.auccentral.com/people/8
+</p>
+<p>
+  Have a great day! <br/>
+  -- Makany
+</p>
+</body>
+</html>
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/8
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 241ms (DB: 3) | 302 Found [http://localhost/friend_invitations?receiver_id=5]
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:19:21) [GET]
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:21 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 87ms (View: 39, DB: 2) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:19:24) [GET]
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"8"}
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 8 ) [0m
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (2.0ms)
+
+28-Nov-2009 18:19:24 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 104ms (View: 28, DB: 3) | 200 OK [http://localhost/people/8]
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:19:29) [GET]
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (0.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 8) [0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:19:29 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (32.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 8) [0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 8) [0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 8) [0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 153ms (View: 44, DB: 35) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 18:19:30) [GET]
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 18:19:30 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#destroy (for  at 2009-11-28 18:19:36) [GET]
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '8') LIMIT 1[0m
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/login
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 51ms (DB: 3) | 302 Found [http://localhost/logout]
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-28 18:19:36) [GET]
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:36 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 64ms (View: 27, DB: 0) | 200 OK [http://localhost/login]
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#create (for  at 2009-11-28 18:19:41) [POST]
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "person_session"=>{"username"=>"omarf", "password"=>"omarf"}, "commit"=>"Login!"}
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (2.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'omarf') LIMIT 1[0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`username` = 'omarf') LIMIT 1[0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/9
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 77ms (DB: 2) | 302 Found [http://localhost/person_sessions]
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:19:41) [GET]
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"9"}
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 9 ) [0m
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:41 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 81ms (View: 23, DB: 2) | 200 OK [http://localhost/people/9]
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:19:44) [GET]
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 9) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 9) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendInvitation Load (0.0ms)[0m   [0;1mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 9) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.friend_id = 9) [0m
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:19:44 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 118ms (View: 67, DB: 5) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing FriendshipsController#create (for  at 2009-11-28 18:19:56) [POST]
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "friend_id"=>"8"}
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:56 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `friendships` (`person_id`, `friend_id`, `created_at`, `updated_at`) VALUES(9, 8, '2009-11-28 18:19:56', '2009-11-28 18:19:56')[0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendInvitation Load (0.0ms)[0m   [0;1mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.`sender_id` = '8') AND (`friend_invitations`.receiver_id = 9) LIMIT 1[0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Destroy (1.0ms)[0m   [0mDELETE FROM `friend_invitations` WHERE `id` = 26[0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Sent mail to afathalla@gmail.com
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+Date: Sat, 28 Nov 2009 18:19:57 +0200
+From: Makany <webmaster@auccentral.com>
+To: afathalla@gmail.com
+Subject: Omar Fathalla is now your friend on Makany
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h1>Hello Ahmed,
+</h1>
+<p>
+Omar Fathalla has accepted your friend invitation. <br/>
+To see your Makany friends visit your profile page at <br/>
+http://www.auccentral.com/people/8
+</p>
+<p>
+  Have a great day! <br/>
+  -- Makany
+</p>
+</body>
+</html>
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/9
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 166ms (DB: 3) | 302 Found [http://localhost/friendships?friend_id=8]
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:19:57) [GET]
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"9"}
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 9 ) [0m
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:57 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 80ms (View: 23, DB: 3) | 200 OK [http://localhost/people/9]
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:19:59) [GET]
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 9) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 9) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 9) [0m
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:19:59 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 101ms (View: 42, DB: 4) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:20:34) [GET]
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 9) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 9) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (1.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 9) [0m
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:20:34 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 161ms (View: 111, DB: 3) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#index (for  at 2009-11-28 18:20:45) [GET]
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` [0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/index
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 5) AND ((`friendships`.person_id = 9)) LIMIT 1[0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT `people`.id FROM `people` INNER JOIN `friendships` ON `people`.id = `friendships`.friend_id WHERE (`people`.`id` = 8) AND ((`friendships`.person_id = 9)) LIMIT 1[0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 83ms (View: 33, DB: 4) | 200 OK [http://localhost/people]
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 18:20:45) [GET]
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 18:20:45 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 18:20:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing FriendInvitationsController#create (for  at 2009-11-28 18:20:48) [POST]
+
+28-Nov-2009 18:20:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"authenticity_token"=>"Z0BVmfHoe8FXELEgZs4fHYioxbRHa1cbsKWvNyCJI0Y=", "receiver_id"=>"5"}
+
+28-Nov-2009 18:20:48 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (89.0ms)[0m   [0mINSERT INTO `friend_invitations` (`sender_id`, `receiver_id`, `sent_at`, `created_at`, `updated_at`) VALUES(9, 5, NULL, '2009-11-28 18:20:48', '2009-11-28 18:20:48')[0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Sent mail to amr.aljarhi@aucegypt.edu
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+Date: Sat, 28 Nov 2009 18:20:49 +0200
+From: Makany <webmaster@auccentral.com>
+To: amr.aljarhi@aucegypt.edu
+Subject: Omar Fathalla wants to be your friend
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h1>Hello Amr,
+</h1>
+<p>
+Omar Fathalla wants to be your friend. <br/>
+To view and accept friend invitations visit your profile page at <br/>
+http://www.auccentral.com/people/9
+</p>
+<p>
+  Have a great day! <br/>
+  -- Makany
+</p>
+</body>
+</html>
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/people/9
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 214ms (DB: 91) | 302 Found [http://localhost/friend_invitations?receiver_id=5]
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#show (for  at 2009-11-28 18:20:49) [GET]
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"9"}
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (1.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 9) [0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/show
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 9 ) [0m
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (4.0ms)
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:20:49 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 82ms (View: 34, DB: 3) | 200 OK [http://localhost/people/9]
+
+28-Nov-2009 18:20:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PeopleController#manage_friends (for  at 2009-11-28 18:20:51) [GET]
+
+28-Nov-2009 18:20:51 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   Parameters: {"id"=>"current"}
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/people
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering people/manage_friends
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mFriendInvitation Load (0.0ms)[0m   [0mSELECT * FROM `friend_invitations` WHERE (`friend_invitations`.sender_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mPerson Load (8.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 5) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `friend_invitations` WHERE (`friend_invitations`.receiver_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.person_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 8) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mFriendship Load (0.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.friend_id = 9) [0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (1.0ms)
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (1.0ms)
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 114ms (View: 51, DB: 10) | 200 OK [http://localhost/people/current/manage_friends]
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing ApplicationController#index (for  at 2009-11-28 18:20:52) [GET]
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:82:in `serve_rails'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/adapter/rails.rb:109:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/jruby/rack/rails.rb:69:in `call'
+  file:/tmp/.glassfish/static-cache/gf/glassfish.jar!/rack/handler/grizzly.rb:55:in `call'
+  :1
+
+
+28-Nov-2009 18:20:52 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering rescues/layout (not_found)
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#destroy (for  at 2009-11-28 18:21:06) [GET]
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '9') LIMIT 1[0m
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Redirected to http://localhost:3000/login
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 62ms (DB: 0) | 302 Found [http://localhost/logout]
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO:   [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: 
+
+Processing PersonSessionsController#new (for  at 2009-11-28 18:21:06) [GET]
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering template within layouts/application
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendering person_sessions/new
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_menu (2.0ms)
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Rendered layouts/_login_status (0.0ms)
+
+28-Nov-2009 18:21:06 com.sun.grizzly.config.GrizzlyServiceListener
+INFO: Completed in 60ms (View: 24, DB: 1) | 200 OK [http://localhost/login]
+
