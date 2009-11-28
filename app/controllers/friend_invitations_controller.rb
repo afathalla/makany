@@ -42,12 +42,12 @@ class FriendInvitationsController < ApplicationController
   def create
      @friend_invitation = current_person.sent_friend_invitations.build(:receiver_id => params[:receiver_id])
      if @friend_invitation.save
-     # @friend_invitation.receiver.received_friend_invitations.build(:sender_id=>current_person.id)
-       flash[:notice] = "Invitation sent to " << @friend_invitation.receiver.full_name
-      redirect_to people_url
+       PersonMailer.deliver_friend_invitation(@friend_invitation)
+      flash[:notice] = "Invitation sent to " << @friend_invitation.receiver.full_name
+      redirect_to current_person
     else
       flash[:notice] = "Unable to send invitation to " << @friend_invitation.receiver.full_name
-      redirect_to people_url
+      redirect_to current_person
     end
  end
 

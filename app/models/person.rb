@@ -15,7 +15,7 @@ has_many :received_friend_invitations, :class_name => 'FriendInvitation',:foreig
 #PaperClip Properties
 has_attached_file :photo ,:styles => {:small=>'75x75',:medium=>'200x200'}
 validates_attachment_size :photo, :less_than => 500.kilobytes
-validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
+validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png','image/gif']
 
 #Methods
   def full_name

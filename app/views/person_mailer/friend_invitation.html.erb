@@ -2,22 +2,22 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-<h1>Welcome to Makany,<%=h @person.first_name %>
+<h1>Hello <%=h @sent_invitation.receiver.first_name %>,
 </h1>
 <p>
-You have successfully signed up to Makany, and your username is: <%= @person.username %>.<br/>  To login to the site, just follow this link:
+<%=@sent_invitation.sender.full_name%> wants to be your friend. <br/>
+To view and accept friend invitations visit your profile page at <br/>
+<%=@profile_url%>
 </p>
 <p>
-  Thanks for joining and have a great day! <br/>
+  Have a great day! <br/>
   -- Makany
 </p>
 </body>
 </html>
-

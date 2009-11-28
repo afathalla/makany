@@ -7,7 +7,8 @@ class FriendshipsController < ApplicationController
       #Removing friendship request now that they are friends
       @friend_invitation=current_person.received_friend_invitations.find_by_sender_id(params[:friend_id])
       @friend_invitation.destroy
-      
+      #Sending an email that invitation has been accepted
+      PersonMailer.deliver_friend_invitation_accepted(@friendship)
       redirect_to current_person
     else
       flash[:notice] = "Unable to add friend."

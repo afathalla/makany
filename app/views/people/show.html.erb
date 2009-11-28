@@ -51,7 +51,7 @@
       <%=image_tag inverse_friendship.person.photo.url(:small)  %>
       <%=h inverse_friendship.person.full_name %>
      </li>
-     (<%=link_to 'Remove Friend',friendship,:method=>:delete%>)
+     (<%=link_to 'Remove Friend',inverse_friendship,:method=>:delete%>)
   <% end %>
  </ul>
 </p>

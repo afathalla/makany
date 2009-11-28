@@ -13,11 +13,8 @@
   <tr>
     <td><%=h person.first_name %></td>
     <td><%=h person.last_name %></td>
-    <td><%=h person.age %></td>
-    <td><%=h person.gender %></td>
-    <td><%= link_to 'Show Limited Profile', person %></td>
-    <td><%= link_to 'Request Friendship', friend_invitations_path(:receiver_id=>person), :method=>:post %></td>
-    <td><%= link_to 'Add as a friend', friendships_path(:friend_id=>person), :method=>:post %></td>
+    <td colspan="2"><%= link_to 'Show Limited Profile', person %></td>
+    <td colspan="2"><%= link_to 'Request Friendship', friend_invitations_path(:receiver_id=>person), :method=>:post %></td>
   </tr>
   <% end %>
 <% end %>
