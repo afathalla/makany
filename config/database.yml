@@ -5,7 +5,7 @@ development:
       database: makany_dev
       port: 3306
       username: root
-      password: #password: root New Work Laptop has no MySQL Password
+      password: root #New Work Laptop has no MySQL Password
 
 
 # Warning: The database defined as 'test' will be erased and

@@ -9391,3 +9391,1269 @@ ArgumentError (dump format error()):
 Rendered rescues/_trace (62.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+Migrating to CreateSections (20091024120825)
+Migrating to AddCourseNumberToCourse (20091024121036)
+Migrating to CreatePlaces (20091024122024)
+Migrating to AddPlaceIdToSection (20091024123611)
+Migrating to CreateCourseCodes (20091024125439)
+Migrating to RenameCourseCodeInCourses (20091024130000)
+Migrating to CreateLocations (20091026181448)
+Migrating to CreatePeople (20091026181630)
+Migrating to CreatePeoplePlaces (20091030205800)
+Migrating to CreatePlaceTypes (20091031120547)
+Migrating to AddAuthenticationToPeople (20091107092907)
+Migrating to AddAttachmentsPhotoToPerson (20091114221018)
+Migrating to CreateFriendships (20091121184244)
+Migrating to AddAuthorizationToPeople (20091121210935)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091121210935')[0m
+Migrating to CreateFriendInvitations (20091127191021)
+  [4;35;1mSQL (141.0ms)[0m   [0mCREATE TABLE `friend_invitations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `sender_id` integer(10), `receiver_id` integer(10), `sent_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091127191021')[0m
+Migrating to AddAddressCityToPlaces (20091130054221)
+  [4;35;1mSQL (516.0ms)[0m   [0mALTER TABLE `places` ADD `address` varchar(255)[0m
+  [4;36;1mSQL (515.0ms)[0m   [0;1mALTER TABLE `places` ADD `city_id` integer(10)[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091130054221')[0m
+Migrating to CreateCities (20091130055354)
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCREATE TABLE `cities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `city_name` varchar(255), `location` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091130055354')[0m
+Migrating to AddLatLongToPlaces (20091130062552)
+  [4;36;1mSQL (484.0ms)[0m   [0;1mALTER TABLE `places` ADD `lat` float[0m
+  [4;35;1mSQL (547.0ms)[0m   [0mALTER TABLE `places` ADD `lng` float[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091130062552')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 20:59:00) [GET]
+Redirected to http://localhost:3000/person_sessions/new
+Filter chain halted as [:require_person] rendered_or_redirected.
+Completed in 610ms (DB: 0) | 302 Found [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#new (for 127.0.0.1 at 2009-11-30 20:59:02) [GET]
+Rendering template within layouts/application
+Rendering person_sessions/new
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (15.0ms)
+Completed in 515ms (View: 343, DB: 0) | 200 OK [http://localhost/person_sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonSessionsController#create (for 127.0.0.1 at 2009-11-30 20:59:09) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "person_session"=>{"username"=>"afathalla", "password"=>"omar"}, "commit"=>"Login!"}
+  [4;35;1mPerson Load (47.0ms)[0m   [0mSELECT * FROM `people` WHERE (LOWER(`people`.username) = 'afathalla') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`username` = 'afathalla') LIMIT 1[0m
+Redirected to http://localhost:3000/people/1
+Completed in 781ms (DB: 47) | 302 Found [http://localhost/person_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-30 20:59:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (15.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 500ms (View: 171, DB: 31) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 20:59:19) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (15.0ms)
+Completed in 359ms (View: 109, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 20:59:22) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mCity Load (0.0ms)[0m   [0mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 516ms (View: 203, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#new (for 127.0.0.1 at 2009-11-30 20:59:40) [GET]
+Rendering template within layouts/place_types
+Rendering place_types/new
+  [4;35;1mPerson Load (15.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (234.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 437ms (View: 375, DB: 15) | 200 OK [http://localhost/place_types/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#create (for 127.0.0.1 at 2009-11-30 20:59:45) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place_type"=>{"place_type"=>"Other", "place_description"=>"Other"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `place_types` (`place_type`, `place_description`, `created_at`, `updated_at`) VALUES('Other', 'Other', '2009-11-30 20:59:45', '2009-11-30 20:59:45')[0m
+Redirected to http://localhost:3000/place_types/1
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/place_types]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#show (for 127.0.0.1 at 2009-11-30 20:59:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlaceType Load (16.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendering template within layouts/place_types
+Rendering place_types/show
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (187.0ms)
+Rendered layouts/_login_status (16.0ms)
+Completed in 344ms (View: 266, DB: 16) | 200 OK [http://localhost/place_types/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#index (for 127.0.0.1 at 2009-11-30 20:59:49) [GET]
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` [0m
+Rendering template within layouts/place_types
+Rendering place_types/index
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (172.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 328ms (View: 297, DB: 0) | 200 OK [http://localhost/place_types]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-11-30 20:59:56) [GET]
+  Parameters: {"id"=>"nes"}
+  [4;35;1mCity Load (0.0ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find City with ID=nes):
+  app/controllers/cities_controller.rb:16:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#new (for 127.0.0.1 at 2009-11-30 20:59:59) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 110ms (View: 63, DB: 0) | 200 OK [http://localhost/cities/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#create (for 127.0.0.1 at 2009-11-30 21:00:13) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "city"=>{"city_name"=>"Cairo", "location"=>"Egypt"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `cities` (`city_name`, `location`, `created_at`, `updated_at`) VALUES('Cairo', 'Egypt', '2009-11-30 21:00:13', '2009-11-30 21:00:13')[0m
+Redirected to http://localhost:3000/cities/1
+Completed in 141ms (DB: 0) | 302 Found [http://localhost/cities]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-11-30 21:00:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCity Load (16.0ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) [0m
+Rendering template within layouts/cities
+Rendering cities/show
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/cities/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2009-11-30 21:00:14) [GET]
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/cities]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:00:23) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (16.0ms)
+Completed in 406ms (View: 188, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-30 21:00:39) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place"=>{"place_name"=>"Ahmed Fathalla's Home", "type_id"=>"1", "address"=>"8 Mohamed Tawfic Diab Street Cairo", "city_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`, `address`, `city_id`, `lat`, `lng`) VALUES('Ahmed Fathalla\'s Home', 1, NULL, '2009-11-30 21:00:40', '2009-11-30 21:00:40', '8 Mohamed Tawfic Diab Street Cairo', 1, NULL, NULL)[0m
+Redirected to http://localhost:3000/places/1
+Completed in 907ms (DB: 16) | 302 Found [http://localhost/places]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:00:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (16.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Cairo. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Cairo</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AddressLine>القاهرة</AddressLine></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="30.1419662" south="29.9874575" east="31.3775684" west="31.1214496" />
+    </ExtendedData>
+    <Point><coordinates>31.2495090,30.0647420,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1156ms (View: 125, DB: 16) | 200 OK [http://localhost/places/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:05:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: Intercontinental Cairo CityStars. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Intercontinental Cairo CityStars</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: Intercontinental Cairo CityStars
+Geocoder.us geocoding. Address: Intercontinental Cairo CityStars. Result: 2: couldn't find this address! sorry
+geocoder.us was unable to geocode address: Intercontinental Cairo CityStars
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (32.0ms)
+Completed in 1641ms (View: 219, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:08:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (15.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 31 30, Whitesboro, Oneida, New York 13492. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>31 30, Whitesboro, Oneida, New York 13492</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>31 30, Whitesboro, NY 13492, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NY</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Oneida</SubAdministrativeAreaName><Locality><LocalityName>Whitesboro</LocalityName><Thoroughfare><ThoroughfareName>31 30</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>13492</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="43.1243117" south="43.1180164" east="-75.2895083" west="-75.2958035" />
+    </ExtendedData>
+    <Point><coordinates>-75.2926481,43.1211577,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1000ms (View: 110, DB: 15) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:08:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 31 30, Whitesboro, Oneida, New York 13492. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>31 30, Whitesboro, Oneida, New York 13492</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>31 30, Whitesboro, NY 13492, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NY</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Oneida</SubAdministrativeAreaName><Locality><LocalityName>Whitesboro</LocalityName><Thoroughfare><ThoroughfareName>31 30</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>13492</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="43.1243117" south="43.1180164" east="-75.2895083" west="-75.2958035" />
+    </ExtendedData>
+    <Point><coordinates>-75.2926481,43.1211577,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (16.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (62.0ms)
+Rendered layouts/_login_status (16.0ms)
+Completed in 1062ms (View: 156, DB: 16) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1532ms (View: 125, DB: 16) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:13:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (15.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 671ms (View: 94, DB: 15) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:13:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (15.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 688ms (View: 125, DB: 15) | 200 OK [http://localhost/places/1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:13:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+
+NameError (undefined local variable or method `loc' for #<PlacesController:0x107939f>):
+  app/controllers/places_controller.rb:24:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:13:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+
+NameError (undefined local variable or method `loc' for #<PlacesController:0x1c836e8>):
+  app/controllers/places_controller.rb:24:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:13:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+
+NameError (undefined local variable or method `loc' for #<PlacesController:0x1941ff4>):
+  app/controllers/places_controller.rb:24:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:14:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 828ms (View: 125, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:15:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 781ms (View: 125, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:17:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 813ms (View: 110, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:18:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 703ms (View: 125, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:18:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 94085. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>94085</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Sunnyvale, CA 94085, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Sunnyvale</LocalityName><PostalCode><PostalCodeNumber>94085</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4023400" south="37.3768410" east="-121.9871700" west="-122.0472720" />
+    </ExtendedData>
+    <Point><coordinates>-122.0183914,37.3895297,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 703ms (View: 109, DB: 16) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:20:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: Intercontinental City Stars. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Intercontinental City Stars</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: Intercontinental City Stars
+Geocoder.us geocoding. Address: Intercontinental City Stars. Result: 2: couldn't find this address! sorry
+geocoder.us was unable to geocode address: Intercontinental City Stars
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 2656ms (View: 125, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:38) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:38) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:42) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=9&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:42) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=9&s=&tretry=1"}
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:43) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=8&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:44) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=8&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:45) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=7&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:45) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=7&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:46) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=6&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:46) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=5&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:47) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=4&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:48) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=3&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:49) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=2&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:49) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=2&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:50) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=1&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:51) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=1&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:52) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=0&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:20:53) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=0&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:21:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: Intercontinental City Stars. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Intercontinental City Stars</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: Intercontinental City Stars
+Geocoder.us geocoding. Address: Intercontinental City Stars. Result: 2: couldn't find this address! sorry
+geocoder.us was unable to geocode address: Intercontinental City Stars
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (15.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1063ms (View: 79, DB: 47) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:21:28) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#1 (for 127.0.0.1 at 2009-11-30 21:21:29) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, redirect_back_or_default, require_no_person, require_person, show, store_location, and update):
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:22:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: Cairo Egypt. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Cairo Egypt</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AddressLine>القاهرة</AddressLine></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="30.1419662" south="29.9874575" east="31.3775684" west="31.1214496" />
+    </ExtendedData>
+    <Point><coordinates>31.2495090,30.0647420,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 704ms (View: 125, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:22:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Cairo Egypt. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Cairo Egypt</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AddressLine>القاهرة</AddressLine></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="30.1419662" south="29.9874575" east="31.3775684" west="31.1214496" />
+    </ExtendedData>
+    <Point><coordinates>31.2495090,30.0647420,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 953ms (View: 94, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:23:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Maadi Cairo Egypt. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Maadi Cairo Egypt</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Maadi, Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AdministrativeArea><AdministrativeAreaName>القاهرة</AdministrativeAreaName><AddressLine>معادي</AddressLine></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="29.9792656" south="29.9599335" east="31.2765074" west="31.2444926" />
+    </ExtendedData>
+    <Point><coordinates>31.2605000,29.9696000,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 828ms (View: 109, DB: 16) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:23:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Maadi Cairo Egypt. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Maadi Cairo Egypt</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Maadi, Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AdministrativeArea><AdministrativeAreaName>القاهرة</AdministrativeAreaName><AddressLine>معادي</AddressLine></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="29.9792656" south="29.9599335" east="31.2765074" west="31.2444926" />
+    </ExtendedData>
+    <Point><coordinates>31.2605000,29.9696000,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (16.0ms)
+Completed in 891ms (View: 110, DB: 0) | 200 OK [http://localhost/places/1/]
