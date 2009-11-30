@@ -4,17 +4,21 @@
   <%= f.error_messages %>
 
   <p>
-    <b><%= f.label :place_name %></b><br />
+    <h3><%= f.label :place_name,"Name" %></h3>
     <%= f.text_field :place_name %>
   </p>
   <p>
-    <b>Place Type </b> <br />
+    <h3>Type of Place</h3>
     <%= collection_select(:place, :type_id,PlaceType.find(:all),:id, :place_type, {:prompt=>true})  %>
   </p>
-  <!--<p>
-    <#%= f.label :location_id %><br />
-    <#%= f.text_field :location_id %>
-  </p>-->
+  <p>
+    <%= f.label :address,"Address" %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <h3>City</h3>
+       <%= collection_select(:place, :city_id,City.find(:all),:id, :city_name, {:prompt=>true})  %>
+  </p>
   <p>
     <%= f.submit "Create" %>
   </p>

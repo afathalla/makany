@@ -1,4 +1,5 @@
 class PlacesController < ApplicationController
+  include Geokit::Geocoders #Include Geocoders to use Google Maps
   before_filter :require_person
 
 
@@ -17,6 +18,10 @@ class PlacesController < ApplicationController
   # GET /places/1.xml
   def show
     @place = Place.find(params[:id])
+    loc=MultiGeocoder.geocode("8 Mohamed Tawfic Diab Street Cairo")
+    @map=GMap.new("map_div")
+    @map.control_init(:large_map=>true,:map_type=>true)
+    @map.center_zoom_int([loc.lat,loc.lng],13)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -66,7 +71,9 @@ class PlacesController < ApplicationController
   # PUT /places/1.xml
   def update
     @place = Place.find(params[:id])
-
+ 
+    
+    
     respond_to do |format|
       if @place.update_attributes(params[:place])
         flash[:notice] = 'Place was successfully updated.'

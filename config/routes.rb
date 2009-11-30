@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :cities
+
   map.resources :friend_invitations
 
   map.resources :place_types
