@@ -10,7 +10,8 @@
 
 <p>
   <b>Location:</b>
-  <%=h @place.location_id %>
+<%= @map.to_html %>
+<%= @map.div(:width => 600, :height => 400) %>
 </p>
 
 
