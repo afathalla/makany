@@ -10657,3 +10657,850 @@ Rendering places/show
 Rendered layouts/_menu (0.0ms)
 Rendered layouts/_login_status (16.0ms)
 Completed in 891ms (View: 110, DB: 0) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:37:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Cairo. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Cairo</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AddressLine>القاهرة</AddressLine></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="30.1419662" south="29.9874575" east="31.3775684" west="31.1214496" />
+    </ExtendedData>
+    <Point><coordinates>31.2495090,30.0647420,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 781ms (View: 109, DB: 32) | 200 OK [http://localhost/places/1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:37:07) [GET]
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (15.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 265ms (View: 110, DB: 31) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:37:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Google geocoding. Address: 8 Mohamed Tawfic Diab Street Cairo. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>8 Mohamed Tawfic Diab Street Cairo</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Cairo, Egypt</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>EG</CountryNameCode><CountryName>Egypt</CountryName><AddressLine>القاهرة</AddressLine></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="30.1419662" south="29.9874575" east="31.3775684" west="31.1214496" />
+    </ExtendedData>
+    <Point><coordinates>31.2495090,30.0647420,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 609ms (View: 62, DB: 16) | 200 OK [http://localhost/places/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:37:16) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 266ms (View: 109, DB: 16) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#edit (for 127.0.0.1 at 2009-11-30 21:37:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering template within layouts/places
+Rendering places/edit
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 281ms (View: 78, DB: 0) | 200 OK [http://localhost/places/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:37:23) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 266ms (View: 109, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:37:30) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` [0m
+  [4;35;1mCity Load (0.0ms)[0m   [0mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 297ms (View: 141, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#new (for 127.0.0.1 at 2009-11-30 21:38:01) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/cities/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#create (for 127.0.0.1 at 2009-11-30 21:38:14) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "city"=>{"city_name"=>"San Francisco", "location"=>"USA"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `cities` (`city_name`, `location`, `created_at`, `updated_at`) VALUES('San Francisco', 'USA', '2009-11-30 21:38:14', '2009-11-30 21:38:14')[0m
+Redirected to http://localhost:3000/cities/2
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/cities]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-11-30 21:38:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 2) [0m
+Rendering template within layouts/cities
+Rendering cities/show
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/cities/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2009-11-30 21:38:16) [GET]
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 79ms (View: 47, DB: 0) | 200 OK [http://localhost/cities]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-30 21:38:24) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 156ms (View: 47, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-11-30 21:38:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` INNER JOIN `people_places` ON `places`.id = `people_places`.place_id WHERE (`people_places`.person_id = 1 ) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 188ms (View: 63, DB: 16) | 200 OK [http://localhost/people/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-11-30 21:38:31) [GET]
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 125ms (View: 16, DB: 0) | 200 OK [http://localhost/people/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:38:35) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 250ms (View: 109, DB: 0) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:38:37) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 312ms (View: 156, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (1)
+Migrating to CreateSections (20091024120825)
+Migrating to AddCourseNumberToCourse (20091024121036)
+Migrating to CreatePlaces (20091024122024)
+Migrating to AddPlaceIdToSection (20091024123611)
+Migrating to CreateCourseCodes (20091024125439)
+Migrating to RenameCourseCodeInCourses (20091024130000)
+Migrating to CreateLocations (20091026181448)
+Migrating to CreatePeople (20091026181630)
+Migrating to CreatePeoplePlaces (20091030205800)
+Migrating to CreatePlaceTypes (20091031120547)
+Migrating to AddAuthenticationToPeople (20091107092907)
+Migrating to AddAttachmentsPhotoToPerson (20091114221018)
+Migrating to CreateFriendships (20091121184244)
+Migrating to AddAuthorizationToPeople (20091121210935)
+Migrating to CreateFriendInvitations (20091127191021)
+Migrating to AddAddressCityToPlaces (20091130054221)
+Migrating to CreateCities (20091130055354)
+Migrating to AddLatLongToPlaces (20091130062552)
+Migrating to AddZipCodeToPlaces (20091130194103)
+  [4;36;1mSQL (422.0ms)[0m   [0;1mALTER TABLE `places` ADD `zip_code` integer(10)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091130194103')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:51:43) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mCity Load (15.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 359ms (View: 172, DB: 15) | 200 OK [http://localhost/places/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#new (for 127.0.0.1 at 2009-11-30 21:51:58) [GET]
+Rendering template within layouts/place_types
+Rendering place_types/new
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (125.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 203ms (View: 156, DB: 16) | 200 OK [http://localhost/place_types/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#create (for 127.0.0.1 at 2009-11-30 21:52:14) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place_type"=>{"place_type"=>"School", "place_description"=>"Any Educational Institution"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `place_types` (`place_type`, `place_description`, `created_at`, `updated_at`) VALUES('School', 'Any Educational Institution', '2009-11-30 21:52:14', '2009-11-30 21:52:14')[0m
+Redirected to http://localhost:3000/place_types/2
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/place_types]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#show (for 127.0.0.1 at 2009-11-30 21:52:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+Rendering template within layouts/place_types
+Rendering place_types/show
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (140.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 265ms (View: 171, DB: 16) | 200 OK [http://localhost/place_types/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlaceTypesController#index (for 127.0.0.1 at 2009-11-30 21:52:16) [GET]
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+Rendering template within layouts/place_types
+Rendering place_types/index
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendered layouts/_menu (141.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 219ms (View: 188, DB: 0) | 200 OK [http://localhost/place_types]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:52:22) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (16.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 328ms (View: 157, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-30 21:52:58) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place"=>{"place_name"=>"The American University in Cairo", "type_id"=>"2", "address"=>"113 Kasr El Aini Street, Cairo, Egypt", "zip_code"=>"", "city_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`, `address`, `city_id`, `lat`, `lng`, `zip_code`) VALUES('The American University in Cairo', 2, NULL, '2009-11-30 21:52:58', '2009-11-30 21:52:58', '113 Kasr El Aini Street, Cairo, Egypt', 1, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/places/2
+Completed in 281ms (DB: 0) | 302 Found [http://localhost/places]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:52:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+
+TypeError (can't convert nil into String):
+  app/controllers/places_controller.rb:21:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:53:12) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (16.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 328ms (View: 171, DB: 32) | 200 OK [http://localhost/places/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#destroy (for 127.0.0.1 at 2009-11-30 21:53:15) [DELETE]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "id"=>"2"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+  [4;35;1mPerson Load (16.0ms)[0m   [0mSELECT * FROM `people` INNER JOIN `people_places` ON `people`.id = `people_places`.person_id WHERE (`people_places`.place_id = 2 ) [0m
+  [4;36;1mPlace Destroy (31.0ms)[0m   [0;1mDELETE FROM `places` WHERE `id` = 2[0m
+Redirected to http://localhost:3000/places
+Completed in 266ms (DB: 47) | 302 Found [http://localhost/places/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2009-11-30 21:53:16) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering template within layouts/places
+Rendering places/index
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 250ms (View: 109, DB: 0) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2009-11-30 21:54:45) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/places
+Rendering places/new
+  [4;35;1mPlaceType Load (0.0ms)[0m   [0mSELECT * FROM `place_types` [0m
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 313ms (View: 141, DB: 0) | 200 OK [http://localhost/places/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-30 21:55:25) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place"=>{"place_name"=>"The American University in Cairo", "type_id"=>"2", "address"=>"113 Kasr El Aini Street", "zip_code"=>"", "city_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`, `address`, `city_id`, `lat`, `lng`, `zip_code`) VALUES('The American University in Cairo', 2, NULL, '2009-11-30 21:55:25', '2009-11-30 21:55:25', '113 Kasr El Aini Street', 1, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/places/3
+Completed in 250ms (DB: 0) | 302 Found [http://localhost/places]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 3) [0m
+Google geocoding. Address: 113 Kasr El Aini Street. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>113 Kasr El Aini Street</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: 113 Kasr El Aini Street
+Geocoder.us geocoding. Address: 113 Kasr El Aini Street. Result: 2: couldn't find this address! sorry
+geocoder.us was unable to geocode address: 113 Kasr El Aini Street
+Rendering template within layouts/places
+Rendering places/show
+  [4;35;1mPlaceType Load (16.0ms)[0m   [0mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1078ms (View: 78, DB: 31) | 200 OK [http://localhost/places/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:27) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=10&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:28) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=10&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:32) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=9&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=9&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:32) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=9&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=9&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:33) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=8&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=8&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:34) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=8&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (15.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=8&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:35) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=7&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=7&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:35) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=7&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=7&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:36) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=6&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=6&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:37) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=6&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=6&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:38) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=5&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=5&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:38) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=5&s=&tretry=1"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=5&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:39) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=4&s="}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=4&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 21:55:40) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=4&s=&tretry=1"}
+  [4;36;1mPerson Load (16.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (16.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=4&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2009-11-30 22:16:04) [POST]
+  Parameters: {"authenticity_token"=>"uFe0rX8Vu7QhFYVvZ7Why0Je8g2a2erfye3nAZ8dIhI=", "place"=>{"place_name"=>"The American University in Cairo", "type_id"=>"2", "address"=>"113 Kasr El Aini Street", "zip_code"=>"", "city_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `places` (`place_name`, `type_id`, `location_id`, `created_at`, `updated_at`, `address`, `city_id`, `lat`, `lng`, `zip_code`) VALUES('The American University in Cairo', 2, NULL, '2009-11-30 22:16:04', '2009-11-30 22:16:04', '113 Kasr El Aini Street', 1, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/places/4
+Completed in 266ms (DB: 0) | 302 Found [http://localhost/places]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 22:16:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 4) [0m
+Google geocoding. Address: 113 Kasr El Aini Street. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>113 Kasr El Aini Street</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: 113 Kasr El Aini Street
+Geocoder.us geocoding. Address: 113 Kasr El Aini Street. Result: 2: couldn't find this address! sorry
+geocoder.us was unable to geocode address: 113 Kasr El Aini Street
+Rendering template within layouts/places
+Rendering places/show
+  [4;36;1mPlaceType Load (0.0ms)[0m   [0;1mSELECT * FROM `place_types` WHERE (`place_types`.`id` = 2) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_login_status (0.0ms)
+Completed in 1640ms (View: 93, DB: 0) | 200 OK [http://localhost/places/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 22:16:08) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;35;1mPlace Load (0.0ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=10&s=):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2009-11-30 22:16:09) [GET]
+  Parameters: {"id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mPerson Load (0.0ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = '1') LIMIT 1[0m
+  [4;36;1mPlace Load (0.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Place with ID=x=NaN&y=NaN&z=10&s=&tretry=1):
+  app/controllers/places_controller.rb:20:in `show'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)

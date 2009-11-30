@@ -16,6 +16,10 @@
     <%= f.text_field :address %>
   </p>
   <p>
+    <%= f.label :zip_code,"Zip Code" %><br />
+    <%= f.text_field :zip_code %>
+  </p>
+  <p>
     <h3>City</h3>
        <%= collection_select(:place, :city_id,City.find(:all),:id, :city_name, {:prompt=>true})  %>
   </p>

@@ -18,7 +18,13 @@ class PlacesController < ApplicationController
   # GET /places/1.xml
   def show
     @place = Place.find(params[:id])
-    @loc=MultiGeocoder.geocode("8 Mohamed Tawfic Diab Street Maadi Cairo Egypt")
+    
+    if (!@place.zip_code.nil?)
+    @loc=MultiGeocoder.geocode(@place.address << ' '<< @place.zip_code)
+    else
+    @loc=MultiGeocoder.geocode(@place.address)
+    end
+    
     @map=GMap.new("map_div")
     @map.control_init(:large_map=>true,:map_type=>true)
     @map.center_zoom_init([@loc.lat,@loc.lng],10)
