@@ -8,7 +8,7 @@ class PersonSessionsController < ApplicationController
    if @person_session.save
      flash[:notice] = "Successfully logged in."
 #     redirect_to root_url
-     redirect_to people_path
+redirect_to person_path(Person.find_by_username(@person_session.username))
 
     else
      render :action => 'new'

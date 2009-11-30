@@ -1,0 +1,18 @@
+<p>
+  <b>Sender:</b>
+  <%=h @friend_invitation.sender_id %>
+</p>
+
+<p>
+  <b>Receiver:</b>
+  <%=h @friend_invitation.receiver_id %>
+</p>
+
+<p>
+  <b>Sent at:</b>
+  <%=h @friend_invitation.sent_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_friend_invitation_path(@friend_invitation) %> |
+<%= link_to 'Back', friend_invitations_path %>

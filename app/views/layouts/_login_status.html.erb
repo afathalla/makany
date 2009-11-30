@@ -1,0 +1,13 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div class="loginstatus">
+   <% if current_person %>
+   <p>
+    Hello, <%=current_person.first_name%>
+    <%=  link_to '(Not ' << current_person.first_name << ' ? Logout)', logout_path %>
+   </p>
+   <%end%>
+  </div>
