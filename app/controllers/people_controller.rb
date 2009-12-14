@@ -1,5 +1,40 @@
+require 'java' #Using Java fot Ekahau Integration
+require File.join(File.dirname(__FILE__), '../../lib/ekahau-engine-sdk-new.jar')
+require File.join(File.dirname(__FILE__), '../../lib/commons-codec-1.3.jar')
+require File.join(File.dirname(__FILE__), '../../lib/commons-httpclient-3.1.jar')
+require File.join(File.dirname(__FILE__), '../../lib/commons-logging-1.1.jar')
+require File.join(File.dirname(__FILE__), '../../lib/log4j-1.2.14.jar')
+require File.join(File.dirname(__FILE__), '../../lib/servlet-2.4.jar')
+
+#TODO:remove unneeded imports
+java_import java.io.BufferedReader
+java_import java.io.IOException
+java_import java.io.InputStreamReader
+java_import java.util.List
+
+#Importing Ekahau Java SDK classes
+#TODO:remove unneeded imports
+module EkahauCommonSDK
+include_package "com.ekahau.common.sdk"
+end
+module EkahauEngineSDK
+include_package "com.ekahau.engine.sdk"
+end
+module EkahauEngineSDKEvent
+include_package "com.ekahau.engine.sdk.event"
+end
+module EkahauEngineSDKExamples
+include_package "com.ekahau.engine.sdk.examples"
+end
+module EkahauEngineSDKImpl
+include_package "com.ekahau.engine.sdk.impl"
+end
+module EkahauEngineSDKSensor
+include_package "com.ekahau.engine.sdk.sensor"
+end
 class PeopleController < ApplicationController
   before_filter :require_person, :except=> [:new,:create]
+  before_filter :initalize_ekahau_engine
 
   # GET /people
   # GET /people.xml
@@ -14,9 +49,27 @@ class PeopleController < ApplicationController
 
   # GET /people/1
   # GET /people/1.xml
+  # Do some changes to show so that we can display a friend feed on homepage
+  # Ekahau SDK calls can be used find friend locations
   def show
     @person = Person.find(params[:id])
     #@person_places=Person.person_places
+
+    #Create new Ekahau EventListener
+    unless @m_engine.nil?
+#    @event_listener = EventListener.new
+#		@m_engine.addEventListener(@event_listener, nil, "ANY_RULE_LABEL", false);
+#		@m_engine.startTracking();
+
+   @event_history = @m_engine.getEventHistory(nil,"user" , nil,nil, nil, nil, nil, "1h",nil , 10)
+#    for event in @event_history
+#      event.type=EkahauEngineSDKEvent::ZoneEvent
+#    end
+    end
+
+#		mEngine.stopTracking();
+#		mEngine.removeAllListeners()
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @person }

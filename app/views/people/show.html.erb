@@ -8,6 +8,19 @@
     </td>
   </tr>
 </table>
+<p>
+ <h2> Ekahau Places Visited Recently </h2>
+  <table>
+   <%for event in @event_history %>
+  <tr>
+    <%unless event.get_location.nil?%>
+      <td><%=h event.get_location.get_zone_name%></td>
+   <%end%>
+ </tr>
+  <%end%>
+</table>
+</p>
+
 <div id="recentLocations" class="recentLocations">
  <h2> Places Visited Recently </h2>
   <table>
@@ -17,8 +30,7 @@
     <td><%= link_to 'More About this place', place %></td>
   </tr>
 <% end %>
-</table> 
+</table>
 </div>
-
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
