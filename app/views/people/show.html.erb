@@ -14,7 +14,8 @@
    <%for event in @event_history %>
   <tr>
     <%unless event.get_location.nil?%>
-      <td><%=h event.get_location.get_zone_name%></td>
+    <td><%=h event.get_location.get_zone_name%></td>
+
    <%end%>
  </tr>
   <%end%>

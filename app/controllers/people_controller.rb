@@ -61,7 +61,7 @@ class PeopleController < ApplicationController
 #		@m_engine.addEventListener(@event_listener, nil, "ANY_RULE_LABEL", false);
 #		@m_engine.startTracking();
 
-   @event_history = @m_engine.getEventHistory(nil,"user" , nil,nil, nil, nil, nil, "1h",nil , 10)
+   @event_history = @m_engine.getEventHistory(nil,"user" , nil,nil, nil, nil, nil, "3d",nil , 10)
 #    for event in @event_history
 #      event.type=EkahauEngineSDKEvent::ZoneEvent
 #    end
