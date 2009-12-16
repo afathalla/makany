@@ -54,21 +54,24 @@ class PeopleController < ApplicationController
   def show
     @person = Person.find(params[:id])
     #@person_places=Person.person_places
-
+   
     #Create new Ekahau EventListener
     unless @m_engine.nil?
-#    @event_listener = EventListener.new
-#		@m_engine.addEventListener(@event_listener, nil, "ANY_RULE_LABEL", false);
-#		@m_engine.startTracking();
 
-   @event_history = @m_engine.getEventHistory(nil,"user" , nil,nil, nil, nil, nil, "3d",nil , 10)
-#    for event in @event_history
-#      event.type=EkahauEngineSDKEvent::ZoneEvent
-#    end
+      @my_tag=@m_engine.findDevices("name="<<@person.username)[0]
+      @tags= @m_engine.findDevices
+      for tag in @tags
+        unless tag.get_device_id==@my_tag.get_device_id
+           @other_tag=tag
+        end
+      end
+     # @event_history = @m_engine.getEventHistory(nil,"user" , nil,nil, nil, nil, nil, "5d",nil , 5)
+      #@my_event_history = @m_engine.getEventHistory(nil,"user" , nil,[@tag[0].get_device_id].to_java(:long), nil, nil, nil, "5d",nil , 5)
+      @event_history = @m_engine.getEventHistory(nil,"user" , nil,[@other_tag.get_device_id].to_java(:long), nil, nil, nil, "5d",nil , 5)
+      @my_event_history = @m_engine.getEventHistory(nil,"user" , nil,[@my_tag.get_device_id].to_java(:long), nil, nil, nil, "5d",nil , 5)
+
     end
 
-#		mEngine.stopTracking();
-#		mEngine.removeAllListeners()
 
     respond_to do |format|
       format.html # show.html.erb

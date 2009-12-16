@@ -9,12 +9,39 @@
   </tr>
 </table>
 <p>
- <h2> Ekahau Places Visited Recently </h2>
+ <h2>Friend Activity</h2>
   <table>
-   <%for event in @event_history %>
+  <%for event in @event_history %>
   <tr>
-    <%unless event.get_location.nil?%>
+    <%unless event.get_location.nil? || Person.find_by_username(event.get_device.get_name).nil? || Person.find_by_username(event.get_device.get_name)==@person %>
+    <td><%=image_tag Person.find_by_username(event.get_device.get_name).photo.url(:small)%></td>
+    <td><%=Person.find_by_username(event.get_device.get_name).full_name%></td>
     <td><%=h event.get_location.get_zone_name%></td>
+    <td><%=h event.get_location.get_map_name%></td>
+   <%end%>
+ </tr>
+  <%end%>
+</table>
+</p>
+
+<p>
+ <h2>Places Recently Visited</h2>
+  <table>
+    <thead>
+      <tr>
+        <td><h2>Zone Name </h2> </td>
+        <td><h2> Map Name</h2> </td>
+        <td><h2> Time ago</h2></td>
+      </tr>
+    </thead>
+   <%for event in @my_event_history%>
+  <tr>
+    <%unless event.get_location.nil? || Person.find_by_username(event.get_device.get_name).nil? || Person.find_by_username(event.get_device.get_name)!=@person %>
+    <td><%=h event.get_location.get_zone_name%></td>
+    <td><%=h event.get_location.get_map_name%></td>
+    <td><%=h event.get_event_time%></td>
+    <td><%=h Time.at(event.get_event_time)%></td>
+    <td><%=h time_ago_in_words(Time.at(event.get_event_time), true)%></td>
 
    <%end%>
  </tr>
@@ -22,16 +49,10 @@
 </table>
 </p>
 
-<div id="recentLocations" class="recentLocations">
- <h2> Places Visited Recently </h2>
-  <table>
-  <% for place in @person.places %>
-  <tr>
-    <td><%=h place.place_name %></td>
-    <td><%= link_to 'More About this place', place %></td>
-  </tr>
-<% end %>
-</table>
-</div>
+ <p>
+   <h2>Map View of Your Latest Location</h2>
+   <%=image_tag "http://localhost:8550/epe/map/render?tagid="<< @my_tag.get_device_id.to_s<<"&width=600&height=300&scale=true"%>
+</p>
+
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>

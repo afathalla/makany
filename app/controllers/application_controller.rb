@@ -86,8 +86,10 @@ class ApplicationController < ActionController::Base
     end
 
     def initalize_ekahau_engine
-      engine_ip="10.7.46.45"
-     if @m_engine.nil?
+     # engine_ip="10.7.46.45"
+      engine_ip="localhost"
+
+      if @m_engine.nil?
        #Create objects needed for the communication with EPE.
        @m_engine = EkahauEngineSDK::PositioningEngine.new(
           engine_ip,8550,"admin", "admin");
