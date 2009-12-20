@@ -18,10 +18,10 @@ class PlacesController < ApplicationController
   # GET /places/1.xml
   def show
     @place = Place.find(params[:id])
-    loc=MultiGeocoder.geocode("8 Mohamed Tawfic Diab Street Cairo")
+    @loc=MultiGeocoder.geocode("480 E Broad St,Columbus, Ohio 43215")
     @map=GMap.new("map_div")
     @map.control_init(:large_map=>true,:map_type=>true)
-    @map.center_zoom_int([loc.lat,loc.lng],13)
+    @map.center_zoom_init([@loc.lat,@loc.lng],10)
 
     respond_to do |format|
       format.html # show.html.erb

@@ -1,8 +1,10 @@
 <div class="nav">
    <% if current_person %>
    <%= link_to "Home", person_path(current_person.id) %>
-   <%= link_to "Edit Profile", edit_person_path(:current) %>
-   <%= link_to "Friends", manage_friends_person_path(:current) %>
+   <%= link_to "Friends", manage_friends_person_path(:current) %> 
+   <%= link_to "People", people_path %>
+   <%= link_to "Places", places_path %>
+   <%= link_to "My Profile", edit_person_path(:current) %>
    <%= link_to "Logout", logout_path %>
    <% else %>
    <%= link_to "Register", new_person_path %>
