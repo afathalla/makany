@@ -1,20 +1,18 @@
 <p>
-  <b>Place name:</b>
-  <%=h @place.place_name %>
+  <h2><%=@place.place_name %></h2>
 </p>
 
 <p>
-  <b>Type:</b>
   <%=h PlaceType.find(@place.type_id).place_type %>
 </p>
 
 <p>
-  <b>Location:</b>
-Lat <%=@loc.lat%> Long <%=@loc.lng%>
-<%= @map.to_html %>
-<%= @map.div(:width => 500, :height => 400) %>
+  <%= @place.address %> 
 </p>
-
+<p>
+<%= @map.to_html %>
+<%= @map.div(:width => 500, :height => 200) %>
+</p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>
